@@ -1,4 +1,4 @@
-import { freeSheets, sheets, bundles } from './sheetsData';
+import { freeSheets, bundles, universalExtras } from './sheetsData';
 import FreeSheetsGrid from './FreeSheetsGrid';
 import styles from './sheets.module.css';
 
@@ -9,20 +9,6 @@ const colorMap: Record<string, string> = {
   yellow: 'linear-gradient(135deg, #FFD23F, #FF8A3D)',
   purple: 'linear-gradient(135deg, #9B5DE5, #FF7EB9)',
   pink: 'linear-gradient(135deg, #FF7EB9, #FF4E6A)',
-  teal: 'linear-gradient(135deg, #2EC4B6, #4A9EFF)',
-  orange: 'linear-gradient(135deg, #FF8A3D, #FFD23F)',
-};
-
-const tagColors: Record<string, string> = {
-  bestseller: 'var(--red)',
-  new: 'var(--green)',
-  popular: 'var(--purple)',
-};
-
-const tagLabels: Record<string, string> = {
-  bestseller: '🔥 BESTSELLER',
-  new: '✨ NEW',
-  popular: '💕 POPULAR',
 };
 
 export default function ActivitySheetsPage() {
@@ -30,40 +16,41 @@ export default function ActivitySheetsPage() {
     <>
       {/* HERO */}
       <section className="page-hero">
-        <div className="page-hero-sticker">📝 Phase 1 · Live Now</div>
+        <div className="page-hero-sticker">🎁 Every sheet is free · Always</div>
         <h1>
-          <span className="rainbow-word">Printable</span> activity sheets
-          <br />for little big minds
+          All sheets are <span className="rainbow-word">free</span>.
+          <br />Forever.
         </h1>
         <p>
-          Designed by a Montessori teacher. Start with free sheets — fall in love —
-          then dive deeper into the full packs. No catch, no email wall on the free ones.
+          No trial. No email wall. No catch. Every individual activity sheet
+          Chutki makes is 100% free to download. We make money through bundles that
+          add structure, support, and guides — not by locking up content.
         </p>
       </section>
 
-      {/* ============ FREE FOREVER — THE STAR OF THE PAGE ============ */}
+      {/* ============ FREE SHEETS LIBRARY ============ */}
       <section className={styles.freeSection}>
         <div className={styles.freeHeader}>
           <div className={styles.freeHeaderLeft}>
             <div className={styles.freeBanner}>
-              <span className={styles.freeGift}>🎁</span>
+              <span className={styles.freeGift}>🌈</span>
               <div>
-                <div className={styles.freeEyebrow}>Free Forever · No email required</div>
+                <div className={styles.freeEyebrow}>The Free Library</div>
                 <h2 className={styles.freeTitle}>
-                  Start with <span className="rainbow-word">8 free sheets</span>
+                  <span className="rainbow-word">{freeSheets.length}</span> free sheets · growing weekly
                 </h2>
               </div>
             </div>
             <p className={styles.freeSubtitle}>
-              Not a sample. Not a trial. Yours to print, share with your WhatsApp mom group,
-              and use as long as you like — completely free. This is how we say thank you
-              to every parent who trusts us.
+              Start with these. We add <strong>10–15 new free sheets every week</strong> — letters,
+              numbers, Hindi, life skills, colouring. Click, download, print, share with friends.
+              Yours forever.
             </p>
           </div>
           <div className={styles.freeStats}>
             <div className={styles.freeStatCard}>
               <div className={styles.freeStatNum}>83,900+</div>
-              <div className={styles.freeStatLabel}>Free sheets downloaded</div>
+              <div className={styles.freeStatLabel}>Free downloads this month</div>
             </div>
             <div className={styles.freeStatCard}>
               <div className={styles.freeStatNum}>200+</div>
@@ -77,108 +64,82 @@ export default function ActivitySheetsPage() {
         <div className={styles.freeNudge}>
           <span>🌱</span>
           <p>
-            Loved these? The paid packs below go <strong>much deeper</strong> — 20–30 pages each,
-            parent guides, answer keys, and full curriculum sequences. Pennies per page.
+            <strong>Want structure instead of 50 separate downloads?</strong> Our bundles add parent guides,
+            learning sequences, progress trackers, certificates, and WhatsApp support — so your child
+            learns in the right order, not randomly.
           </p>
         </div>
       </section>
 
-      {/* ============ TRANSITION DIVIDER ============ */}
-      <div className={styles.divider}>
-        <div className={styles.dividerLine}></div>
-        <div className={styles.dividerText}>
-          <span className={styles.dividerSpan}>✨ Ready for more? Meet our premium packs ✨</span>
+      {/* ============ WHY BUNDLES EXIST — THE VALUE EXPLAINER ============ */}
+      <section className={styles.bundleValue}>
+        <div className="section-head">
+          <div className="section-eyebrow">~ Why pay for bundles? ~</div>
+          <h2>Free sheets are the tool. Bundles are the guide. 🗺️</h2>
+          <p>Here&apos;s exactly what bundles add that free individual sheets don&apos;t.</p>
         </div>
-        <div className={styles.dividerLine}></div>
-      </div>
 
-      {/* TRUST BAR */}
-      <section className={styles.trustBar}>
-        <div className={styles.trustItems}>
-          <div className={styles.trustItem}>
-            <div className={styles.trustIcon}>🇮🇳</div>
-            <div><strong>UPI Payment</strong><br /><span>Paytm, PhonePe, GPay</span></div>
+        <div className={styles.compareBox}>
+          <div className={styles.compareCol}>
+            <div className={styles.compareHead} style={{ background: '#E8F9E8' }}>
+              <div className={styles.compareTag}>FREE SHEETS</div>
+              <h3>Just the PDFs</h3>
+              <div className={styles.compareSubhead}>Perfect for casual use</div>
+            </div>
+            <ul className={styles.compareList}>
+              <li>✅ Individual activity sheets</li>
+              <li>✅ Download as many as you want</li>
+              <li>✅ Print, share, reuse forever</li>
+              <li className={styles.compareDim}>✖ No guidance on order</li>
+              <li className={styles.compareDim}>✖ No teaching notes</li>
+              <li className={styles.compareDim}>✖ No progress tracking</li>
+              <li className={styles.compareDim}>✖ No support from Chutki</li>
+              <li className={styles.compareDim}>✖ No completion certificate</li>
+            </ul>
           </div>
-          <div className={styles.trustItem}>
-            <div className={styles.trustIcon}>⚡</div>
-            <div><strong>Instant Download</strong><br /><span>PDF in your dashboard in 2 min</span></div>
-          </div>
-          <div className={styles.trustItem}>
-            <div className={styles.trustIcon}>🔁</div>
-            <div><strong>Lifetime Access</strong><br /><span>Re-download anytime from dashboard</span></div>
-          </div>
-          <div className={styles.trustItem}>
-            <div className={styles.trustIcon}>💛</div>
-            <div><strong>Happiness Promise</strong><br /><span>Not loving it? Email us, full refund</span></div>
+
+          <div className={styles.compareVs}>VS</div>
+
+          <div className={styles.compareCol}>
+            <div className={styles.compareHead} style={{ background: '#FFF4D6' }}>
+              <div className={styles.compareTag} style={{ background: 'var(--red)', color: 'white' }}>BUNDLES</div>
+              <h3>A full learning path</h3>
+              <div className={styles.compareSubhead}>For parents who want structure</div>
+            </div>
+            <ul className={styles.compareList}>
+              <li>✅ All the sheets (organised)</li>
+              <li>✅ <strong>Parent Guide</strong> — how to teach each one</li>
+              <li>✅ <strong>Learning Sequence Map</strong> — what order</li>
+              <li>✅ <strong>Progress Tracker</strong> — printable checklist</li>
+              <li>✅ <strong>Completion Certificate</strong> — for your child</li>
+              <li>✅ <strong>WhatsApp Support</strong> — ask Chutki anything</li>
+              <li>✅ <strong>Monthly Q&amp;A calls</strong> — live with Chutki</li>
+              <li>✅ <strong>Lifetime updates</strong> — new sheets free forever</li>
+            </ul>
           </div>
         </div>
-      </section>
 
-      {/* FILTERS */}
-      <section className={styles.filters}>
-        <div className={styles.filterRow}>
-          <div className={styles.filterGroup}>
-            <span className={styles.filterLabel}>Age:</span>
-            {['All', '2–4', '3–5', '4–7'].map((age, i) => (
-              <button key={age} className={`${styles.filterPill} ${i === 0 ? styles.filterActive : ''}`}>
-                {age}
-              </button>
+        {/* Universal extras explained */}
+        <div className={styles.extrasShowcase}>
+          <h3 className={styles.extrasTitle}>What&apos;s inside every bundle</h3>
+          <div className={styles.extrasGrid}>
+            {universalExtras.map((extra) => (
+              <div key={extra.title} className={styles.extraCard}>
+                <div className={styles.extraIcon}>{extra.icon}</div>
+                <h4>{extra.title}</h4>
+                <p>{extra.description}</p>
+              </div>
             ))}
           </div>
-          <div className={styles.filterGroup}>
-            <span className={styles.filterLabel}>Sort:</span>
-            <select className={styles.select}>
-              <option>Most loved</option>
-              <option>New first</option>
-              <option>Price: Low to High</option>
-              <option>Price: High to Low</option>
-            </select>
-          </div>
         </div>
       </section>
 
-      {/* PAID SHEETS GRID */}
-      <section className={styles.sheetsSection}>
-        <div className={styles.sheetsGrid}>
-          {sheets.map((sheet) => (
-            <div key={sheet.id} className={styles.sheetCard}>
-              {sheet.tag && (
-                <div
-                  className={styles.cardTag}
-                  style={{ background: tagColors[sheet.tag] }}
-                >
-                  {tagLabels[sheet.tag]}
-                </div>
-              )}
-              <div
-                className={styles.sheetThumb}
-                style={{ background: colorMap[sheet.color] }}
-              >
-                <div className={styles.sheetEmoji}>{sheet.emoji}</div>
-                <div className={styles.sheetPageBadge}>{sheet.pages} pages</div>
-              </div>
-              <div className={styles.sheetBody}>
-                <div className={styles.sheetAge}>Ages {sheet.ageRange}</div>
-                <h3 className={styles.sheetTitle}>{sheet.title}</h3>
-                <p className={styles.sheetDesc}>{sheet.description}</p>
-                <div className={styles.sheetFooter}>
-                  <div className={styles.priceBlock}>
-                    <span className={styles.price}>₹{sheet.price}</span>
-                  </div>
-                  <button className={styles.addBtn}>Buy →</button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* BUNDLES */}
-      <section className={styles.bundlesSection}>
+      {/* ============ BUNDLES ============ */}
+      <section className={styles.bundlesSection} id="bundles">
         <div className="section-head">
-          <div className="section-eyebrow">~ Save More, Learn More ~</div>
-          <h2>Bundle &amp; Save 💰</h2>
-          <p>Most parents start with one pack, love it, and come back for more. Skip that trip — bundle up and save up to ₹125.</p>
+          <div className="section-eyebrow">~ Choose your bundle ~</div>
+          <h2>Which path fits your child? 🎯</h2>
+          <p>Each bundle is curated around a stage or goal — not just a pile of sheets.</p>
         </div>
 
         <div className={styles.bundlesGrid}>
@@ -188,21 +149,57 @@ export default function ActivitySheetsPage() {
               className={`${styles.bundleCard} ${i === 1 ? styles.bundleFeatured : ''}`}
             >
               {i === 1 && <div className={styles.bundleBadge}>⭐ MOST LOVED</div>}
+
               <div
                 className={styles.bundleTop}
                 style={{ background: colorMap[bundle.color] }}
               >
                 <div className={styles.bundleEmoji}>{bundle.emoji}</div>
                 <h3 className={styles.bundleTitle}>{bundle.title}</h3>
-                <div className={styles.bundleItems}>{bundle.items} activity packs</div>
+                <div className={styles.bundleSubtitle}>{bundle.subtitle}</div>
+                <div className={styles.bundleMeta}>
+                  <span>{bundle.ageFocus}</span>
+                  <span>·</span>
+                  <span>{bundle.sheetCount}+ sheets</span>
+                </div>
               </div>
+
               <div className={styles.bundleBody}>
                 <p className={styles.bundleDesc}>{bundle.description}</p>
-                <ul className={styles.bundleList}>
-                  {bundle.included.map((item, j) => (
-                    <li key={j}>✓ {item}</li>
+
+                <div className={styles.bundleSection}>
+                  <div className={styles.bundleSectionLabel}>📚 Topics covered</div>
+                  <ul className={styles.bundleList}>
+                    {bundle.topics.map((t, j) => (
+                      <li key={j}>• {t}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className={styles.bundleSection}>
+                  <div className={styles.bundleSectionLabel}>🎁 Special extras</div>
+                  {bundle.bonusExtras.map((extra, j) => (
+                    <div key={j} className={styles.bundleBonus}>
+                      <span className={styles.bonusIcon}>{extra.icon}</span>
+                      <div>
+                        <strong>{extra.title}</strong>
+                        <p>{extra.description}</p>
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
+
+                <div className={styles.bundleSection}>
+                  <div className={styles.bundleSectionLabel}>✨ Plus the usual goodies</div>
+                  <div className={styles.universalBadges}>
+                    <span>📘 Parent Guide</span>
+                    <span>🗺️ Sequence Map</span>
+                    <span>✅ Tracker</span>
+                    <span>📜 Certificate</span>
+                    <span>💬 WhatsApp</span>
+                  </div>
+                </div>
+
                 <div className={styles.bundlePriceBlock}>
                   <div>
                     <span className={styles.bundleStrike}>₹{bundle.originalPrice}</span>
@@ -210,6 +207,7 @@ export default function ActivitySheetsPage() {
                   </div>
                   <div className={styles.bundleSave}>{bundle.tag}</div>
                 </div>
+
                 <button className={styles.bundleBtn}>
                   Get {bundle.title} →
                 </button>
@@ -219,24 +217,24 @@ export default function ActivitySheetsPage() {
         </div>
       </section>
 
-      {/* SUBSCRIPTION — COMING SOON STATE */}
+      {/* SUBSCRIPTION — COMING SOON */}
       <section className={styles.subscriptionSection}>
         <div className={styles.subscriptionBox}>
           <div className={styles.comingSoonBadge}>⏳ COMING SOON</div>
           <div className={styles.subLeft}>
-            <div className="sticker" style={{ background: 'var(--yellow)' }}>🔁 For Regular Learners</div>
+            <div className="sticker" style={{ background: 'var(--yellow)' }}>🔁 For Dedicated Families</div>
             <h2 className={styles.subTitle}>
               The <span className="rainbow-word">Magic Pass</span> — coming soon
             </h2>
             <p className={styles.subText}>
-              A monthly subscription for families who want <em>everything</em>. New sheets every week,
-              unlimited downloads, priority access to Phase 2 books &amp; toys, and our private parent community.
+              All bundles + every new bundle we release + exclusive members-only sheets +
+              monthly live workshops with Chutki. The full Chutki Ki Duniya experience in one subscription.
             </p>
             <ul className={styles.subList}>
-              <li>✓ Unlimited sheet downloads (new + archive)</li>
-              <li>✓ 4–6 new sheets added every month</li>
-              <li>✓ Early access to books &amp; toys (Phase 2)</li>
-              <li>✓ WhatsApp parent community</li>
+              <li>✓ Every current &amp; future bundle</li>
+              <li>✓ Members-only worksheets (not in free library)</li>
+              <li>✓ Monthly live workshops with Chutki</li>
+              <li>✓ Early access to Phase 2 books &amp; toys</li>
               <li>✓ Cancel anytime, no lock-in</li>
             </ul>
           </div>
@@ -245,11 +243,11 @@ export default function ActivitySheetsPage() {
               <div className={styles.subPriceLabel}>Launching soon at</div>
               <div className={styles.subPriceMain}>
                 <span className={styles.subCurrency}>₹</span>
-                <span className={styles.subAmount}>149</span>
+                <span className={styles.subAmount}>199</span>
                 <span className={styles.subUnit}>/month</span>
               </div>
               <div className={styles.subPriceCompare}>
-                Early subscribers get <strong>Lifetime ₹99/month</strong> pricing 🎉
+                Early subscribers get <strong>Lifetime ₹149/month</strong> pricing 🎉
               </div>
               <form className={styles.waitlistForm}>
                 <input
@@ -277,17 +275,17 @@ export default function ActivitySheetsPage() {
         <div className={styles.proofGrid}>
           <div className={styles.testimonial}>
             <div className={styles.stars}>⭐⭐⭐⭐⭐</div>
-            <p>&quot;Downloaded the free Hindi starter, my 4-year-old finished it in a day. Bought the full pack immediately.&quot;</p>
+            <p>&quot;Free sheets got me hooked. Then I bought the School-Ready bundle — the parent guide is worth the price alone.&quot;</p>
             <div className={styles.testimonialAuthor}>— Priya, Lucknow</div>
           </div>
           <div className={styles.testimonial}>
             <div className={styles.stars}>⭐⭐⭐⭐⭐</div>
-            <p>&quot;Free sheets se start kiya, ab poora bundle hai. Chutki didi kamaal hai!&quot;</p>
+            <p>&quot;Whatsapp group se Chutki didi ne meri beti ke liye personal tips diye. Worth every rupee.&quot;</p>
             <div className={styles.testimonialAuthor}>— Rohan, Pune</div>
           </div>
           <div className={styles.testimonial}>
             <div className={styles.stars}>⭐⭐⭐⭐⭐</div>
-            <p>&quot;Quality same as ₹500 international worksheets, at 1/10th the price. UPI payment was instant.&quot;</p>
+            <p>&quot;I love that individual sheets stay free — feels honest. The bundle is genuinely structured, not just a zip.&quot;</p>
             <div className={styles.testimonialAuthor}>— Meera, Delhi</div>
           </div>
         </div>

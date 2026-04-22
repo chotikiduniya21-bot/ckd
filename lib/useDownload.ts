@@ -20,7 +20,7 @@ interface DownloadState {
  *   </button>
  */
 export function useDownload() {
-  const { user, recordDownload: recordDownloadInAuth } = useUser();
+  const { user, recordFreeDownload } = useUser();
   const [state, setState] = useState<DownloadState>({ status: 'idle' });
 
   const download = async (sheetId: string, kind: DownloadKind) => {
@@ -32,8 +32,8 @@ export function useDownload() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          userId: user?.id ?? null,
-          purchases: user?.purchases ?? [],
+          userId: user?.profile.id ?? null,
+          purchases: user?.purchases.map((p) => p.sheet_id) ?? [],
         }),
       });
 
@@ -49,7 +49,7 @@ export function useDownload() {
 
       // Record in client-side auth store (updates UI instantly)
       if (kind === 'free') {
-        recordDownloadInAuth(sheetId);
+        await recordFreeDownload(sheetId);
       }
 
       // Trigger the browser download

@@ -9,7 +9,8 @@ import styles from './dashboard.module.css';
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
-  const { user, isSignedIn, isLoading } = useUser();
+  const { user, isLoading } = useUser();
+  const isSignedIn = !!user;
 
   // Client-side route protection
   useEffect(() => {
@@ -48,11 +49,11 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       <aside className={styles.sidebar}>
         <div className={styles.sidebarHeader}>
           <div className={styles.sidebarAvatar}>
-            {user.firstName.charAt(0).toUpperCase()}
+            {user.profile.first_name.charAt(0).toUpperCase()}
           </div>
           <div>
-            <div className={styles.sidebarName}>{user.firstName}</div>
-            <div className={styles.sidebarEmail}>{user.email}</div>
+            <div className={styles.sidebarName}>{user.profile.first_name}</div>
+            <div className={styles.sidebarEmail}>{user.profile.email}</div>
           </div>
         </div>
 

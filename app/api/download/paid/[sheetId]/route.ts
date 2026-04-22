@@ -1,24 +1,21 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSignedDownloadUrl, recordDownload } from '@/lib/storage';
-import { sheets } from '@/app/activity-sheets/sheetsData';
+import { bundles } from '@/app/activity-sheets/sheetsData';
 
 /**
- * GET /api/download/paid/[sheetId]
+ * POST /api/download/paid/[sheetId]
  *
- * Request body (optional): { userId: string, purchases: string[] }
- * (When Clerk is wired, we'll get user from session instead of body.)
+ * In the new model, "paid" downloads are bundle-level.
+ * The [sheetId] param is actually a bundle ID (e.g. "school-ready").
  *
- * Returns: { success: true, downloadUrl, expiresAt }
- *     or: { success: false, error: '...' }
+ * Auth + ownership check → signed URL for the bundle's ZIP.
  */
 export async function POST(
   req: NextRequest,
   { params }: { params: { sheetId: string } },
 ) {
-  const { sheetId } = params;
+  const bundleId = params.sheetId;
 
-  // Body carries user info until we wire real auth.
-  // With Clerk: const { userId } = auth(); then look up purchases in DB.
   let body: { userId?: string; purchases?: string[] } = {};
   try {
     body = await req.json();
@@ -31,35 +28,35 @@ export async function POST(
   // 1. Auth check
   if (!userId) {
     return NextResponse.json(
-      { success: false, error: 'You must be signed in to download paid sheets.' },
+      { success: false, error: 'You must be signed in to download paid bundles.' },
       { status: 401 },
     );
   }
 
-  // 2. Sheet exists?
-  const sheet = sheets.find((s) => String(s.id) === sheetId);
-  if (!sheet) {
+  // 2. Bundle exists?
+  const bundle = bundles.find((b) => b.id === bundleId);
+  if (!bundle) {
     return NextResponse.json(
-      { success: false, error: 'Sheet not found.' },
+      { success: false, error: 'Bundle not found.' },
       { status: 404 },
     );
   }
 
-  // 3. Ownership check — did user actually pay for this sheet?
-  const owns = purchases.includes(sheetId);
+  // 3. Ownership check
+  const owns = purchases.includes(bundleId);
   if (!owns) {
     return NextResponse.json(
-      { success: false, error: 'You do not own this sheet. Purchase it first.' },
+      { success: false, error: 'You do not own this bundle. Purchase it first.' },
       { status: 403 },
     );
   }
 
-  // 4. Generate signed URL
+  // 4. Signed URL — points to bundle ZIP in production
   const signed = await getSignedDownloadUrl({
-    sheetId,
+    sheetId: bundleId,
     userId,
-    expiresIn: 900, // 15 minutes for paid downloads
-    downloadFileName: `${sheet.title.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}.pdf`,
+    expiresIn: 900,
+    downloadFileName: `${bundle.title.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}-bundle.zip`,
   });
 
   if (!signed) {
@@ -69,10 +66,9 @@ export async function POST(
     );
   }
 
-  // 5. Log for audit
   await recordDownload({
     userId,
-    sheetId,
+    sheetId: bundleId,
     type: 'paid',
     ipAddress: req.headers.get('x-forwarded-for') ?? undefined,
   });
@@ -82,6 +78,6 @@ export async function POST(
     downloadUrl: signed.url,
     expiresAt: signed.expiresAt,
     isMock: signed.isMock,
-    sheetTitle: sheet.title,
+    sheetTitle: bundle.title,
   });
 }

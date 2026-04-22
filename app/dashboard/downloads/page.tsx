@@ -23,8 +23,9 @@ export default function DownloadsPage() {
   const { download, state } = useDownload();
   if (!user) return null;
 
-  const downloadedSheets = freeSheets.filter((s) => user.freeDownloads.includes(String(s.id)));
-  const availableSheets = freeSheets.filter((s) => !user.freeDownloads.includes(String(s.id)));
+  const downloadedSheetIds = user.freeDownloads.map((d) => d.sheet_id);
+  const downloadedSheets = freeSheets.filter((s) => downloadedSheetIds.includes(String(s.id)));
+  const availableSheets = freeSheets.filter((s) => !downloadedSheetIds.includes(String(s.id)));
   const isDownloading = state.status === 'loading';
 
   return (

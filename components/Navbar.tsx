@@ -7,7 +7,8 @@ import styles from './Navbar.module.css';
 
 export default function Navbar() {
   const pathname = usePathname();
-  const { user, isSignedIn, signOut } = useUser();
+  const { user, signOut } = useUser();
+  const isSignedIn = !!user;
 
   const links = [
     { href: '/activity-sheets', label: 'Activity Sheets' },
@@ -38,9 +39,9 @@ export default function Navbar() {
           <div className={styles.userMenu}>
             <Link href="/dashboard" className={styles.userPill}>
               <div className={styles.avatar}>
-                {user.firstName.charAt(0).toUpperCase()}
+                {user.profile.first_name.charAt(0).toUpperCase()}
               </div>
-              <span className={styles.userName}>Hi, {user.firstName}!</span>
+              <span className={styles.userName}>Hi, {user.profile.first_name}!</span>
             </Link>
             <button onClick={signOut} className={styles.signOutBtn} title="Sign out">
               ↪

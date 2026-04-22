@@ -56,39 +56,74 @@ npm start
 
 All colors, fonts, and tokens live in `styles/globals.css` as CSS variables — change them to re-theme the whole site.
 
-## 🔐 Moving from mock auth to real auth
+## 🔐 Moving from mock auth to real Supabase
 
-The mock in `lib/auth.tsx` mimics Clerk's API surface intentionally. To go live:
+The mock in `lib/auth.tsx` mirrors Supabase's API surface — `signUp`, `signInWithPassword`, `signOut`, relational user data. Migration is nearly import-only.
 
-### Option 1: Clerk (recommended — 2-3 hours work)
+### Steps to go live with Supabase
 
 ```bash
-npm install @clerk/nextjs
+npm install @supabase/supabase-js @supabase/ssr
 ```
 
-1. Sign up at [clerk.com](https://clerk.com) (10k MAU free)
-2. Add `CLERK_SECRET_KEY` and `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` to `.env.local`
-3. Replace `lib/auth.tsx` imports in these files:
-   - `app/layout.tsx` — `AuthProvider` → `ClerkProvider`
-   - `components/Navbar.tsx` — `useUser` from `@clerk/nextjs`
-   - All dashboard pages — same `useUser` swap
-   - `app/login/page.tsx` — replace form with Clerk's `<SignIn />` component
-4. Add `middleware.ts` at the project root to protect `/dashboard/*`:
+1. **Sign up at [supabase.com](https://supabase.com)** — free tier is generous (500MB database, 50k monthly active users)
 
-```ts
-import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
-const isProtected = createRouteMatcher(['/dashboard(.*)']);
-export default clerkMiddleware((auth, req) => {
-  if (isProtected(req)) auth().protect();
-});
-export const config = { matcher: ['/((?!.*\\..*|_next).*)', '/', '/(api|trpc)(.*)'] };
-```
+2. **Create a new project** → wait ~2 min for provisioning
 
-That's it. Everything else stays the same.
+3. **Get your keys** — Settings → API:
+   - `URL` (public, safe)
+   - `anon / public` key (safe to use in browser)
+   - `service_role` key (NEVER commit — server-only)
 
-### Option 2: NextAuth.js (free, more control)
+4. **Add to `.env.local`:**
+   ```
+   NEXT_PUBLIC_SUPABASE_URL=https://xxxxx.supabase.co
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...
+   ```
 
-More setup but fully free. Use NextAuth's `useSession` hook and adapt the mock's shape to NextAuth's session object.
+5. **Create the tables** — in Supabase SQL editor, paste:
+
+   ```sql
+   -- Profiles table (extends auth.users)
+   create table profiles (
+     id uuid references auth.users on delete cascade primary key,
+     email text,
+     first_name text,
+     last_name text,
+     child_age_range text,
+     created_at timestamptz default now()
+   );
+
+   -- Purchases (one-time sheet buys)
+   create table purchases (
+     id uuid default gen_random_uuid() primary key,
+     user_id uuid references profiles(id) on delete cascade,
+     sheet_id text not null,
+     amount int not null,
+     created_at timestamptz default now()
+   );
+
+   -- Free download history
+   create table free_downloads (
+     id uuid default gen_random_uuid() primary key,
+     user_id uuid references profiles(id) on delete cascade,
+     sheet_id text not null,
+     downloaded_at timestamptz default now()
+   );
+
+   -- Row Level Security — users only see their own data
+   alter table profiles enable row level security;
+   alter table purchases enable row level security;
+   alter table free_downloads enable row level security;
+
+   create policy "own profile" on profiles for all using (auth.uid() = id);
+   create policy "own purchases" on purchases for all using (auth.uid() = user_id);
+   create policy "own downloads" on free_downloads for all using (auth.uid() = user_id);
+   ```
+
+6. **Replace `lib/auth.tsx`** — the bottom of that file has the full Supabase implementation commented out. Just copy-paste it over the mock and delete the mock code.
+
+That's it. All pages, hooks, and components keep working unchanged — they already use `user.profile.first_name`, `user.purchases[].sheet_id`, etc. — the exact shape Supabase returns.
 
 ## 💳 Adding real Razorpay payments
 

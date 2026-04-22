@@ -7,20 +7,29 @@ import styles from './login.module.css';
 
 export default function LoginPage() {
   const router = useRouter();
-  const { signIn, signUp } = useUser();
+  const { signInWithPassword, signUp } = useUser();
   const [mode, setMode] = useState<'login' | 'signup'>('login');
   const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [firstName, setFirstName] = useState('');
   const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setErrorMsg(null);
     if (!email || (mode === 'signup' && !firstName)) return;
     setLoading(true);
-    if (mode === 'login') {
-      await signIn(email);
-    } else {
-      await signUp(email, firstName);
+
+    const result =
+      mode === 'login'
+        ? await signInWithPassword(email, password)
+        : await signUp(email, password, firstName);
+
+    if (result.error) {
+      setErrorMsg(result.error);
+      setLoading(false);
+      return;
     }
     router.push('/dashboard');
   };
@@ -74,6 +83,20 @@ export default function LoginPage() {
                 required
               />
             </div>
+            <div className={styles.field}>
+              <label>Password</label>
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder={mode === 'signup' ? 'Create a password (any value in demo)' : 'Your password'}
+                required
+              />
+            </div>
+
+            {errorMsg && (
+              <div className={styles.errorMsg}>⚠️ {errorMsg}</div>
+            )}
 
             <button type="submit" disabled={loading} className={styles.submitBtn}>
               {loading

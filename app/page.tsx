@@ -130,14 +130,14 @@ export default function Home() {
           <div className={`${styles.phaseCard} ${styles.live}`}>
             <div className={`${styles.phaseRibbon} ${styles.ribbonLive}`}>✨ LIVE NOW</div>
             <div className={styles.phaseNumber}>01</div>
-            <span className={styles.phaseIcon}>📝</span>
-            <h3>Activity Sheets</h3>
-            <div className={styles.phaseSubhead}>Printable. Playful. Proven.</div>
+            <span className={styles.phaseIcon}>🎁</span>
+            <h3>Free Sheets &amp; Bundles</h3>
+            <div className={styles.phaseSubhead}>Free forever. Structured when you need it.</div>
             <ul className={styles.phaseList}>
-              <li>Alphabet &amp; numbers tracing sheets</li>
-              <li>Seasonal craft &amp; coloring pages</li>
-              <li>Hindi + English editions</li>
-              <li>Instant PDF download</li>
+              <li>All individual sheets free — forever</li>
+              <li>10–15 new free sheets every week</li>
+              <li>Paid bundles add guides &amp; support</li>
+              <li>Hindi + English · Ages 2–8</li>
             </ul>
             <Link href="/activity-sheets" className="btn-primary">Browse Sheets</Link>
           </div>

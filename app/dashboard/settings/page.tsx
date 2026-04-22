@@ -29,19 +29,19 @@ export default function SettingsPage() {
         <form className={styles.form} onSubmit={handleSave}>
           <div className={styles.field}>
             <label>First name</label>
-            <input type="text" defaultValue={user.firstName} />
+            <input type="text" defaultValue={user.profile.first_name} />
           </div>
           <div className={styles.field}>
             <label>Last name</label>
-            <input type="text" defaultValue={user.lastName} placeholder="Add your last name" />
+            <input type="text" defaultValue={user.profile.last_name} placeholder="Add your last name" />
           </div>
           <div className={styles.field}>
             <label>Email</label>
-            <input type="email" defaultValue={user.email} />
+            <input type="email" defaultValue={user.profile.email} />
           </div>
           <div className={styles.field}>
             <label>Child&apos;s age range</label>
-            <select defaultValue="3-5">
+            <select defaultValue={user.profile.child_age_range ?? '3-5'}>
               <option value="2-4">2–4 years</option>
               <option value="3-5">3–5 years</option>
               <option value="4-6">4–6 years</option>

@@ -51,8 +51,8 @@ export default function SubscriptionPage() {
             <form className={styles.waitlistForm} onSubmit={handleJoinWaitlist}>
               <input
                 type="email"
-                placeholder={user.email}
-                defaultValue={user.email}
+                placeholder={user.profile.email}
+                defaultValue={user.profile.email}
                 className={styles.waitlistInput}
               />
               <button type="submit" className={styles.waitlistBtn}>
@@ -75,7 +75,7 @@ export default function SubscriptionPage() {
           <div className={styles.joinedEmoji}>🎉</div>
           <h2>You&apos;re on the list!</h2>
           <p>
-            We&apos;ll email <strong>{user.email}</strong> the moment Magic Pass launches.
+            We&apos;ll email <strong>{user.profile.email}</strong> the moment Magic Pass launches.
             Your lifetime ₹99/month price is locked in.
           </p>
         </div>
