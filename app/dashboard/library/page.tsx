@@ -80,7 +80,7 @@ export default function LibraryPage() {
                 <div className={styles.bundleHeaderRight}>
                   <h3 className={styles.bundleTitle}>{bundle.title}</h3>
                   <div className={styles.bundleMeta}>
-                    <span>{bundle.ageFocus}</span>
+                    <span>{bundle.ageLabel}</span>
                     <span>·</span>
                     <span>{bundle.sheetCount}+ sheets</span>
                   </div>
@@ -151,7 +151,7 @@ export default function LibraryPage() {
                 </div>
                 <div className={styles.suggestedBody}>
                   <h4>{bundle.title}</h4>
-                  <div className={styles.suggestedMeta}>{bundle.ageFocus} · {bundle.sheetCount}+ sheets</div>
+                  <div className={styles.suggestedMeta}>{bundle.ageLabel} · {bundle.sheetCount}+ sheets</div>
                   <div className={styles.suggestedFooter}>
                     <span className={styles.price}>₹{bundle.price}</span>
                     <Link href={`/activity-sheets#bundles`} className={styles.buyBtn}>View →</Link>

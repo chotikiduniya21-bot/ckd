@@ -82,8 +82,8 @@ export default function SettingsPage() {
           </label>
           <label className={styles.toggleRow}>
             <div>
-              <strong>Magic Pass launch alert</strong>
-              <span>One email when the subscription launches.</span>
+              <strong>New product launches</strong>
+              <span>One email when we launch something new (books, toys, passes).</span>
             </div>
             <input type="checkbox" defaultChecked className={styles.toggle} />
           </label>

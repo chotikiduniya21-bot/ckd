@@ -40,7 +40,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     { href: '/dashboard',              label: 'Overview',      icon: '🏠' },
     { href: '/dashboard/library',      label: 'My Library',    icon: '📚' },
     { href: '/dashboard/downloads',    label: 'Free Downloads', icon: '🎁' },
-    { href: '/dashboard/subscription', label: 'Magic Pass',    icon: '🔁' },
     { href: '/dashboard/settings',     label: 'Settings',      icon: '⚙️' },
   ];
 

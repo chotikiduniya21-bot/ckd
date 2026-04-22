@@ -52,8 +52,8 @@ export default function LoginPage() {
           </h1>
           <p className={styles.subtitle}>
             {mode === 'login'
-              ? 'Sign in to access your sheets, track downloads, and get ready for the Magic Pass.'
-              : 'Create your free account to save sheets, track your learning, and join the waitlist.'}
+              ? 'Sign in to access your bundles, track downloads, and jump back into learning.'
+              : 'Create your free account to save sheets, track your learning, and get early access to new drops.'}
           </p>
 
           <div className={styles.demoBanner}>
@@ -158,11 +158,11 @@ export default function LoginPage() {
             <div className={styles.rightCard}>
               <h3>What you get 🎁</h3>
               <ul>
-                <li>✓ Access to all 8 free sheets</li>
-                <li>✓ Your purchase history &amp; re-downloads</li>
-                <li>✓ Waitlist for the Magic Pass (₹99 lifetime price)</li>
+                <li>✓ Save every free sheet you&apos;ve downloaded</li>
+                <li>✓ Your bundle purchases &amp; re-downloads</li>
                 <li>✓ Weekly new sheet notifications</li>
-                <li>✓ Early access to Phase 2 books &amp; toys</li>
+                <li>✓ Early access to new bundle drops</li>
+                <li>✓ First dibs on Phase 2 books &amp; toys</li>
               </ul>
             </div>
           </div>

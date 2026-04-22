@@ -38,7 +38,7 @@ export default function DashboardOverview() {
         <div className={styles.welcomeEmoji}>🎈</div>
       </div>
 
-      {/* Stats row */}
+      {/* Stats row — 3 meaningful stats, no filler */}
       <div className={styles.statsRow}>
         <div className={styles.statCard} style={{ background: '#E8F9E8' }}>
           <div className={styles.statEmoji}>🎁</div>
@@ -54,11 +54,6 @@ export default function DashboardOverview() {
           <div className={styles.statEmoji}>📄</div>
           <div className={styles.statNum}>{totalSheetsUnlocked}+</div>
           <div className={styles.statLabel}>Sheets unlocked</div>
-        </div>
-        <div className={styles.statCard} style={{ background: '#E5F4FF' }}>
-          <div className={styles.statEmoji}>⏳</div>
-          <div className={styles.statNum}>Soon</div>
-          <div className={styles.statLabel}>Magic Pass launching</div>
         </div>
       </div>
 

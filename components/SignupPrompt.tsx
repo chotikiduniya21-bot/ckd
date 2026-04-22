@@ -102,8 +102,8 @@ export default function SignupPrompt({ open, downloadCount, onClose }: SignupPro
               <li>
                 <span className={styles.benefitIcon}>⚡</span>
                 <div>
-                  <strong>Lifetime Magic Pass discount</strong>
-                  <span>Early members lock in ₹149/month (forever, when we launch).</span>
+                  <strong>Early access to new drops</strong>
+                  <span>Get the first peek at new bundles + festive sheet packs.</span>
                 </div>
               </li>
             </ul>

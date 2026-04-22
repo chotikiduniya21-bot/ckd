@@ -12,7 +12,6 @@ export default function Navbar() {
 
   const links = [
     { href: '/activity-sheets', label: 'Activity Sheets' },
-    { href: '/seasonal-pass', label: 'Seasonal Pass' },
     { href: '/blog', label: 'Parent Blog' },
     { href: '/about', label: 'About' },
   ];
