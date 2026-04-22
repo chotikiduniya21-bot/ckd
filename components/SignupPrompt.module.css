@@ -1,0 +1,290 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(42, 27, 61, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal {
+  background: var(--cream);
+  border: 4px solid var(--ink);
+  border-radius: 28px;
+  box-shadow: 12px 12px 0 var(--shadow);
+  max-width: 880px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: popUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes popUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  background: white;
+  border: 2.5px solid var(--ink);
+  border-radius: 50%;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 3px 3px 0 var(--shadow);
+  transition: all 0.15s;
+  z-index: 2;
+  line-height: 0.9;
+}
+.closeBtn:hover {
+  background: var(--red);
+  color: white;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+
+.modalGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+}
+
+/* Left visual side */
+.visualSide {
+  background: linear-gradient(135deg, var(--yellow) 0%, var(--orange) 100%);
+  padding: 40px 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 4px solid var(--ink);
+  overflow: hidden;
+}
+.visualSide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.08) 0, rgba(255,255,255,0.08) 2px, transparent 2px, transparent 14px);
+}
+
+.sparkle1, .sparkle2, .sparkle3 {
+  position: absolute;
+  font-size: 32px;
+  filter: drop-shadow(2px 2px 0 var(--ink));
+}
+.sparkle1 {
+  top: 15%; left: 10%;
+  animation: floaty 3s ease-in-out infinite;
+}
+.sparkle2 {
+  top: 25%; right: 15%;
+  animation: floaty 3.5s ease-in-out infinite 0.5s;
+}
+.sparkle3 {
+  bottom: 20%; left: 18%;
+  animation: floaty 3.2s ease-in-out infinite 1s;
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(10deg); }
+}
+
+.downloadCounter {
+  background: white;
+  border: 4px solid var(--ink);
+  border-radius: 24px;
+  padding: 26px 30px;
+  text-align: center;
+  box-shadow: 6px 6px 0 var(--shadow);
+  position: relative;
+  transform: rotate(-3deg);
+  z-index: 2;
+}
+.counterEmoji {
+  font-size: 48px;
+  margin-bottom: 6px;
+  animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.counterNum {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: var(--red);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.counterLabel {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 18px;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.counterSub {
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-weight: 700;
+  padding-top: 8px;
+  border-top: 2px dashed rgba(42,27,61,0.15);
+}
+
+/* Right content side */
+.contentSide {
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.eyebrow {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--pink);
+  color: var(--ink);
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 2px solid var(--ink);
+  font-family: 'Patrick Hand', cursive;
+  font-size: 14px;
+  box-shadow: 2px 2px 0 var(--shadow);
+}
+.title {
+  font-size: clamp(26px, 3.2vw, 34px);
+  line-height: 1.05;
+  margin-bottom: 2px;
+}
+.subtitle {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  font-weight: 600;
+}
+.benefits {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 8px 0 4px;
+}
+.benefits li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: white;
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 10px 14px;
+  box-shadow: 3px 3px 0 var(--shadow);
+}
+.benefitIcon {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.benefits li > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.benefits li strong {
+  font-size: 13px;
+  color: var(--ink);
+}
+.benefits li span {
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.ctaRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+.ctaPrimary {
+  background: var(--red);
+  color: white;
+  border: 3px solid var(--ink);
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 var(--shadow);
+  transition: all 0.15s;
+  flex: 1;
+  text-align: center;
+  min-width: 200px;
+}
+.ctaPrimary:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--shadow);
+}
+.ctaSecondary {
+  background: transparent;
+  color: var(--ink-soft);
+  border: 2px solid var(--ink-soft);
+  padding: 11px 20px;
+  border-radius: 999px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.ctaSecondary:hover {
+  background: var(--ink-soft);
+  color: white;
+}
+
+.smallNote {
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  padding-top: 4px;
+}
+
+@media (max-width: 720px) {
+  .modalGrid { grid-template-columns: 1fr; }
+  .visualSide {
+    padding: 30px 20px;
+    border-right: none;
+    border-bottom: 4px solid var(--ink);
+  }
+  .downloadCounter { padding: 20px 24px; transform: rotate(-2deg); }
+  .counterNum { font-size: 56px; }
+  .contentSide { padding: 30px 24px; }
+  .ctaRow { flex-direction: column; align-items: stretch; }
+  .ctaPrimary { min-width: auto; }
+}

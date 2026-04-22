@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { seasonalCalendar } from './calendarData';
 import styles from './calendar.module.css';
 
@@ -266,6 +267,25 @@ export default function SeasonalCalendarPage() {
             <h4>Review &amp; learn</h4>
             <p>Check conversion, refund rate. Feed learnings into next drop. Start T-21 for next month.</p>
           </div>
+        </div>
+      </section>
+
+      {/* PASS UPSELL — let parents skip the 12-drop juggle */}
+      <section className={styles.passUpsell}>
+        <div className={styles.passBox}>
+          <div className={styles.passLeft}>
+            <div className={styles.passBadge}>🎁 For parents reading this</div>
+            <h2>Skip the juggle — get all 12 drops at once 🎉</h2>
+            <p>
+              Instead of buying each festive bundle separately through the year, our
+              <strong> Seasonal Pass </strong> gives you every drop for ₹999/year.
+              Early access, bonus sheets, and a WhatsApp group full of other parents.
+            </p>
+            <Link href="/seasonal-pass" className={styles.passCta}>
+              See Seasonal Pass →
+            </Link>
+          </div>
+          <div className={styles.passEmoji}>🎁</div>
         </div>
       </section>
 

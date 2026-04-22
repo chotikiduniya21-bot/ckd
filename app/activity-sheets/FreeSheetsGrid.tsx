@@ -2,6 +2,7 @@
 
 import { useDownload } from '@/lib/useDownload';
 import DownloadToast from '@/components/DownloadToast';
+import SignupPrompt from '@/components/SignupPrompt';
 import type { FreeSheet } from './sheetsData';
 import styles from './sheets.module.css';
 
@@ -17,12 +18,17 @@ const colorMap: Record<string, string> = {
 };
 
 export default function FreeSheetsGrid({ sheets }: { sheets: FreeSheet[] }) {
-  const { download, state } = useDownload();
+  const { download, state, signupPrompt, closeSignupPrompt } = useDownload();
   const isDownloading = state.status === 'loading';
 
   return (
     <>
       <DownloadToast status={state.status} message={state.message} />
+      <SignupPrompt
+        open={signupPrompt.open}
+        downloadCount={signupPrompt.downloadCount}
+        onClose={closeSignupPrompt}
+      />
       <div className={styles.freeGrid}>
         {sheets.map((sheet) => (
           <div key={sheet.id} className={styles.freeCard}>

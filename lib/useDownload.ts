@@ -2,6 +2,11 @@
 
 import { useState } from 'react';
 import { useUser } from './auth';
+import {
+  incrementDownloadCount,
+  shouldShowPopup,
+  getDownloadCount,
+} from './downloadTracking';
 
 type DownloadKind = 'free' | 'paid';
 
@@ -10,24 +15,23 @@ interface DownloadState {
   message?: string;
 }
 
-/**
- * Hook for downloading sheets end-to-end.
- *
- * Usage:
- *   const { download, state } = useDownload();
- *   <button onClick={() => download('101', 'free')} disabled={state.status === 'loading'}>
- *     {state.status === 'loading' ? 'Getting file...' : 'Download'}
- *   </button>
- */
+interface SignupPromptState {
+  open: boolean;
+  downloadCount: number;
+}
+
 export function useDownload() {
   const { user, recordFreeDownload } = useUser();
   const [state, setState] = useState<DownloadState>({ status: 'idle' });
+  const [signupPrompt, setSignupPrompt] = useState<SignupPromptState>({
+    open: false,
+    downloadCount: 0,
+  });
 
   const download = async (sheetId: string, kind: DownloadKind) => {
     setState({ status: 'loading' });
 
     try {
-      // Call our API route
       const res = await fetch(`/api/download/${kind}/${sheetId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -49,7 +53,24 @@ export function useDownload() {
 
       // Record in client-side auth store (updates UI instantly)
       if (kind === 'free') {
-        await recordFreeDownload(sheetId);
+        if (user) {
+          // Signed-in user: record in auth profile
+          await recordFreeDownload(sheetId);
+        } else {
+          // Anonymous user: track count in localStorage for popup trigger
+          const newCount = incrementDownloadCount();
+
+          // Check if we should show the signup prompt
+          if (shouldShowPopup()) {
+            // Slight delay so user sees the download succeed first
+            setTimeout(() => {
+              setSignupPrompt({
+                open: true,
+                downloadCount: newCount,
+              });
+            }, 1200);
+          }
+        }
       }
 
       // Trigger the browser download
@@ -79,5 +100,16 @@ export function useDownload() {
     }
   };
 
-  return { download, state };
+  const closeSignupPrompt = () => {
+    setSignupPrompt({ open: false, downloadCount: 0 });
+  };
+
+  return {
+    download,
+    state,
+    signupPrompt,
+    closeSignupPrompt,
+    // Helpers exposed for testing/display
+    anonDownloadCount: getDownloadCount(),
+  };
 }
