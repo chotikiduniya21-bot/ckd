@@ -1,0 +1,63 @@
+.footer {
+  background: var(--ink);
+  color: white;
+  padding: 50px 6% 30px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footerLogo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 28px;
+  color: white;
+}
+
+.logoCircle {
+  width: 46px;
+  height: 46px;
+  background: var(--yellow);
+  border: 3px solid var(--ink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 0 var(--shadow);
+  font-size: 24px;
+  color: var(--ink);
+}
+
+.socialRow {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.socialBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.socialBtn:hover {
+  background: var(--red);
+  border-color: var(--red);
+  transform: translateY(-3px);
+}
+
+.footerNote {
+  font-family: 'Patrick Hand', cursive;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 15px;
+  margin-top: 16px;
+}

@@ -1,0 +1,118 @@
+.downloads { display: flex; flex-direction: column; gap: 28px; }
+
+.header {
+  background: white;
+  border: 3px solid var(--ink);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 5px 5px 0 var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.title { font-size: clamp(26px, 3vw, 36px); line-height: 1.1; margin-bottom: 6px; }
+.subtitle { font-size: 14px; color: var(--ink-soft); font-weight: 600; max-width: 500px; }
+.progress { flex-shrink: 0; min-width: 240px; }
+.progressLabel { font-size: 12px; color: var(--ink-soft); font-weight: 800; letter-spacing: 0.05em; margin-bottom: 6px; }
+.progressBar {
+  height: 16px;
+  background: var(--cream);
+  border: 2.5px solid var(--ink);
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: 3px 3px 0 var(--shadow);
+}
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--green), var(--teal));
+  border-right: 2px solid var(--ink);
+  transition: width 0.5s;
+}
+.progressText {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 15px;
+  color: var(--ink);
+  margin-top: 6px;
+  font-weight: 700;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  margin-bottom: 14px;
+  color: var(--ink);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.card {
+  background: white;
+  border: 2.5px solid var(--ink);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 4px 4px 0 var(--shadow);
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--shadow); }
+.available { box-shadow: 4px 4px 0 var(--green); }
+.available:hover { box-shadow: 6px 6px 0 var(--green); }
+.thumb {
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-bottom: 2.5px solid var(--ink);
+}
+.thumb::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.15) 0, rgba(255,255,255,0.15) 2px, transparent 2px, transparent 10px);
+}
+.emoji { font-size: 44px; position: relative; filter: drop-shadow(2px 2px 0 rgba(0,0,0,0.2)); }
+.cardBody { padding: 12px 14px; background: var(--cream); display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.cardBody h4 { font-size: 14px; line-height: 1.2; color: var(--ink); }
+.cardMeta { font-family: 'Patrick Hand', cursive; font-size: 13px; color: var(--ink-soft); flex: 1; }
+
+.redownloadBtn {
+  background: white;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 var(--shadow);
+  transition: all 0.15s;
+}
+.redownloadBtn:hover { background: var(--yellow); transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--shadow); }
+
+.downloadBtn {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  border: 2px solid var(--ink);
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 2px 2px 0 var(--shadow);
+  transition: all 0.15s;
+}
+.downloadBtn:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--shadow); }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .progress { min-width: 100%; }
+}

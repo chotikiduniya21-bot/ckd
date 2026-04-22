@@ -1,0 +1,238 @@
+.library { display: flex; flex-direction: column; gap: 24px; }
+
+.header {
+  background: white;
+  border: 3px solid var(--ink);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 5px 5px 0 var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.title { font-size: clamp(26px, 3vw, 36px); line-height: 1.1; margin-bottom: 6px; }
+.subtitle { font-size: 14px; color: var(--ink-soft); font-weight: 600; }
+.headerStats { display: flex; gap: 20px; }
+.headerStat {
+  background: var(--yellow);
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 2.5px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow);
+  font-size: 13px;
+  color: var(--ink);
+  font-weight: 700;
+}
+.headerStat strong {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
+  display: block;
+  color: var(--red);
+}
+
+/* Owned grid */
+.ownedGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.libraryCard {
+  background: white;
+  border: 3px solid var(--ink);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 5px 5px 0 var(--green);
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  position: relative;
+  transition: all 0.2s;
+}
+.libraryCard:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 var(--green);
+}
+.ownedBadge {
+  position: absolute;
+  top: 10px; right: 10px;
+  background: var(--green);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  z-index: 3;
+  border: 2px solid var(--ink);
+  box-shadow: 2px 2px 0 var(--shadow);
+}
+.thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-right: 3px solid var(--ink);
+}
+.thumb::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.15) 0, rgba(255,255,255,0.15) 2px, transparent 2px, transparent 10px);
+}
+.emoji { font-size: 50px; position: relative; filter: drop-shadow(2px 2px 0 rgba(0,0,0,0.2)); }
+.pageBadge {
+  position: absolute;
+  bottom: 8px; left: 8px;
+  background: var(--ink);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.cardBody {
+  padding: 16px 18px;
+  background: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.age {
+  font-family: 'Patrick Hand', cursive;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+.cardTitle { font-size: 15px; margin-bottom: 4px; line-height: 1.2; }
+.cardDesc { font-size: 12px; color: var(--ink-soft); font-weight: 600; margin-bottom: 12px; line-height: 1.4; }
+.cardActions { display: flex; gap: 8px; }
+.downloadBtn {
+  flex: 1;
+  background: var(--green);
+  color: white;
+  border: 2px solid var(--ink);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 var(--shadow);
+  transition: all 0.15s;
+}
+.downloadBtn:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--shadow); }
+.shareBtn {
+  background: white;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 var(--shadow);
+  transition: all 0.15s;
+}
+.shareBtn:hover { background: var(--yellow); transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--shadow); }
+
+/* Empty state */
+.emptyState {
+  background: white;
+  border: 3px dashed var(--ink);
+  border-radius: 20px;
+  padding: 60px 30px;
+  text-align: center;
+}
+.emptyEmoji { font-size: 64px; margin-bottom: 14px; }
+.emptyState h3 { font-size: 24px; margin-bottom: 8px; }
+.emptyState p {
+  font-size: 15px;
+  color: var(--ink-soft);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.emptyBtn {
+  display: inline-block;
+  background: var(--red);
+  color: white;
+  border: 3px solid var(--ink);
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 4px 4px 0 var(--shadow);
+  transition: all 0.15s;
+}
+.emptyBtn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--shadow); }
+
+/* Suggested section */
+.suggested {
+  background: white;
+  border: 3px solid var(--ink);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 5px 5px 0 var(--shadow);
+}
+.suggestedTitle { font-size: 22px; margin-bottom: 4px; }
+.suggestedSub { font-size: 13px; color: var(--ink-soft); font-weight: 600; margin-bottom: 18px; }
+.suggestedGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.suggestedCard {
+  background: var(--cream);
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  box-shadow: 3px 3px 0 var(--shadow);
+  transition: all 0.15s;
+}
+.suggestedCard:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+.suggestedCard .thumb { aspect-ratio: auto; }
+.suggestedCard .emoji { font-size: 36px; }
+.suggestedCard .cardBody { padding: 10px 12px; background: white; }
+.suggestedCard h4 {
+  font-size: 13px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+.suggestedFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price {
+  font-family: 'Fredoka', sans-serif;
+  color: var(--red);
+  font-weight: 700;
+  font-size: 15px;
+}
+.buyBtn {
+  background: var(--ink);
+  color: white;
+  border: 2px solid var(--ink);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.buyBtn:hover { background: var(--red); }
+
+@media (max-width: 900px) {
+  .ownedGrid, .suggestedGrid { grid-template-columns: 1fr; }
+  .libraryCard { grid-template-columns: 1fr; }
+  .libraryCard .thumb { aspect-ratio: 4/2; border-right: none; border-bottom: 3px solid var(--ink); }
+}

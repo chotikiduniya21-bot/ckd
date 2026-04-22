@@ -1,0 +1,260 @@
+.overview { display: flex; flex-direction: column; gap: 24px; }
+
+/* Welcome header */
+.welcomeCard {
+  background: linear-gradient(135deg, var(--yellow) 0%, var(--orange) 100%);
+  border: 4px solid var(--ink);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 8px 8px 0 var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.welcomeCard::before {
+  content: '';
+  position: absolute;
+  bottom: -50px; right: -50px;
+  width: 150px; height: 150px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 50%;
+}
+.welcomeContent { position: relative; z-index: 2; flex: 1; }
+.welcomeSticker {
+  display: inline-block;
+  background: white;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 2.5px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow);
+  font-family: 'Patrick Hand', cursive;
+  font-size: 16px;
+  margin-bottom: 12px;
+  transform: rotate(-2deg);
+}
+.welcomeTitle {
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.1;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.welcomeSub {
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.welcomeEmoji {
+  font-size: 90px;
+  filter: drop-shadow(4px 4px 0 var(--ink));
+  position: relative;
+  z-index: 2;
+  animation: bounce 2.5s ease-in-out infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+/* Stats row */
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.statCard {
+  border: 3px solid var(--ink);
+  border-radius: 18px;
+  padding: 22px 18px;
+  text-align: center;
+  box-shadow: 5px 5px 0 var(--shadow);
+  transition: transform 0.2s;
+}
+.statCard:hover { transform: translateY(-3px); }
+.statEmoji { font-size: 36px; margin-bottom: 6px; }
+.statNum {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.statLabel {
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Section title */
+.sectionTitle {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: var(--ink);
+}
+
+/* Quick actions */
+.quickActions {
+  background: white;
+  border: 3px solid var(--ink);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 5px 5px 0 var(--shadow);
+}
+.actionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.actionCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  background: var(--cream);
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  transition: all 0.15s;
+  box-shadow: 3px 3px 0 var(--shadow);
+}
+.actionCard:hover {
+  transform: translate(-2px,-2px);
+  box-shadow: 5px 5px 0 var(--shadow);
+  background: white;
+}
+.actionEmoji { font-size: 30px; flex-shrink: 0; }
+.actionText { flex: 1; }
+.actionText strong { display: block; font-size: 15px; color: var(--ink); margin-bottom: 2px; }
+.actionText span { font-size: 12px; color: var(--ink-soft); font-weight: 600; }
+.actionArrow { font-size: 22px; color: var(--red); font-weight: 700; }
+
+/* Recent activity */
+.recentActivity {
+  background: white;
+  border: 3px solid var(--ink);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 5px 5px 0 var(--shadow);
+}
+.activityList { display: flex; flex-direction: column; gap: 10px; }
+.activityItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--cream);
+  border: 2px solid rgba(42,27,61,0.15);
+  border-radius: 12px;
+  transition: all 0.15s;
+}
+.activityItem:hover {
+  border-color: var(--ink);
+  background: white;
+}
+.activityIcon {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 2.5px solid var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+  box-shadow: 2px 2px 0 var(--shadow);
+}
+.activityContent { flex: 1; }
+.activityTitle { font-size: 14px; color: var(--ink); font-weight: 600; }
+.activityTitle strong { font-weight: 800; }
+.activityMeta { font-size: 12px; color: var(--ink-soft); font-weight: 600; margin-top: 2px; }
+.activityBtn {
+  background: var(--ink);
+  color: white;
+  border: 2px solid var(--ink);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 var(--red);
+  transition: all 0.15s;
+}
+.activityBtn:hover {
+  background: var(--red);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+/* Upsell banner */
+.upsellBanner {
+  background: linear-gradient(135deg, var(--purple) 0%, var(--pink) 100%);
+  border: 4px solid var(--ink);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 8px 8px 0 var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.upsellLeft { flex: 1; position: relative; z-index: 2; }
+.upsellBadge {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--ink);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  border: 2px solid var(--ink);
+}
+.upsellTitle {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 8px;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+}
+.upsellText {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 14px;
+  font-weight: 600;
+  opacity: 0.95;
+}
+.upsellBtn {
+  display: inline-block;
+  background: white;
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.3);
+  transition: all 0.15s;
+}
+.upsellBtn:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 rgba(0,0,0,0.3); }
+.upsellEmoji {
+  font-size: 80px;
+  filter: drop-shadow(3px 3px 0 var(--ink));
+  position: relative;
+  z-index: 2;
+  animation: bounce 3s ease-in-out infinite;
+}
+
+@media (max-width: 900px) {
+  .statsRow { grid-template-columns: repeat(2, 1fr); }
+  .actionGrid { grid-template-columns: 1fr; }
+  .welcomeCard, .upsellBanner { flex-direction: column; text-align: center; }
+  .welcomeEmoji, .upsellEmoji { font-size: 60px; }
+}

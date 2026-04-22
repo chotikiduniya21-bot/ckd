@@ -1,0 +1,141 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--cream);
+  border-bottom: 3px dashed var(--ink);
+  padding: 14px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.logoCircle {
+  width: 46px;
+  height: 46px;
+  background: var(--yellow);
+  border: 3px solid var(--ink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 0 var(--shadow);
+  font-size: 24px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.navLink {
+  font-weight: 700;
+  font-size: 15px;
+  position: relative;
+  transition: transform 0.2s;
+  color: var(--ink);
+}
+.navLink:hover { transform: translateY(-2px); }
+.navLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: var(--red);
+  transition: width 0.3s;
+  border-radius: 3px;
+}
+.navLink:hover::after, .active::after { width: 100%; }
+.active { color: var(--red); }
+
+.navCta {
+  background: var(--red);
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 2.5px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow);
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.15s;
+}
+.navCta:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--shadow); }
+
+/* User menu (when signed in) */
+.userMenu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.userPill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--yellow);
+  padding: 6px 14px 6px 6px;
+  border-radius: 999px;
+  border: 2.5px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow);
+  transition: all 0.15s;
+}
+.userPill:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+.avatar {
+  width: 32px; height: 32px;
+  background: var(--red);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  border: 2px solid var(--ink);
+}
+.userName {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+}
+.signOutBtn {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: white;
+  border: 2.5px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow);
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--ink);
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signOutBtn:hover {
+  background: var(--red);
+  color: white;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+
+@media (max-width: 900px) {
+  .navLinks { gap: 14px; }
+  .navLink:not(:last-child) { display: none; }
+  .logo span { font-size: 18px; }
+}
