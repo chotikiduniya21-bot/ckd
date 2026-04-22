@@ -12,6 +12,7 @@ export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [firstName, setFirstName] = useState('');
+  const [childAge, setChildAge] = useState('3-5');
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
@@ -24,7 +25,7 @@ export default function LoginPage() {
     const result =
       mode === 'login'
         ? await signInWithPassword(email, password)
-        : await signUp(email, password, firstName);
+        : await signUp(email, password, firstName, childAge);
 
     if (result.error) {
       setErrorMsg(result.error);
@@ -93,6 +94,25 @@ export default function LoginPage() {
                 required
               />
             </div>
+            {mode === 'signup' && (
+              <div className={styles.field}>
+                <label>Your child&apos;s age</label>
+                <select
+                  value={childAge}
+                  onChange={(e) => setChildAge(e.target.value)}
+                  className={styles.ageSelect}
+                >
+                  <option value="2-4">2–4 years (toddler)</option>
+                  <option value="3-5">3–5 years (pre-nursery)</option>
+                  <option value="4-6">4–6 years (nursery/LKG)</option>
+                  <option value="5-7">5–7 years (UKG/Class 1)</option>
+                  <option value="6-8">6–8 years (Class 1–2)</option>
+                </select>
+                <div className={styles.fieldHint}>
+                  We&apos;ll use this to recommend the right sheets &amp; bundles for your little one.
+                </div>
+              </div>
+            )}
 
             {errorMsg && (
               <div className={styles.errorMsg}>⚠️ {errorMsg}</div>

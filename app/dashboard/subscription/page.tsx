@@ -121,23 +121,24 @@ export default function SubscriptionPage() {
       {/* Math comparison */}
       <div className={styles.mathBox}>
         <div className={styles.mathBadge}>💡 Quick math</div>
-        <h3 className={styles.mathTitle}>Why Magic Pass breaks even after 3 sheets</h3>
+        <h3 className={styles.mathTitle}>Why Magic Pass makes sense if you buy 2+ bundles a year</h3>
         <div className={styles.mathRow}>
           <div className={styles.mathSide}>
-            <div className={styles.mathLabel}>Buying individually</div>
-            <div className={styles.mathValue}>3 packs × ₹49 = ₹147</div>
-            <div className={styles.mathNote}>(One-off purchase)</div>
+            <div className={styles.mathLabel}>Buying bundles individually</div>
+            <div className={styles.mathValue}>2 bundles × ₹299 = ₹598/yr</div>
+            <div className={styles.mathNote}>(Pay each time)</div>
           </div>
           <div className={styles.mathVs}>vs</div>
           <div className={styles.mathSide}>
-            <div className={styles.mathLabel}>Magic Pass</div>
-            <div className={styles.mathValue}>₹99/month</div>
-            <div className={styles.mathNote}>(Unlimited everything)</div>
+            <div className={styles.mathLabel}>Magic Pass (early-bird)</div>
+            <div className={styles.mathValue}>₹149/mo × 12 = ₹1,788/yr</div>
+            <div className={styles.mathNote}>(Everything, unlimited)</div>
           </div>
         </div>
         <div className={styles.mathConclusion}>
-          👉 Get 3 packs in your first month and you&apos;re already ahead. After that, everything
-          is a bonus.
+          👉 Magic Pass wins if you&apos;d buy <strong>6+ bundles a year</strong>, get <strong>members-only sheets</strong>,
+          and value <strong>monthly live workshops</strong> with Chutki. For just 1–2 bundles a year, bundles alone are cheaper.
+          Honest math.
         </div>
       </div>
     </div>

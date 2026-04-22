@@ -76,7 +76,7 @@ interface AuthContextValue {
   isLoading: boolean;
 
   // These methods mirror Supabase client methods
-  signUp: (email: string, password: string, firstName: string) => Promise<{ error: string | null }>;
+  signUp: (email: string, password: string, firstName: string, childAgeRange?: string) => Promise<{ error: string | null }>;
   signInWithPassword: (email: string, password: string) => Promise<{ error: string | null }>;
   signOut: () => Promise<void>;
 
@@ -153,7 +153,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const signUp: AuthContextValue['signUp'] = async (email, _password, firstName) => {
+  const signUp: AuthContextValue['signUp'] = async (email, _password, firstName, childAgeRange) => {
     if (!email || !firstName) return { error: 'Please fill in all fields.' };
 
     const newUser: AuthUser = {
@@ -162,6 +162,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         email,
         first_name: firstName,
         last_name: '',
+        child_age_range: childAgeRange,
         created_at: new Date().toISOString(),
       },
       purchases: [],
@@ -290,7 +291,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => subscription.unsubscribe();
   }, []);
 
-  const signUp = async (email: string, password: string, firstName: string) => {
+  const signUp = async (email: string, password: string, firstName: string, childAgeRange?: string) => {
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
@@ -304,6 +305,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         email,
         first_name: firstName,
         last_name: '',
+        child_age_range: childAgeRange,
       });
     }
     return { error: null };

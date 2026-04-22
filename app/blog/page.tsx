@@ -38,8 +38,8 @@ export default function BlogPage() {
             This blog is the <strong>AdSense engine</strong> for the whole site. The activity sheet
             pages are classified as &quot;made for kids&quot; (which disables personalized ads and tanks
             CPM). This blog is written <strong>for parents</strong> — normal CPM, AdSense eligible,
-            affiliate-friendly, and every post funnels into ₹49 sheet sales. One post = three revenue
-            streams: ads + affiliate + sheet conversion.
+            affiliate-friendly, and every post funnels into bundle sales. One post = three revenue
+            streams: ads + affiliate + bundle conversion.
           </p>
         </div>
       </section>

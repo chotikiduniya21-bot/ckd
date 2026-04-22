@@ -51,8 +51,8 @@ export default function SeasonalCalendarPage() {
               <div className={styles.recipeLabel}>Base ingredient</div>
               <div className={styles.recipeCard}>
                 <div className={styles.recipeEmoji}>🎨</div>
-                <div className={styles.recipeName}>Colors &amp; Shapes Pack</div>
-                <div className={styles.recipePrice}>₹39 (evergreen)</div>
+                <div className={styles.recipeName}>Colors &amp; Shapes sheets</div>
+                <div className={styles.recipePrice}>Free (always)</div>
               </div>
             </div>
             <div className={styles.recipeArrow}>→</div>
@@ -61,17 +61,17 @@ export default function SeasonalCalendarPage() {
               <div className={styles.recipeToppings}>
                 <div className={styles.topping}>🪔 Diwali theme cover</div>
                 <div className={styles.topping}>🌈 +4 rangoli pages</div>
-                <div className={styles.topping}>⏳ Limited time tag</div>
-                <div className={styles.topping}>📣 YouTube launch</div>
+                <div className={styles.topping}>📘 Parent guide</div>
+                <div className={styles.topping}>⏳ Limited-time bonus</div>
               </div>
             </div>
             <div className={styles.recipeArrow}>→</div>
             <div className={styles.recipeStep}>
-              <div className={styles.recipeLabel}>New seasonal drop</div>
+              <div className={styles.recipeLabel}>New festive bundle</div>
               <div className={`${styles.recipeCard} ${styles.recipeFeatured}`}>
                 <div className={styles.recipeEmoji}>🪔</div>
                 <div className={styles.recipeName}>Diwali Festive Bundle</div>
-                <div className={styles.recipePriceNew}>₹149 (limited)</div>
+                <div className={styles.recipePriceNew}>₹499 (limited)</div>
                 <div className={styles.recipeSales}>3–5× more sales 🚀</div>
               </div>
             </div>
@@ -194,12 +194,12 @@ export default function SeasonalCalendarPage() {
 
                   {month.secondaryDrop && (
                     <div className={styles.secondaryDrop}>
-                      <div className={styles.secondaryLabel}>+ Mini drop</div>
+                      <div className={styles.secondaryLabel}>+ Free drop this month</div>
                       <div className={styles.secondaryRow}>
                         <span className={styles.secondaryEmoji}>{month.secondaryDrop.emoji}</span>
                         <div className={styles.secondaryText}>
                           <strong>{month.secondaryDrop.title}</strong>
-                          <span>{month.secondaryDrop.price}</span>
+                          <span>{month.secondaryDrop.count}</span>
                         </div>
                       </div>
                     </div>
