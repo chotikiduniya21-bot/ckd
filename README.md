@@ -253,3 +253,4 @@ styles/globals.css                    ← design tokens + shared classes
 5. **Bundles ₹99/₹199/₹349** — AOV boost via Starter/School-Ready/Mega tiers
 6. **Magic Pass ₹99/month (early bird)** — recurring revenue, launching in Phase 2
 7. **Seasonal drops** — April, August, November are peak months (see `/seasonal-calendar`)
+
