@@ -1,8 +1,9 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
+import Link from 'next/link';
 import { useUser } from '@/lib/auth';
-import type { Bundle, BundleExtra } from './sheetsData';
+import type { Bundle } from './sheetsData';
 import styles from './sheets.module.css';
 
 const colorMap: Record<string, string> = {
@@ -178,6 +179,9 @@ function BundleCard({ bundle }: { bundle: Bundle }) {
         </div>
 
         <button className={styles.bundleBtn}>Get this bundle →</button>
+        <Link href={`/bundle-preview/${bundle.id}`} className={styles.bundlePreviewLink}>
+          👀 See what&apos;s inside first
+        </Link>
       </div>
     </div>
   );

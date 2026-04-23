@@ -585,6 +585,28 @@
 }
 .bundleBtn:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--shadow); }
 
+.bundlePreviewLink {
+  display: block;
+  text-align: center;
+  padding: 10px 12px;
+  margin-top: 8px;
+  background: transparent;
+  color: var(--ink-soft);
+  border: 2px dashed var(--ink-soft);
+  border-radius: 999px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.bundlePreviewLink:hover {
+  background: var(--yellow);
+  border-color: var(--ink);
+  color: var(--ink);
+  border-style: solid;
+}
+
 /* ============== BUNDLE FILTER PILLS ============== */
 .filterWrapper {
   max-width: 1400px;
