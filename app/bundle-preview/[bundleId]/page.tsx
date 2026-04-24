@@ -18,15 +18,16 @@ export function generateStaticParams() {
   return bundles.map((b) => ({ bundleId: b.id }));
 }
 
-export default function BundlePreviewPage({
+export default async function BundlePreviewPage({
   params,
 }: {
-  params: { bundleId: string };
+  params: Promise<{ bundleId: string }>;
 }) {
-  const bundle = bundles.find((b) => b.id === params.bundleId);
+  const { bundleId } = await params;
+  const bundle = bundles.find((b) => b.id === bundleId);
   if (!bundle) notFound();
 
-  const preview = getBundlePreview(params.bundleId);
+  const preview = getBundlePreview(bundleId);
   const bundleColor = colorMap[bundle.color];
 
   return (

@@ -12,9 +12,9 @@ import { bundles } from '@/app/activity-sheets/sheetsData';
  */
 export async function POST(
   req: NextRequest,
-  { params }: { params: { sheetId: string } },
+  { params }: { params: Promise<{ sheetId: string }> },
 ) {
-  const bundleId = params.sheetId;
+  const { sheetId: bundleId } = await params;
 
   let body: { userId?: string; purchases?: string[] } = {};
   try {

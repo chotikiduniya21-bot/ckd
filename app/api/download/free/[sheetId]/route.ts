@@ -1,69 +1,66 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getSignedDownloadUrl, recordDownload, checkRateLimit } from '@/lib/storage';
+import { getSignedDownloadUrl, checkRateLimit, recordDownload } from '@/lib/storage';
 import { freeSheets } from '@/app/activity-sheets/sheetsData';
 
 /**
  * POST /api/download/free/[sheetId]
  *
- * Free sheets need no auth — but we rate-limit by IP to prevent bot scraping.
- * Body (optional): { userId?: string } — if user happens to be signed in,
- * we record the download to their account for the downloads history.
+ * Rate-limited (20/hour per IP). No auth required — free sheets.
+ * Returns a short-lived signed URL for the PDF.
  */
 export async function POST(
   req: NextRequest,
-  { params }: { params: { sheetId: string } },
+  { params }: { params: Promise<{ sheetId: string }> },
 ) {
-  const { sheetId } = params;
+  const { sheetId } = await params;
 
-  // Rate limit by IP (20 free downloads per hour per IP)
-  const ip = req.headers.get('x-forwarded-for')?.split(',')[0].trim() ?? 'unknown';
-  const rate = await checkRateLimit(`free-download:${ip}`, 20, 3600_000);
-  if (!rate.allowed) {
+  // 1. Sheet exists?
+  const sheet = freeSheets.find((s) => String(s.id) === sheetId);
+  if (!sheet) {
+    return NextResponse.json(
+      { success: false, error: 'Sheet not found.' },
+      { status: 404 },
+    );
+  }
+
+  // 2. Rate limit by IP
+  const ip = req.headers.get('x-forwarded-for') ?? 'unknown';
+const { allowed, remaining } = await checkRateLimit(ip);
+  if (!allowed) {
     return NextResponse.json(
       {
         success: false,
-        error: 'Too many downloads from your connection. Please try again later.',
-        resetAt: rate.resetAt,
+        error: 'Too many downloads in the last hour. Try again in a bit.',
       },
       { status: 429 },
     );
   }
 
-  // Validate sheet ID
-  const sheet = freeSheets.find((s) => String(s.id) === sheetId);
-  if (!sheet) {
-    return NextResponse.json(
-      { success: false, error: 'Free sheet not found.' },
-      { status: 404 },
-    );
-  }
-
-  // Optional user context
-  let userId: string | null = null;
-  try {
-    const body = await req.json();
-    userId = body?.userId ?? null;
-  } catch {
-    // fine — anonymous download
-  }
-
-  // Generate signed URL (longer validity for free — 1 hour)
+  // 3. Generate signed URL (1 hour for free sheets — more lenient)
   const signed = await getSignedDownloadUrl({
     sheetId,
-    userId: userId ?? undefined,
+    userId: undefined,
     expiresIn: 3600,
-    downloadFileName: `${sheet.title.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}-free.pdf`,
+    downloadFileName: `${sheet.title.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}.pdf`,
   });
 
   if (!signed) {
     return NextResponse.json(
-      { success: false, error: 'Could not generate download link.' },
+      { success: false, error: 'Could not generate download link. Try again.' },
       { status: 500 },
     );
   }
 
+  // 4. Record (anonymous — just for analytics/rate-limit)
+  let body: { userId?: string } = {};
+  try {
+    body = await req.json();
+  } catch {
+    // empty body ok for anonymous downloads
+  }
+
   await recordDownload({
-    userId,
+    userId: body.userId ?? null,
     sheetId,
     type: 'free',
     ipAddress: ip,
@@ -75,6 +72,6 @@ export async function POST(
     expiresAt: signed.expiresAt,
     isMock: signed.isMock,
     sheetTitle: sheet.title,
-    rateLimitRemaining: rate.remaining,
+    rateLimitRemaining: remaining,
   });
 }
