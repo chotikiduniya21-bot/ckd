@@ -130,7 +130,7 @@ export default function TermsPage() {
         <h2>11. Governing law and disputes</h2>
         <p>
           These Terms are governed by the laws of India. Any disputes will be subject to the
-          exclusive jurisdiction of the courts in <strong>[Your City]</strong>, India. Before heading
+          exclusive jurisdiction of the courts in <strong>[Uttarakhand]</strong>, India. Before heading
           to court, please try to resolve things with us via email — most issues get fixed in a
           single conversation.
         </p>
