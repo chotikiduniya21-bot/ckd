@@ -336,3 +336,99 @@
   .mascotWrap { min-height: 320px; }
   .mascotBgCircle { width: 300px; height: 300px; }
 }
+
+
+/* ============== YT SECTION — THUMBNAIL GRID (added for real videos) ============== */
+.ytCtaRow {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.ytSecondaryLink {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2.5px dashed var(--ink);
+  padding-bottom: 2px;
+  transition: color 0.15s;
+}
+.ytSecondaryLink:hover {
+  color: var(--red);
+  border-bottom-color: var(--red);
+}
+
+.ytThumbsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.ytThumbCard {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 4px 4px 0 var(--shadow);
+  transition: all 0.18s;
+  text-decoration: none;
+}
+.ytThumbCard:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 var(--shadow);
+}
+
+.ytThumbImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ytThumbOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.18s;
+}
+.ytThumbCard:hover .ytThumbOverlay {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.ytThumbPlayBtn {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 0, 0, 0.95);
+  border: 3px solid white;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3px;
+  opacity: 0.9;
+  transform: scale(0.85);
+  transition: all 0.18s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+.ytThumbCard:hover .ytThumbPlayBtn {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (max-width: 600px) {
+  .ytThumbsGrid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .ytCtaRow { flex-direction: column; align-items: stretch; }
+}

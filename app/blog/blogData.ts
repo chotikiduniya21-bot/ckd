@@ -8,7 +8,6 @@ export interface BlogPost {
   emoji: string;
   color: 'red' | 'blue' | 'green' | 'yellow' | 'purple' | 'pink' | 'teal' | 'orange';
   // Internal notes (shown in preview so Ash can understand strategy)
-  strategyNote: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -21,7 +20,6 @@ export const blogPosts: BlogPost[] = [
     excerpt: "No imported shelves, no ₹50k kits. What actually works in a 2BHK.",
     emoji: "🏠",
     color: "red",
-    strategyNote: "High search volume + evergreen. Pulls in affluent urban parents. Internal links to every activity sheet."
   },
   {
     id: 2,
@@ -32,7 +30,6 @@ export const blogPosts: BlogPost[] = [
     excerpt: "WHO says zero. Reality says otherwise. Here's the middle ground.",
     emoji: "📱",
     color: "blue",
-    strategyNote: "Viral potential. AdSense goldmine — ed-tech brands bid on this keyword."
   },
   {
     id: 3,
@@ -43,7 +40,6 @@ export const blogPosts: BlogPost[] = [
     excerpt: "A Montessori teacher's rant about India's preschool obsession.",
     emoji: "💬",
     color: "yellow",
-    strategyNote: "Choti's personal POV = trust-building. Emotional share triggers."
   },
   {
     id: 4,
@@ -54,7 +50,6 @@ export const blogPosts: BlogPost[] = [
     excerpt: "The affiliate-friendly guide — every toy linked, every one genuinely useful.",
     emoji: "🧸",
     color: "pink",
-    strategyNote: "Highest affiliate revenue post. Amazon + FirstCry links embedded."
   },
   {
     id: 5,
@@ -65,7 +60,6 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Hot months are secretly the best months. Here's the plan.",
     emoji: "🌞",
     color: "orange",
-    strategyNote: "Hyper-specific, low competition, seasonal spike every March–May."
   },
   {
     id: 6,
@@ -76,7 +70,6 @@ export const blogPosts: BlogPost[] = [
     excerpt: "The debate that splits every Indian family dinner table.",
     emoji: "📖",
     color: "green",
-    strategyNote: "Controversy-driven. Huge share potential on WhatsApp."
   },
   {
     id: 7,
@@ -87,7 +80,6 @@ export const blogPosts: BlogPost[] = [
     excerpt: "The stuff parenting books won't tell you. From the classroom floor.",
     emoji: "😤",
     color: "purple",
-    strategyNote: "Choti's experience = unbeatable credibility. Search volume: massive."
   },
   {
     id: 8,
@@ -98,7 +90,6 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Skip the 'air-conditioned' brochure fluff. Ask these instead.",
     emoji: "🏫",
     color: "teal",
-    strategyNote: "Super high CPM — preschools, edtech, and ed-insurance bid on this."
   },
   {
     id: 9,
@@ -109,7 +100,6 @@ export const blogPosts: BlogPost[] = [
     excerpt: "The Montessori sequence no Indian parent was told about.",
     emoji: "✏️",
     color: "red",
-    strategyNote: "Perfect lead-in to paid tracing sheets. 1:1 conversion funnel."
   },
   {
     id: 10,
@@ -120,7 +110,6 @@ export const blogPosts: BlogPost[] = [
     excerpt: "25 ideas you can set up in 5 minutes with stuff already at home.",
     emoji: "🌧️",
     color: "blue",
-    strategyNote: "Monsoon traffic spike. Each idea links to a free or paid activity sheet."
   },
 ];
 

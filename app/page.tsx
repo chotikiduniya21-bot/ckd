@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import Mascot from '@/components/Mascot';
+import { chotiVideos } from './videos/videosData';
 import styles from './page.module.css';
+
+const CHANNEL_URL = 'https://www.youtube.com/@ChutkiKiDuniya_21';
 
 export default function Home() {
   return (
@@ -27,7 +30,7 @@ export default function Home() {
               Join millions of families learning, playing, and giggling with us. 🌈
             </p>
             <div className={styles.heroCtas}>
-              <a href="#" className="btn-primary">▶ Watch on YouTube</a>
+              <a href={CHANNEL_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">▶ Watch on YouTube</a>
               <Link href="/activity-sheets" className="btn-secondary">✏️ Free Activity Sheets</Link>
             </div>
           </div>
@@ -78,13 +81,35 @@ export default function Home() {
               Real songs, real learning, with a real teacher — not a cartoon. Choti&apos;s 8+ years
               of Montessori experience shine through every rhyme, story, and activity.
             </p>
-            <a href="#" className="btn-primary">Subscribe on YouTube</a>
-          </div>
-          <div className={styles.ytPreview}>
-            <div className={styles.ytPreviewInner}>
-              <div className={styles.ytPlay}></div>
+            <div className={styles.ytCtaRow}>
+              <a href={CHANNEL_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                ▶ Subscribe on YouTube
+              </a>
+              <Link href="/videos" className={styles.ytSecondaryLink}>
+                Watch featured videos →
+              </Link>
             </div>
-            <div className={styles.ytThumbTag}>🔴 LIVE • 10,240 watching</div>
+          </div>
+          <div className={styles.ytThumbsGrid}>
+            {chotiVideos.slice(0, 4).map((video) => (
+              <a
+                key={video.id}
+                href={video.isShort ? `https://www.youtube.com/shorts/${video.id}` : `https://www.youtube.com/watch?v=${video.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.ytThumbCard}
+              >
+                <img
+                  src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
+                  alt={video.title}
+                  className={styles.ytThumbImg}
+                  loading="lazy"
+                />
+                <div className={styles.ytThumbOverlay}>
+                  <div className={styles.ytThumbPlayBtn}>▶</div>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </section>
@@ -165,11 +190,11 @@ export default function Home() {
             Let&apos;s raise curious kids,<br />one giggle at a time 🌸
           </h2>
           <p className={styles.ctaText}>
-            Join 8 lakh+ families. Get free activity sheets every Sunday.
+            Join 8 lakh+ families. Free activity sheets, always.
           </p>
-          <a href="#" className="btn-primary" style={{ background: 'white', color: 'var(--ink)' }}>
-            ✨ Join the Family Free
-          </a>
+          <Link href="/login" className="btn-primary" style={{ background: 'white', color: 'var(--ink)' }}>
+            ✨ Create Free Account
+          </Link>
         </div>
       </section>
     </>
