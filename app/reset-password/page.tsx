@@ -4,7 +4,10 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useUser } from '@/lib/auth';
+import { createClient } from '@/lib/supabase/client';
 import styles from './reset.module.css';
+
+const supabase = createClient();
 
 export default function ResetPasswordPage() {
   const router = useRouter();
@@ -17,22 +20,40 @@ export default function ResetPasswordPage() {
   const [success, setSuccess] = useState(false);
   const [hasSession, setHasSession] = useState<boolean | null>(null);
 
-  // When user arrives via reset link, Supabase auto-creates a temporary session.
-  // We give it a moment to settle, then check if we have one.
+ // When user arrives via reset link, Supabase processes the URL hash
+  // and emits PASSWORD_RECOVERY event with a temporary session.
+  // We listen for this event to know when it's safe to update password.
   useEffect(() => {
-    const timer = setTimeout(() => {
-      // We just check the URL hash — Supabase puts auth tokens there
-      // If there's no hash AND no existing session, the link was bad/expired
-      const hash = window.location.hash;
-      if (hash.includes('access_token') || hash.includes('error')) {
-        setHasSession(true);
-      } else {
-        // Even without hash, the user might have a session from clicking the link
-        // We'll let them try and Supabase will reject if invalid
+    let mounted = true;
+
+    const checkSession = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (mounted) {
+        if (session) {
+          setHasSession(true);
+        } else {
+          // Wait a bit longer for Supabase to process the URL hash
+          setTimeout(async () => {
+            const { data: { session: retrySession } } = await supabase.auth.getSession();
+            if (mounted) setHasSession(retrySession !== null);
+          }, 1500);
+        }
+      }
+    };
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (!mounted) return;
+      if (event === 'PASSWORD_RECOVERY' || (event === 'SIGNED_IN' && session)) {
         setHasSession(true);
       }
-    }, 500);
-    return () => clearTimeout(timer);
+    });
+
+    checkSession();
+
+    return () => {
+      mounted = false;
+      subscription.unsubscribe();
+    };
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
