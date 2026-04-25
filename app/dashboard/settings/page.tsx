@@ -1,19 +1,55 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { useUser } from '@/lib/auth';
 import styles from './settings.module.css';
 
 export default function SettingsPage() {
+  const router = useRouter();
   const { user, signOut } = useUser();
   const [saved, setSaved] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [deleteConfirmText, setDeleteConfirmText] = useState('');
+  const [deleting, setDeleting] = useState(false);
+  const [deleteError, setDeleteError] = useState<string | null>(null);
 
   if (!user) return null;
-
-  const handleSave = (e: React.FormEvent) => {
+const handleSave = (e: React.FormEvent) => {
     e.preventDefault();
     setSaved(true);
     setTimeout(() => setSaved(false), 3000);
+  };
+
+const handleDelete = async () => {
+    setDeleteError(null);
+    setDeleting(true);
+
+    try {
+      const res = await fetch('/api/account/delete', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+      });
+      const data = await res.json();
+
+      if (!data.success) {
+        setDeleteError(data.error ?? 'Something went wrong. Try again.');
+        setDeleting(false);
+        return;
+      }
+
+    // Account is deleted — redirect FIRST (so dashboard layout doesn't bounce
+      // to /login when it sees !user), then clear local session.
+      router.push('/account-deleted');
+      // Small delay so navigation starts before we sign out
+      setTimeout(() => {
+        signOut().catch(() => { /* ignore */ });
+      }, 100);
+    } catch (err) {
+      console.error('Delete request failed:', err);
+      setDeleteError('Network error. Please try again.');
+      setDeleting(false);
+    }
   };
 
   return (
@@ -97,7 +133,7 @@ export default function SettingsPage() {
           <button onClick={signOut} className={styles.signOutBtn}>
             🚪 Sign out
           </button>
-          <button className={styles.deleteBtn}>
+          <button onClick={() => setShowDeleteModal(true)} className={styles.deleteBtn}>
             🗑️ Delete my account
           </button>
         </div>
@@ -106,6 +142,54 @@ export default function SettingsPage() {
           entries will be removed. Contact support@chutkikiduniya.com if you need help.
         </p>
       </div>
+
+      {/* Delete confirmation modal */}
+      {showDeleteModal && (
+        <div className={styles.modalBackdrop} onClick={() => !deleting && setShowDeleteModal(false)}>
+          <div className={styles.modalCard} onClick={(e) => e.stopPropagation()}>
+            <div className={styles.modalEmoji}>⚠️</div>
+            <h3 className={styles.modalTitle}>Delete your account?</h3>
+            <p className={styles.modalBody}>
+              This will permanently delete your profile, all bundle purchases, and download history.
+              <strong> This cannot be undone.</strong>
+            </p>
+            <p className={styles.modalConfirmLabel}>
+              Type <strong>{user.profile.email}</strong> to confirm:
+            </p>
+            <input
+              type="text"
+              value={deleteConfirmText}
+              onChange={(e) => setDeleteConfirmText(e.target.value)}
+              placeholder={user.profile.email}
+              className={styles.modalInput}
+              disabled={deleting}
+            />
+            {deleteError && (
+              <div className={styles.modalError}>⚠️ {deleteError}</div>
+            )}
+            <div className={styles.modalActions}>
+              <button
+                onClick={() => {
+                  setShowDeleteModal(false);
+                  setDeleteConfirmText('');
+                  setDeleteError(null);
+                }}
+                className={styles.modalCancel}
+                disabled={deleting}
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleDelete}
+                className={styles.modalDelete}
+                disabled={deleting || deleteConfirmText !== user.profile.email}
+              >
+                {deleting ? 'Deleting...' : 'Delete forever'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
