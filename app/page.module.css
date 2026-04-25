@@ -432,3 +432,93 @@
   .ytThumbsGrid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .ytCtaRow { flex-direction: column; align-items: stretch; }
 }
+
+/* ============== MOBILE PHONE SIZING (added for actual phones) ============== */
+@media (max-width: 600px) {
+  /* Hero text — smaller, tighter */
+  .heroTitle {
+    font-size: clamp(34px, 9vw, 44px);
+    line-height: 1.05;
+    margin-bottom: 18px;
+  }
+  .heroSubtitle {
+    font-size: 15px !important;
+    line-height: 1.55;
+  }
+
+  /* Stickers — smaller, less cramped */
+  .heroStickers {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .heroStickers > :global(.sticker) {
+    font-size: 13px;
+    padding: 4px 12px;
+  }
+
+  /* CTAs — full-width, stacked */
+  .heroCtas {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .heroCtas > * {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Mascot — much smaller on phones */
+  .mascotWrap {
+    min-height: 240px;
+    margin-top: 30px;
+  }
+  .mascotBgCircle {
+    width: 220px !important;
+    height: 220px !important;
+  }
+
+  /* Stats — single column, tighter */
+  .statsGrid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* Pillars — single column on small phones */
+  .pillarsGrid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Sections — less padding */
+  .ytSection {
+    padding: 50px 5% !important;
+  }
+  .ytCard {
+    padding: 24px !important;
+  }
+  .ytTitle {
+    font-size: 28px !important;
+  }
+  .ytText {
+    font-size: 15px !important;
+  }
+
+  /* Final CTA — smaller padding */
+  .finalCta .ctaBox {
+    padding: 40px 20px;
+  }
+  .ctaTitle {
+    font-size: 28px !important;
+  }
+}
+
+/* ============== VERY NARROW PHONES (e.g. older iPhone SE) ============== */
+@media (max-width: 380px) {
+  .heroTitle {
+    font-size: 30px;
+  }
+  .mascotBgCircle {
+    width: 180px !important;
+    height: 180px !important;
+  }
+}

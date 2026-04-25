@@ -166,7 +166,6 @@ function BundleCard({ bundle }: { bundle: Bundle }) {
             <span>📅 Daily Schedule</span>
             <span>✅ Tracker</span>
             <span>📜 Certificate</span>
-            <span>💬 WhatsApp</span>
           </div>
         </div>
 

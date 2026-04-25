@@ -171,11 +171,205 @@
   letter-spacing: 0.05em;
 }
 
+/* ============== HAMBURGER + MOBILE MENU ============== */
+.hamburgerBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 44px;
+  height: 38px;
+  padding: 9px 8px;
+  background: white;
+  border: 2.5px solid var(--ink);
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 var(--shadow);
+  transition: all 0.15s;
+}
+.hamburgerBtn:hover,
+.hamburgerBtn:active {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+.hamburgerLine {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--ink);
+  border-radius: 2px;
+}
+
+.mobileMenu {
+  position: fixed;
+  inset: 0;
+  background: var(--cream);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.22s ease-out;
+}
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.mobileMenuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  border-bottom: 3px dashed rgba(42, 27, 61, 0.15);
+}
+.closeBtn {
+  width: 44px;
+  height: 44px;
+  background: white;
+  border: 2.5px solid var(--ink);
+  border-radius: 50%;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 3px 3px 0 var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding-bottom: 4px;
+}
+.closeBtn:active {
+  background: var(--red);
+  color: white;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+
+.mobileLinks {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 24px 20px;
+  overflow-y: auto;
+}
+.mobileLink {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 16px 20px;
+  border-radius: 16px;
+  border: 2.5px solid transparent;
+  transition: all 0.15s;
+}
+.mobileLink:active {
+  background: white;
+  border-color: var(--ink);
+  transform: translate(-1px, -1px);
+}
+.mobileActive {
+  background: var(--yellow);
+  border-color: var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow);
+}
+
+.mobileSearchBtn {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--ink);
+  background: white;
+  border: 2.5px solid var(--ink);
+  padding: 14px 20px;
+  border-radius: 16px;
+  box-shadow: 3px 3px 0 var(--shadow);
+  cursor: pointer;
+  text-align: left;
+  margin-top: 12px;
+}
+.mobileSearchBtn:active {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+
+.mobileMenuFooter {
+  padding: 20px;
+  border-top: 3px dashed rgba(42, 27, 61, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.mobileLoginBtn {
+  display: block;
+  text-align: center;
+  background: var(--red);
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 16px 24px;
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 5px 5px 0 var(--shadow);
+}
+.mobileUserCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: white;
+  border: 2.5px solid var(--ink);
+  border-radius: 18px;
+  box-shadow: 4px 4px 0 var(--shadow);
+  text-decoration: none;
+  color: inherit;
+}
+.mobileAvatar {
+  width: 44px;
+  height: 44px;
+  background: var(--yellow);
+  border: 2.5px solid var(--ink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+.mobileUserCard strong {
+  display: block;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--ink);
+}
+.mobileUserCard span {
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+.mobileSignOutBtn {
+  background: white;
+  border: 2px solid var(--ink-soft);
+  color: var(--ink-soft);
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* ============== SHOW HAMBURGER + HIDE DESKTOP NAV ON MOBILE ============== */
 @media (max-width: 900px) {
-  .navLinks { gap: 10px; }
-  .navLink:not(:last-child) { display: none; }
+  .navLinks { display: none; }
+  .hamburgerBtn { display: flex; }
   .logo span { font-size: 18px; }
-  .searchLabel { display: none; }
-  .searchKbd { display: none; }
-  .searchBtn { padding: 8px 10px; }
+  .logoCircle { width: 38px; height: 38px; font-size: 22px; }
 }
