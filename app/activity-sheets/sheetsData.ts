@@ -88,11 +88,6 @@ export const universalExtras: BundleExtra[] = [
     description: "A lovely 'I did it!' certificate with your child's name. Perfect for the fridge.",
   },
   {
-    icon: '💬',
-    title: 'WhatsApp Support',
-    description: 'Private group where you can ask Choti questions. Monthly Q&A video calls included.',
-  },
-  {
     icon: '🔄',
     title: 'Lifetime Updates',
     description: 'When we add or improve sheets in this bundle, you get them free — forever.',

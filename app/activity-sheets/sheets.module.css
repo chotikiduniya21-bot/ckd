@@ -584,7 +584,22 @@
   width: 100%;
 }
 .bundleBtn:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--shadow); }
-
+.comingSoonBadge {
+  width: 100%;
+  background: linear-gradient(135deg, #FFD93D 0%, #FF8A3D 100%);
+  border: 2.5px solid var(--ink);
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--ink);
+  text-align: center;
+  box-shadow: 4px 4px 0 var(--shadow);
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+  cursor: default;
+}
 .bundlePreviewLink {
   display: block;
   text-align: center;

@@ -58,8 +58,8 @@ export default function LibraryPage() {
           <div className={styles.emptyEmoji}>📭</div>
           <h3>No bundles yet</h3>
           <p>
-            Remember — <strong>all individual sheets are already free</strong>. Bundles add
-            structure, parent guides, progress trackers, and WhatsApp support. Ready when you are.
+            Remember — <strong>all individual sheets are already free</strong>. Bundles will add
+            structure, parent guides, daily schedules, and progress trackers. Coming soon!
           </p>
           <Link href="/activity-sheets#bundles" className={styles.emptyBtn}>
             Explore Bundles →
@@ -108,16 +108,6 @@ export default function LibraryPage() {
                   </button>
                 </div>
 
-                {/* WhatsApp / community section */}
-                <div className={styles.communityCard}>
-                  <div className={styles.communityIcon}>💬</div>
-                  <div className={styles.communityContent}>
-                    <strong>WhatsApp Support Group</strong>
-                    <p>Ask Choti questions anytime. Monthly live Q&amp;A with all bundle members.</p>
-                  </div>
-                  <a href="#" className={styles.communityBtn}>Join →</a>
-                </div>
-
                 {/* Certificate section */}
                 <div className={styles.certCard}>
                   <div className={styles.certIcon}>📜</div>
@@ -153,8 +143,8 @@ export default function LibraryPage() {
                   <h4>{bundle.title}</h4>
                   <div className={styles.suggestedMeta}>{bundle.ageLabel} · {bundle.sheetCount}+ sheets</div>
                   <div className={styles.suggestedFooter}>
-                    <span className={styles.price}>₹{bundle.price}</span>
-                    <Link href={`/activity-sheets#bundles`} className={styles.buyBtn}>View →</Link>
+                    <span className={styles.price}>✨ Coming soon</span>
+                    <Link href={`/bundle-preview/${bundle.id}`} className={styles.buyBtn}>Preview →</Link>
                   </div>
                 </div>
               </div>

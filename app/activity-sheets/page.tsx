@@ -104,8 +104,6 @@ export default function ActivitySheetsPage() {
               <li>✅ <strong>Daily Schedule</strong> — know exactly what to do</li>
               <li>✅ <strong>Progress Tracker</strong> — printable checklist</li>
               <li>✅ <strong>Completion Certificate</strong> — for your child</li>
-              <li>✅ <strong>WhatsApp Support</strong> — ask Choti anything</li>
-              <li>✅ <strong>Monthly Q&amp;A calls</strong> — live with Choti</li>
               <li>✅ <strong>Lifetime updates</strong> — free forever</li>
             </ul>
           </div>

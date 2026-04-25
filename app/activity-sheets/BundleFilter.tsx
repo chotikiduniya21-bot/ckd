@@ -171,16 +171,14 @@ function BundleCard({ bundle }: { bundle: Bundle }) {
         </div>
 
         <div className={styles.bundlePriceBlock}>
-          <div>
-            <span className={styles.bundleStrike}>₹{bundle.originalPrice}</span>
-            <span className={styles.bundlePrice}>₹{bundle.price}</span>
-          </div>
-          <div className={styles.bundleSave}>{bundle.tag}</div>
+          <div className={styles.bundleSave}>📦 {bundle.sheetCount} sheets · {bundle.duration}</div>
         </div>
 
-        <button className={styles.bundleBtn}>Get this bundle →</button>
+<div className={styles.comingSoonBadge}>
+          ✨ Coming Soon
+        </div>
         <Link href={`/bundle-preview/${bundle.id}`} className={styles.bundlePreviewLink}>
-          👀 See what&apos;s inside first
+          👀 See what&apos;s inside (preview)
         </Link>
       </div>
     </div>

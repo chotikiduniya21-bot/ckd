@@ -97,9 +97,9 @@ export default function DashboardOverview() {
               <div className={styles.activityIcon} style={{ background: '#FFE5EC' }}>🛒</div>
               <div className={styles.activityContent}>
                 <div className={styles.activityTitle}>
-                  Purchased <strong>{bundle.title} Bundle</strong>
+                  Saved <strong>{bundle.title} Bundle</strong> for later
                 </div>
-                <div className={styles.activityMeta}>₹{bundle.price} · {bundle.sheetCount}+ sheets · 3 days ago</div>
+                <div className={styles.activityMeta}>{bundle.sheetCount}+ sheets · Coming in Phase 2</div>
               </div>
               <Link href="/dashboard/library" className={styles.activityBtn}>Open</Link>
             </div>
@@ -129,9 +129,9 @@ export default function DashboardOverview() {
             </h3>
             <p className={styles.upsellText}>
               You&apos;ve downloaded {downloadedFreeSheets.length} free sheets.
-              The {suggestedBundle.title} bundle organizes {suggestedBundle.sheetCount}+ sheets
-              into a proper learning sequence, adds a parent guide, and unlocks WhatsApp support
-              with Choti. ₹{suggestedBundle.price} — one-time, lifetime access.
+              The {suggestedBundle.title} bundle will organize {suggestedBundle.sheetCount}+ sheets
+              into a proper learning sequence with a parent guide and progress tracker.
+              Launching soon — preview it now!
             </p>
             <Link href="/activity-sheets#bundles" className={styles.upsellBtn}>
               See All Bundles →

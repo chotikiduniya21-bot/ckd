@@ -51,15 +51,17 @@ export default async function BundlePreviewPage({
               </div>
               <p className={styles.heroDesc}>{bundle.description}</p>
             </div>
-            <div className={styles.heroRight}>
+          <div className={styles.heroRight}>
               <div className={styles.heroPriceCard}>
-                <div className={styles.heroPriceLabel}>One-time price</div>
+                <div className={styles.heroPriceLabel}>✨ Coming Soon</div>
                 <div className={styles.heroPriceRow}>
-                  <span className={styles.heroStrike}>₹{bundle.originalPrice}</span>
-                  <span className={styles.heroPrice}>₹{bundle.price}</span>
+                  <span className={styles.heroPrice}>Phase 2</span>
                 </div>
-                <div className={styles.heroPriceTag}>{bundle.tag}</div>
-                <div className={styles.heroSubText}>Lifetime access · No recurring fees</div>
+                <div className={styles.heroPriceTag}>Phase 2 launch</div>
+                <div className={styles.heroSubText}>
+                  All individual sheets are <strong>FREE</strong> right now.
+                  Bundles with parent guide + daily schedule + tracker launch soon.
+                </div>
               </div>
             </div>
           </div>
@@ -74,7 +76,6 @@ export default async function BundlePreviewPage({
           <a href="#schedule">📅 Schedule</a>
           <a href="#tracker">✅ Tracker</a>
           <a href="#certificate">📜 Certificate</a>
-          <a href="#whatsapp">💬 WhatsApp</a>
           <a href="#faq">❓ FAQ</a>
         </div>
       </div>
@@ -228,77 +229,11 @@ export default async function BundlePreviewPage({
         </div>
       </section>
 
-      {/* WHATSAPP */}
-      <section id="whatsapp" className={styles.previewSection}>
-        <div className="section-head">
-          <div className="section-eyebrow">~ WhatsApp Support preview ~</div>
-          <h2>Real support, from a real teacher 💬</h2>
-          <p>No chatbots. Choti answers every question personally (usually within 24 hours). Here&apos;s a real example of how conversations go.</p>
-        </div>
-
-        <div className={styles.whatsappPreview}>
-          <div className={styles.whatsappPhone}>
-            <div className={styles.whatsappTop}>
-              <div className={styles.whatsappAvatar}>🌸</div>
-              <div className={styles.whatsappContact}>
-                <strong>Choti Didi</strong>
-                <span>online</span>
-              </div>
-              <div className={styles.whatsappActions}>📞 🎥</div>
-            </div>
-            <div className={styles.whatsappBody}>
-              <div className={styles.whatsappDate}>Today</div>
-              {preview.whatsappSamples.map((msg, i) => (
-                <div
-                  key={i}
-                  className={`${styles.whatsappMsg} ${
-                    msg.from === 'parent' ? styles.msgParent : styles.msgChoti
-                  }`}
-                >
-                  <div className={styles.whatsappBubble}>
-                    <p>{msg.text}</p>
-                    <span className={styles.whatsappTime}>{msg.time}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className={styles.whatsappInputBar}>
-              <div className={styles.whatsappInputMock}>💬 Ask Choti anything...</div>
-              <div className={styles.whatsappMic}>🎤</div>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.whatsappBelow}>
-          <div className={styles.whatsappFeature}>
-            <span>⚡</span>
-            <div>
-              <strong>Reply within 24 hours</strong>
-              <p>Weekdays 9 AM – 8 PM. Choti replies personally, no assistants.</p>
-            </div>
-          </div>
-          <div className={styles.whatsappFeature}>
-            <span>👥</span>
-            <div>
-              <strong>Private support group</strong>
-              <p>Connect with other bundle parents. See their wins, ask their tips.</p>
-            </div>
-          </div>
-          <div className={styles.whatsappFeature}>
-            <span>🎥</span>
-            <div>
-              <strong>Monthly live Q&amp;A</strong>
-              <p>30-min video call, last Sunday of every month. Pre-submit questions.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* WHAT HAPPENS AFTER YOU PAY */}
       <section id="faq" className={styles.previewSection} style={{ background: '#F0F7FF' }}>
         <div className="section-head">
           <div className="section-eyebrow">~ What happens next ~</div>
-          <h2>After you pay ₹{bundle.price}, here&apos;s what happens 🎯</h2>
+          <h2>After you sign up, here&apos;s what happens 🎯</h2>
         </div>
 
         <div className={styles.stepsGrid}>
@@ -334,13 +269,19 @@ export default async function BundlePreviewPage({
         </div>
       </section>
 
-      {/* FINAL CTA */}
+{/* FINAL CTA — bundles in "coming soon" mode for Phase 1 launch */}
       <section className={styles.finalCta} style={{ background: bundleColor }}>
         <div className={styles.ctaBox}>
-          <h2>Ready to start {bundle.title}? 🚀</h2>
-          <p>{bundle.sheetCount} sheets · {bundle.duration} · ₹{bundle.price} one-time · Lifetime access</p>
+          <h2>{bundle.title} is launching soon! 🚀</h2>
+          <p>{bundle.sheetCount} sheets · {bundle.duration} · Lifetime access (no fees)</p>
+          <p style={{ marginTop: '8px', fontSize: '15px', opacity: 0.9 }}>
+            For now, all individual sheets are <strong>FREE</strong>. Bundles with parent guides,
+            schedules &amp; WhatsApp support coming in Phase 2.
+          </p>
           <div className={styles.ctaButtons}>
-            <button className={styles.ctaPrimary}>Get the bundle for ₹{bundle.price} →</button>
+            <Link href="/activity-sheets" className={styles.ctaPrimary}>
+              Browse free sheets →
+            </Link>
             <Link href="/activity-sheets#bundles" className={styles.ctaSecondary}>
               See other bundles
             </Link>
