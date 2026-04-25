@@ -164,7 +164,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder={mode === 'signup' ? 'Create a password (any value in demo)' : 'Your password'}
+placeholder={mode === 'signup' ? 'Create a password (min 6 characters)' : 'Your password'}
                 required
               />
             </div>
