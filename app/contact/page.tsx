@@ -9,13 +9,37 @@ export default function ContactPage() {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: wire up to Resend or a form service
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 6000);
-    setName(''); setEmail(''); setSubject(''); setMessage('');
+    setErrorMsg(null);
+    setLoading(true);
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
+      const data = await res.json();
+
+      if (!data.success) {
+        setErrorMsg(data.error ?? 'Could not send message. Please try again.');
+        setLoading(false);
+        return;
+      }
+
+      setSubmitted(true);
+      setLoading(false);
+      setName(''); setEmail(''); setSubject(''); setMessage('');
+      setTimeout(() => setSubmitted(false), 8000);
+    } catch (err) {
+      console.error('Contact form failed:', err);
+      setErrorMsg('Network error. Please try emailing us directly at hello@chotikiduniya.com');
+      setLoading(false);
+    }
   };
 
   return (
@@ -100,15 +124,30 @@ export default function ContactPage() {
               required
             />
 
-            <button type="submit" className={styles.contactSubmit}>
-              Send Message →
+            {errorMsg && (
+              <div style={{
+                background: '#FFE5EC',
+                border: '2px solid #FF4E6A',
+                borderRadius: '10px',
+                padding: '10px 14px',
+                fontSize: '13px',
+                color: '#FF4E6A',
+                fontWeight: 600,
+                marginTop: '12px',
+              }}>
+                ⚠️ {errorMsg}
+              </div>
+            )}
+
+            <button type="submit" className={styles.contactSubmit} disabled={loading}>
+              {loading ? 'Sending...' : 'Send Message →'}
             </button>
           </form>
         )}
 
         <div className={styles.callout}>
           <strong>Note:</strong> The form above is connected to our email system — but if you prefer,
-          just email us directly. Replies come from a real human (usually Choti or Ash), never a bot.
+          just email us directly. Replies come from a real human, never a bot.
         </div>
 
         <h2>Business information</h2>

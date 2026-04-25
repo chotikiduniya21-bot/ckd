@@ -99,11 +99,11 @@ export default function SignupPrompt({ open, downloadCount, onClose }: SignupPro
                   <span>When we launch physical books &amp; toys, you&apos;ll know first.</span>
                 </div>
               </li>
-              <li>
-                <span className={styles.benefitIcon}>⚡</span>
+             <li>
+                <span className={styles.benefitIcon}>🌱</span>
                 <div>
-                  <strong>Early access to new drops</strong>
-                  <span>Get the first peek at new bundles + festive sheet packs.</span>
+                  <strong>Help shape what we build</strong>
+                  <span>We&apos;ll ask you what your kid loves &mdash; and make it.</span>
                 </div>
               </li>
             </ul>
@@ -118,7 +118,7 @@ export default function SignupPrompt({ open, downloadCount, onClose }: SignupPro
             </div>
 
             <div className={styles.smallNote}>
-              🔒 We&apos;ll never spam you. One email every Sunday, tops.
+	🔒 We&apos;ll only email when we have something genuinely useful.
             </div>
           </div>
         </div>
