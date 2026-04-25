@@ -1,22 +1,30 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useUser } from '@/lib/auth';
 import styles from './login.module.css';
 
 export default function LoginPage() {
   const router = useRouter();
-  const { signInWithPassword, signUp } = useUser();
+  const { user, signIn, signUp } = useUser();
   const [mode, setMode] = useState<'login' | 'signup'>('login');
+
+  // Already signed in? Bounce to dashboard.
+  useEffect(() => {
+    if (user) {
+      router.push('/dashboard');
+    }
+  }, [user, router]);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [firstName, setFirstName] = useState('');
   const [childAge, setChildAge] = useState('3-5');
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [signupComplete, setSignupComplete] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMsg(null);
     if (!email || (mode === 'signup' && !firstName)) return;
@@ -24,16 +32,85 @@ export default function LoginPage() {
 
     const result =
       mode === 'login'
-        ? await signInWithPassword(email, password)
-        : await signUp(email, password, firstName, childAge);
+        ? await signIn({ email, password })
+        : await signUp({ email, password, firstName, childAgeRange: childAge });
 
-    if (result.error) {
-      setErrorMsg(result.error);
+    if (!result.success) {
+      setErrorMsg(result.error ?? 'Something went wrong. Try again.');
       setLoading(false);
       return;
     }
+
+    if (mode === 'signup') {
+      // Don't redirect — show the "check your email" screen instead
+      setSignupComplete(true);
+      setLoading(false);
+      return;
+    }
+
     router.push('/dashboard');
   };
+
+  // After successful signup, show "check your email" screen
+  if (signupComplete) {
+    return (
+      <section className={styles.loginPage}>
+        <div className={styles.loginCard}>
+          <div className={styles.loginLeft}>
+            <div className={styles.brandMark}>
+              <div className={styles.mascot}>🌸</div>
+              <div className={styles.brandText}>Chutki Ki Duniya</div>
+            </div>
+            <h1 className={styles.welcome}>
+              Almost there! <span>📬</span>
+            </h1>
+            <p className={styles.subtitle}>
+              We&apos;ve sent a confirmation link to <strong>{email}</strong>.
+              Click it to verify your account, then come back here to sign in.
+            </p>
+            <div className={styles.demoBanner} style={{ background: '#FFF4D6', borderColor: '#FF8A3D' }}>
+              <strong>💡 Tip:</strong> Check your spam folder if you don&apos;t see the email
+              within 2 minutes. The link expires in 24 hours.
+            </div>
+            <div className={styles.toggleRow}>
+              Already confirmed?{' '}
+              <button
+                onClick={() => {
+                  setSignupComplete(false);
+                  setMode('login');
+                  setPassword('');
+                }}
+                className={styles.linkBtn}
+              >
+                Sign in →
+              </button>
+            </div>
+          </div>
+          <div className={styles.loginRight}>
+            <div className={styles.rightHero}>
+              <div className={styles.rightEmojis}>
+                <span className={styles.em1}>📧</span>
+                <span className={styles.em2}>✨</span>
+                <span className={styles.em3}>🎉</span>
+                <span className={styles.em4}>🌟</span>
+                <span className={styles.em5}>💛</span>
+              </div>
+              <div className={styles.rightCard}>
+                <h3>What happens next 📬</h3>
+                <ul>
+                  <li>✓ Open your email inbox</li>
+                  <li>✓ Click the &quot;Confirm your mail&quot; link</li>
+                  <li>✓ Come back &amp; sign in with your password</li>
+                  <li>✓ Land on your dashboard</li>
+                  <li>✓ Start downloading free sheets!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className={styles.loginPage}>
@@ -56,10 +133,7 @@ export default function LoginPage() {
               : 'Create your free account to save sheets, track your learning, and get early access to new drops.'}
           </p>
 
-          <div className={styles.demoBanner}>
-            <strong>🎭 Demo mode:</strong> This is a mock login (no real backend yet).
-            Type any email to sign in — you&apos;ll see a pre-filled demo dashboard with sample data.
-          </div>
+         
 
           <form className={styles.form} onSubmit={handleSubmit}>
             {mode === 'signup' && (

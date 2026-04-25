@@ -9,17 +9,17 @@ import styles from './dashboard.module.css';
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
-  const { user, isLoading } = useUser();
+  const { user, loading } = useUser();
   const isSignedIn = !!user;
 
   // Client-side route protection
   useEffect(() => {
-    if (!isLoading && !isSignedIn) {
+    if (!loading && !isSignedIn) {
       router.push('/login');
     }
-  }, [isLoading, isSignedIn, router]);
+  }, [loading, isSignedIn, router]);
 
-  if (isLoading) {
+  if (loading) {
     return (
       <div className={styles.loadingState}>
         <div className={styles.spinner}>🌸</div>

@@ -1,49 +1,21 @@
 'use client';
 
-/**
- * ============================================================
- * Mock auth that mirrors Supabase's API surface.
- * ============================================================
- *
- * This file simulates what @supabase/supabase-js + @supabase/ssr would do,
- * so when you're ready to go live, the migration is nearly import-only.
- *
- * WHAT SUPABASE GIVES YOU (that we're mocking here):
- * - User signup/login with email + password
- * - Session management (stays logged in for 30 days)
- * - A database to store user profile, purchases, downloads
- * - Row-level security (users only see their own data)
- *
- * ============================================================
- * MIGRATION TO REAL SUPABASE (when ready):
- * ============================================================
- * 1. npm install @supabase/supabase-js @supabase/ssr
- * 2. Create project at supabase.com (free tier)
- * 3. Get URL + anon key from Settings → API
- * 4. Add to .env.local:
- *    NEXT_PUBLIC_SUPABASE_URL=https://xxxxx.supabase.co
- *    NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...
- * 5. Replace this file's implementation with real Supabase client
- *    (commented-out code at the bottom shows exactly what to write).
- * 6. Create these tables in Supabase SQL editor:
- *    - profiles (id, first_name, last_name, child_age_range)
- *    - purchases (id, user_id, sheet_id, created_at, amount)
- *    - free_downloads (id, user_id, sheet_id, downloaded_at)
- *    - waitlist (id, user_id, plan_interested, created_at)
- * 7. All the pages, hooks, and components keep working unchanged.
- */
+import React, { createContext, useContext, useEffect, useState, useCallback, useMemo } from 'react';
+import { createClient } from './supabase/client';
+import type { User as SupabaseUser, Session } from '@supabase/supabase-js';
 
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-
-// ----------------------- Types (match Supabase's shape) -----------------------
+// ============================================================
+// TYPES — match the Supabase schema exactly
+// ============================================================
 
 export interface Profile {
   id: string;
   email: string;
   first_name: string;
   last_name: string;
-  child_age_range?: string; // '2-4', '3-5', '4-6', '5-7'
+  child_age_range: string | null;
   created_at: string;
+  updated_at: string;
 }
 
 export interface Purchase {
@@ -61,286 +33,243 @@ export interface FreeDownload {
   downloaded_at: string;
 }
 
-// What components consume — a "hydrated" user with related data joined in.
-// Supabase would do this via a .select() with foreign key joins or separate queries.
 export interface AuthUser {
+  id: string;
+  email: string;
   profile: Profile;
   purchases: Purchase[];
   freeDownloads: FreeDownload[];
 }
 
-// ----------------------- Context shape -----------------------
+// ============================================================
+// CONTEXT
+// ============================================================
 
 interface AuthContextValue {
   user: AuthUser | null;
-  isLoading: boolean;
-
-  // These methods mirror Supabase client methods
-  signUp: (email: string, password: string, firstName: string, childAgeRange?: string) => Promise<{ error: string | null }>;
-  signInWithPassword: (email: string, password: string) => Promise<{ error: string | null }>;
+  loading: boolean;
+  signUp: (args: {
+    email: string;
+    password: string;
+    firstName: string;
+    childAgeRange?: string;
+  }) => Promise<{ success: boolean; error?: string }>;
+  signIn: (args: {
+    email: string;
+    password: string;
+  }) => Promise<{ success: boolean; error?: string }>;
   signOut: () => Promise<void>;
-
-  // Business-data helpers (would hit Supabase tables in production)
-  addPurchase: (sheetId: string, amount: number) => Promise<void>;
+  refreshUser: () => Promise<void>;
   recordFreeDownload: (sheetId: string) => Promise<void>;
 }
 
-const AuthContext = createContext<AuthContextValue | null>(null);
+const AuthContext = createContext<AuthContextValue | undefined>(undefined);
 
-// ----------------------- Demo data -----------------------
-
-const DEMO_PROFILE: Profile = {
-  id: 'user_demo_priya',
-  email: 'priya.sharma@example.com',
-  first_name: 'Priya',
-  last_name: 'Sharma',
-  child_age_range: '3-5',
-  created_at: new Date('2025-01-15').toISOString(),
-};
-
-const DEMO_PURCHASES: Purchase[] = [
-  {
-    id: 'purchase_1',
-    user_id: 'user_demo_priya',
-    sheet_id: 'school-ready', // bundle ID (we're overloading sheet_id for bundle ID in the mock)
-    amount: 299,
-    created_at: new Date('2025-02-01').toISOString(),
-  },
-];
-
-const DEMO_FREE_DOWNLOADS: FreeDownload[] = [
-  {
-    id: 'free_1',
-    user_id: 'user_demo_priya',
-    sheet_id: '101',
-    downloaded_at: new Date('2025-01-20').toISOString(),
-  },
-  {
-    id: 'free_2',
-    user_id: 'user_demo_priya',
-    sheet_id: '103',
-    downloaded_at: new Date('2025-01-22').toISOString(),
-  },
-];
-
-// ----------------------- Provider -----------------------
-
-const STORAGE_KEY = 'ckd_supabase_mock_session';
-
-export function AuthProvider({ children }: { children: ReactNode }) {
-  const [user, setUser] = useState<AuthUser | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  // Hydrate session from localStorage on mount (mimics Supabase's auto-session-restore)
-  useEffect(() => {
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) {
-        setUser(JSON.parse(raw));
-      }
-    } catch {
-      // noop
-    }
-    setIsLoading(false);
-  }, []);
-
-  const persist = (u: AuthUser | null) => {
-    try {
-      if (u) localStorage.setItem(STORAGE_KEY, JSON.stringify(u));
-      else localStorage.removeItem(STORAGE_KEY);
-    } catch {
-      // noop
-    }
-  };
-
-  const signUp: AuthContextValue['signUp'] = async (email, _password, firstName, childAgeRange) => {
-    if (!email || !firstName) return { error: 'Please fill in all fields.' };
-
-    const newUser: AuthUser = {
-      profile: {
-        id: `user_${Date.now()}`,
-        email,
-        first_name: firstName,
-        last_name: '',
-        child_age_range: childAgeRange,
-        created_at: new Date().toISOString(),
-      },
-      purchases: [],
-      freeDownloads: [],
-    };
-    setUser(newUser);
-    persist(newUser);
-    return { error: null };
-  };
-
-  const signInWithPassword: AuthContextValue['signInWithPassword'] = async (email, _password) => {
-    if (!email) return { error: 'Please enter your email.' };
-
-    // Mock: use demo data so the dashboard feels alive
-    const loggedIn: AuthUser = {
-      profile: { ...DEMO_PROFILE, email },
-      purchases: DEMO_PURCHASES,
-      freeDownloads: DEMO_FREE_DOWNLOADS,
-    };
-    setUser(loggedIn);
-    persist(loggedIn);
-    return { error: null };
-  };
-
-  const signOut = async () => {
-    setUser(null);
-    persist(null);
-  };
-
-  const addPurchase: AuthContextValue['addPurchase'] = async (sheetId, amount) => {
-    if (!user) return;
-    const newPurchase: Purchase = {
-      id: `purchase_${Date.now()}`,
-      user_id: user.profile.id,
-      sheet_id: sheetId,
-      amount,
-      created_at: new Date().toISOString(),
-    };
-    const updated = { ...user, purchases: [...user.purchases, newPurchase] };
-    setUser(updated);
-    persist(updated);
-  };
-
-  const recordFreeDownload: AuthContextValue['recordFreeDownload'] = async (sheetId) => {
-    if (!user) return;
-    if (user.freeDownloads.some((d) => d.sheet_id === sheetId)) return; // already downloaded
-
-    const newDownload: FreeDownload = {
-      id: `free_${Date.now()}`,
-      user_id: user.profile.id,
-      sheet_id: sheetId,
-      downloaded_at: new Date().toISOString(),
-    };
-    const updated = { ...user, freeDownloads: [...user.freeDownloads, newDownload] };
-    setUser(updated);
-    persist(updated);
-  };
-
-  return (
-    <AuthContext.Provider
-      value={{
-        user,
-        isLoading,
-        signUp,
-        signInWithPassword,
-        signOut,
-        addPurchase,
-        recordFreeDownload,
-      }}
-    >
-      {children}
-    </AuthContext.Provider>
-  );
-}
-
-// ----------------------- Hook (matches Supabase's useUser-ish usage) -----------------------
+// ============================================================
+// HOOK
+// ============================================================
 
 export function useUser() {
   const ctx = useContext(AuthContext);
-  if (!ctx) throw new Error('useUser must be used inside <AuthProvider>');
+  if (!ctx) {
+    throw new Error('useUser must be used within an AuthProvider');
+  }
   return ctx;
 }
 
 // ============================================================
-// REAL SUPABASE IMPLEMENTATION — uncomment when going live
+// PROVIDER
 // ============================================================
-/*
 
-'use client';
-
-import { createBrowserClient } from '@supabase/ssr';
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
-
-const supabase = createBrowserClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
-
-export function AuthProvider({ children }: { children: ReactNode }) {
+export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
+  // Create the Supabase client ONCE per provider instance.
+  // Otherwise every render makes a new client and breaks session continuity.
+  const supabase = useMemo(() => createClient(), []);
 
-  const hydrateUser = async (authUser: any) => {
-    // Fetch profile + related records in parallel
-    const [{ data: profile }, { data: purchases }, { data: freeDownloads }] = await Promise.all([
-      supabase.from('profiles').select('*').eq('id', authUser.id).single(),
-      supabase.from('purchases').select('*').eq('user_id', authUser.id),
-      supabase.from('free_downloads').select('*').eq('user_id', authUser.id),
-    ]);
+// Load full user data: profile + purchases + free downloads
+  const loadUserData = useCallback(async (supabaseUser: SupabaseUser): Promise<AuthUser | null> => {
 
-    if (profile) {
-      setUser({ profile, purchases: purchases ?? [], freeDownloads: freeDownloads ?? [] });
+    // Fetch profile — use maybeSingle so missing row returns null instead of throwing
+    const { data: profile, error: profileError } = await supabase
+      .from('profiles')
+      .select('*')
+      .eq('id', supabaseUser.id)
+      .maybeSingle();
+
+
+    if (profileError) {
+      console.error('[auth] profile fetch error:', profileError);
+      return null;
     }
-  };
 
+    if (!profile) {
+      console.warn('[auth] no profile row found yet for user', supabaseUser.id, '— trigger may still be running');
+      return null;
+    }
+
+    // Fetch purchases
+    const { data: purchases } = await supabase
+      .from('purchases')
+      .select('*')
+      .eq('user_id', supabaseUser.id)
+      .order('created_at', { ascending: false });
+
+    // Fetch free downloads
+    const { data: freeDownloads } = await supabase
+      .from('free_downloads')
+      .select('*')
+      .eq('user_id', supabaseUser.id)
+      .order('downloaded_at', { ascending: false });
+
+    return {
+      id: supabaseUser.id,
+      email: supabaseUser.email ?? '',
+      profile: profile as Profile,
+      purchases: (purchases ?? []) as Purchase[],
+      freeDownloads: (freeDownloads ?? []) as FreeDownload[],
+    };
+  }, [supabase]);
+
+  const refreshUser = useCallback(async () => {
+    const { data: { user: supabaseUser } } = await supabase.auth.getUser();
+    if (!supabaseUser) {
+      setUser(null);
+      return;
+    }
+    const fullUser = await loadUserData(supabaseUser);
+    setUser(fullUser);
+  }, [supabase, loadUserData]);
+
+  // On mount: check if a session exists, load user if so
   useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session?.user) hydrateUser(session.user);
-      setIsLoading(false);
-    });
+    let mounted = true;
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_evt, session) => {
-      if (session?.user) hydrateUser(session.user);
-      else setUser(null);
-    });
-    return () => subscription.unsubscribe();
-  }, []);
+    const init = async () => {
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
 
-  const signUp = async (email: string, password: string, firstName: string, childAgeRange?: string) => {
+        if (session?.user && mounted) {
+          const fullUser = await loadUserData(session.user);
+          if (mounted) {
+            setUser(fullUser);
+            setLoading(false);
+          }
+        } else if (mounted) {
+          setLoading(false);
+        }
+      } catch (err) {
+        console.error('[auth] init failed:', err);
+        if (mounted) setLoading(false);
+      }
+    };
+
+    init();
+
+    // Listen for sign-in / sign-out across tabs.
+    // IMPORTANT: defer database queries via setTimeout to avoid the Supabase auth lock deadlock.
+    // See: https://github.com/supabase/auth-js/issues/762
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (_event: string, session: Session | null) => {
+        if (!mounted) return;
+        if (session?.user) {
+          // Defer the DB query out of the auth callback to avoid deadlock
+          setTimeout(async () => {
+            if (!mounted) return;
+            const fullUser = await loadUserData(session.user);
+            if (mounted) setUser(fullUser);
+          }, 0);
+        } else {
+          setUser(null);
+        }
+      },
+    );
+
+    return () => {
+      mounted = false;
+      subscription.unsubscribe();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [supabase]);
+
+  // ========== AUTH METHODS ==========
+
+  const signUp = useCallback(async ({
+    email,
+    password,
+    firstName,
+    childAgeRange,
+  }: {
+    email: string;
+    password: string;
+    firstName: string;
+    childAgeRange?: string;
+  }) => {
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
-      options: { data: { first_name: firstName } },
+      options: {
+        data: {
+          first_name: firstName,
+          last_name: '',
+          child_age_range: childAgeRange ?? null,
+        },
+      },
     });
-    if (error) return { error: error.message };
-    // Create profile row
-    if (data.user) {
-      await supabase.from('profiles').insert({
-        id: data.user.id,
-        email,
-        first_name: firstName,
-        last_name: '',
-        child_age_range: childAgeRange,
-      });
+
+    if (error) {
+      return { success: false, error: error.message };
     }
-    return { error: null };
-  };
 
-  const signInWithPassword = async (email: string, password: string) => {
+    if (!data.user) {
+      return { success: false, error: 'Signup failed — please try again.' };
+    }
+
+    // Give the database trigger a moment to create the profile row
+    await new Promise((r) => setTimeout(r, 300));
+    await refreshUser();
+
+    return { success: true };
+  }, [supabase, refreshUser]);
+
+  const signIn = useCallback(async ({ email, password }: { email: string; password: string }) => {
     const { error } = await supabase.auth.signInWithPassword({ email, password });
-    return { error: error?.message ?? null };
-  };
+    if (error) {
+      return { success: false, error: error.message };
+    }
+    // onAuthStateChange fires automatically and loads the user
+    return { success: true };
+  }, [supabase]);
 
-  const signOut = async () => {
+  const signOut = useCallback(async () => {
     await supabase.auth.signOut();
-  };
-
-  const addPurchase = async (sheetId: string, amount: number) => {
+    setUser(null);
+  }, [supabase]);
+const recordFreeDownload = useCallback(async (sheetId: string) => {
     if (!user) return;
-    await supabase.from('purchases').insert({
-      user_id: user.profile.id,
-      sheet_id: sheetId,
-      amount,
-    });
-    await hydrateUser({ id: user.profile.id });
-  };
 
-  const recordFreeDownload = async (sheetId: string) => {
-    if (!user) return;
-    const exists = user.freeDownloads.some(d => d.sheet_id === sheetId);
-    if (exists) return;
-    await supabase.from('free_downloads').insert({
-      user_id: user.profile.id,
-      sheet_id: sheetId,
-    });
-    await hydrateUser({ id: user.profile.id });
-  };
+    // Insert into database
+    const { data, error } = await supabase
+      .from('free_downloads')
+      .insert({ user_id: user.id, sheet_id: sheetId })
+      .select()
+      .single();
 
-  // ...return provider as before
+    if (error || !data) {
+      console.error('Failed to record free download:', error);
+      return;
+    }
+
+    // Update local state so UI reflects it immediately
+    setUser((prev) => prev ? {
+      ...prev,
+      freeDownloads: [data as FreeDownload, ...prev.freeDownloads],
+    } : prev);
+  }, [user, supabase]);
+  return (
+<AuthContext.Provider value={{ user, loading, signUp, signIn, signOut, refreshUser, recordFreeDownload }}>
+      {children}
+    </AuthContext.Provider>
+  );
 }
-*/
