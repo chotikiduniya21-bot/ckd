@@ -75,7 +75,7 @@ export default function Home() {
             <div className={styles.ytLabel}>TRUSTED BY 8,00,000+ FAMILIES</div>
             <h2 className={styles.ytTitle}>Our YouTube channel is where it all begins ✨</h2>
             <p className={styles.ytText}>
-              Real songs, real learning, with a real teacher — not a cartoon. Chutki&apos;s 8+ years
+              Real songs, real learning, with a real teacher — not a cartoon. Choti&apos;s 8+ years
               of Montessori experience shine through every rhyme, story, and activity.
             </p>
             <a href="#" className="btn-primary">Subscribe on YouTube</a>

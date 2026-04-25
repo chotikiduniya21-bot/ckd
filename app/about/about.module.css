@@ -32,11 +32,11 @@
   margin-bottom: 14px;
 }
 
-.chutkiSection {
+.chotiSection {
   padding: 80px 6%;
   background: linear-gradient(180deg, transparent 0%, rgba(255,126,185,0.12) 100%);
 }
-.chutkiGrid {
+.chotiGrid {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -44,8 +44,8 @@
   gap: 60px;
   align-items: center;
 }
-.chutkiText h2 { font-size: clamp(30px, 4vw, 44px); margin: 14px 0 16px; line-height: 1.1; }
-.chutkiText p {
+.chotiText h2 { font-size: clamp(30px, 4vw, 44px); margin: 14px 0 16px; line-height: 1.1; }
+.chotiText p {
   font-size: 16px;
   color: var(--ink-soft);
   line-height: 1.65;
@@ -83,7 +83,7 @@
   margin-top: 6px;
 }
 
-.chutkiPhoto { display: flex; justify-content: center; }
+.chotiPhoto { display: flex; justify-content: center; }
 .photoFrame {
   position: relative;
   max-width: 380px;
@@ -152,7 +152,7 @@
 .missionLine em { font-style: italic; background: rgba(255,255,255,0.2); padding: 0 8px; border-radius: 6px; }
 
 @media (max-width: 900px) {
-  .meetGrid, .chutkiGrid { grid-template-columns: 1fr; gap: 40px; }
+  .meetGrid, .chotiGrid { grid-template-columns: 1fr; gap: 40px; }
   .credentials { grid-template-columns: 1fr; }
   .photoTag { font-size: 13px; padding: 6px 12px; }
 }

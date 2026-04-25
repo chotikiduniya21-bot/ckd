@@ -680,7 +680,7 @@
   width: 100%;
 }
 .msgParent { justify-content: flex-end; }
-.msgChutki { justify-content: flex-start; }
+.msgChoti { justify-content: flex-start; }
 .whatsappBubble {
   max-width: 78%;
   padding: 7px 10px 4px;
@@ -691,7 +691,7 @@
   background: #DCF8C6;
   border-top-right-radius: 2px;
 }
-.msgChutki .whatsappBubble {
+.msgChoti .whatsappBubble {
   background: white;
   border-top-left-radius: 2px;
 }

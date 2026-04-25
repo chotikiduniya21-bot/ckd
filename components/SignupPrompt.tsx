@@ -64,7 +64,7 @@ export default function SignupPrompt({ open, downloadCount, onClose }: SignupPro
 
           {/* Right side — message + CTA */}
           <div className={styles.contentSide}>
-            <div className={styles.eyebrow}>💛 A little ask from Chutki</div>
+            <div className={styles.eyebrow}>💛 A little ask from Choti</div>
 
             <h2 className={styles.title}>
               Loving the free sheets?

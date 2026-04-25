@@ -1,7 +1,7 @@
 import styles from '@/styles/legal.module.css';
 
 export const metadata = {
-  title: 'Refund & Cancellation Policy | Chutki Ki Duniya',
+  title: 'Refund & Cancellation Policy | Choti Ki Duniya',
   description: 'Our honest refund policy. 7-day guarantee, clear process, no drama.',
 };
 
@@ -34,7 +34,7 @@ export default function RefundPage() {
           Every paid bundle comes with a <strong>7-day happiness guarantee</strong>:
         </p>
         <ul>
-          <li>Email <a href="mailto:hello@chutkikiduniya.com">hello@chutkikiduniya.com</a> within 7 days of purchase</li>
+          <li>Email <a href="mailto:hello@chotikiduniya.com">hello@chotikiduniya.com</a> within 7 days of purchase</li>
           <li>Tell us your order ID (from the confirmation email)</li>
           <li>You don&apos;t need to explain why, though feedback helps us improve</li>
           <li>We&apos;ll process the full refund within 3 working days</li>
@@ -107,7 +107,7 @@ export default function RefundPage() {
         <ul>
           <li>Free sheets — they&apos;re free. Nothing to refund. 😄</li>
           <li>Bundles purchased more than 7 days ago, where no technical defect exists</li>
-          <li>Services you&apos;ve already fully consumed (e.g., a 1-on-1 call with Chutki that already happened)</li>
+          <li>Services you&apos;ve already fully consumed (e.g., a 1-on-1 call with Choti that already happened)</li>
           <li>Custom work or personalized requests, once delivered</li>
         </ul>
 
@@ -122,7 +122,7 @@ export default function RefundPage() {
         <h2>9. Questions</h2>
         <p>
           Refund-related questions? Email us at{' '}
-          <a href="mailto:hello@chutkikiduniya.com">hello@chutkikiduniya.com</a> with your order ID.
+          <a href="mailto:hello@chotikiduniya.com">hello@chotikiduniya.com</a> with your order ID.
           We respond within 24 hours on weekdays.
         </p>
       </div>

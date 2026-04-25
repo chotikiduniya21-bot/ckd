@@ -36,7 +36,7 @@ export default function Navbar() {
       <nav className={styles.nav}>
         <Link href="/" className={styles.logo}>
           <div className={`${styles.logoCircle} wobble`}>🌸</div>
-          <span>Chutki Ki Duniya</span>
+          <span>Choti Ki Duniya</span>
         </Link>
 
         <div className={styles.navLinks}>

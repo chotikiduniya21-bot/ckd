@@ -1,6 +1,6 @@
-# Chutki Ki Duniya 🌸
+# Choti Ki Duniya 🌸
 
-A vibrant, kid-friendly Next.js 14 site for Chutki Ki Duniya — a Montessori-inspired learning brand for Indian kids aged 2–8.
+A vibrant, kid-friendly Next.js 14 site for Choti Ki Duniya — a Montessori-inspired learning brand for Indian kids aged 2–8.
 
 ## Pages
 
@@ -11,7 +11,7 @@ A vibrant, kid-friendly Next.js 14 site for Chutki Ki Duniya — a Montessori-in
 | `/activity-sheets` | **Free Forever (8 sheets)** → Paid packs → Bundles → Magic Pass waitlist |
 | `/blog` | 10 post-card index with AdSense + affiliate demo slots |
 | `/seasonal-calendar` | Repackaging concept + 12-month drop plan + revenue projections |
-| `/about` | Mascot + Chutki the real teacher + mission |
+| `/about` | Mascot + Choti the real teacher + mission |
 | `/login` | Login/signup with mode toggle |
 
 ### Protected dashboard (requires login)
@@ -166,14 +166,14 @@ npm install @aws-sdk/client-s3 @aws-sdk/s3-request-presigner
 ```
 
 1. Create an R2 bucket at [dash.cloudflare.com](https://dash.cloudflare.com) → R2
-   - Bucket name: `chutki-sheets` (keep private)
+   - Bucket name: `choti-sheets` (keep private)
    - Generate R2 API token with Object Read permission
 2. Add to `.env.local`:
    ```
    R2_ACCOUNT_ID=your-account-id
    R2_ACCESS_KEY_ID=your-access-key
    R2_SECRET_ACCESS_KEY=your-secret
-   R2_BUCKET_NAME=chutki-sheets
+   R2_BUCKET_NAME=choti-sheets
    ```
 3. In `lib/storage.ts`, replace the mock implementation with the commented-out R2 code (already written, just uncomment)
 4. Upload your real PDFs to R2 as `sheets/{sheetId}.pdf`

@@ -11,7 +11,7 @@ export default function Footer() {
         <div className={styles.brandCol}>
           <Link href="/" className={styles.footerLogo}>
             <div className={`${styles.logoCircle} wobble`}>🌸</div>
-            <span>Chutki Ki Duniya</span>
+            <span>Choti Ki Duniya</span>
           </Link>
           <p className={styles.tagline}>
             Early learning, made joyful — for India&apos;s littlest learners.
@@ -31,7 +31,7 @@ export default function Footer() {
           <Link href="/activity-sheets" className={styles.footerLink}>Free Sheets</Link>
           <Link href="/activity-sheets#bundles" className={styles.footerLink}>Bundles</Link>
           <Link href="/blog" className={styles.footerLink}>Parent Blog</Link>
-          <Link href="/about" className={styles.footerLink}>About Chutki</Link>
+          <Link href="/about" className={styles.footerLink}>About Choti</Link>
         </div>
 
         {/* Account */}
@@ -55,7 +55,7 @@ export default function Footer() {
 
       <div className={styles.footerBottom}>
         <div className={styles.bottomLeft}>
-          © {currentYear} Chutki Ki Duniya. Made with 💛 in India.
+          © {currentYear} Choti Ki Duniya. Made with 💛 in India.
         </div>
         <div className={styles.bottomRight}>
           8 Lakh+ YouTube subscribers · 200+ Indian cities

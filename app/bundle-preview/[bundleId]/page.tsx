@@ -84,13 +84,13 @@ export default async function BundlePreviewPage({
         <div className="section-head">
           <div className="section-eyebrow">~ Parent Guide preview ~</div>
           <h2>Every sheet comes with teaching notes 📘</h2>
-          <p>Not just &quot;give the worksheet to the child.&quot; Chutki walks you through each day — objective, steps, what to watch for.</p>
+          <p>Not just &quot;give the worksheet to the child.&quot; Choti walks you through each day — objective, steps, what to watch for.</p>
         </div>
 
         <div className={styles.guidePreview}>
           <div className={styles.guidePage}>
             <div className={styles.guidePageHeader}>
-              <div className={styles.guideBrand}>🌸 Chutki Ki Duniya · Parent Guide</div>
+              <div className={styles.guideBrand}>🌸 Choti Ki Duniya · Parent Guide</div>
               <div className={styles.guidePageNum}>Page 3 of {bundle.sheetCount + 2}</div>
             </div>
             <h3 className={styles.guideLessonTitle}>{preview.guideSampleLessonLabel}</h3>
@@ -115,7 +115,7 @@ export default async function BundlePreviewPage({
               </ul>
             </div>
             <div className={styles.guideTipBox}>
-              <div className={styles.guideTipLabel}>💡 Chutki's tip</div>
+              <div className={styles.guideTipLabel}>💡 Choti's tip</div>
               <p>{preview.guideSampleNote}</p>
             </div>
             <div className={styles.guideWatermark}>SAMPLE · Actual guide has {bundle.sheetCount} full lessons</div>
@@ -203,16 +203,16 @@ export default async function BundlePreviewPage({
             <div className={styles.certBorder}>
               <div className={styles.certInnerBorder}>
                 <div className={styles.certCrest}>🌸</div>
-                <div className={styles.certEyebrow}>Chutki Ki Duniya presents</div>
+                <div className={styles.certEyebrow}>Choti Ki Duniya presents</div>
                 <h3 className={styles.certTitle}>Certificate of Completion</h3>
                 <div className={styles.certAwarded}>This is awarded to</div>
                 <div className={styles.certName}>_____ Your Child&apos;s Name _____</div>
                 <p className={styles.certMessage}>{preview.certMessage}</p>
                 <div className={styles.certFooter}>
                   <div className={styles.certSignBlock}>
-                    <div className={styles.certSignLine}>Chutki</div>
-                    <div className={styles.certSignLabel}>Chutki Didi</div>
-                    <div className={styles.certSignSub}>Founder, Chutki Ki Duniya</div>
+                    <div className={styles.certSignLine}>Choti</div>
+                    <div className={styles.certSignLabel}>Choti Didi</div>
+                    <div className={styles.certSignSub}>Founder, Choti Ki Duniya</div>
                   </div>
                   <div className={styles.certMedal}>{bundle.emoji}</div>
                   <div className={styles.certSignBlock}>
@@ -233,7 +233,7 @@ export default async function BundlePreviewPage({
         <div className="section-head">
           <div className="section-eyebrow">~ WhatsApp Support preview ~</div>
           <h2>Real support, from a real teacher 💬</h2>
-          <p>No chatbots. Chutki answers every question personally (usually within 24 hours). Here&apos;s a real example of how conversations go.</p>
+          <p>No chatbots. Choti answers every question personally (usually within 24 hours). Here&apos;s a real example of how conversations go.</p>
         </div>
 
         <div className={styles.whatsappPreview}>
@@ -241,7 +241,7 @@ export default async function BundlePreviewPage({
             <div className={styles.whatsappTop}>
               <div className={styles.whatsappAvatar}>🌸</div>
               <div className={styles.whatsappContact}>
-                <strong>Chutki Didi</strong>
+                <strong>Choti Didi</strong>
                 <span>online</span>
               </div>
               <div className={styles.whatsappActions}>📞 🎥</div>
@@ -252,7 +252,7 @@ export default async function BundlePreviewPage({
                 <div
                   key={i}
                   className={`${styles.whatsappMsg} ${
-                    msg.from === 'parent' ? styles.msgParent : styles.msgChutki
+                    msg.from === 'parent' ? styles.msgParent : styles.msgChoti
                   }`}
                 >
                   <div className={styles.whatsappBubble}>
@@ -263,7 +263,7 @@ export default async function BundlePreviewPage({
               ))}
             </div>
             <div className={styles.whatsappInputBar}>
-              <div className={styles.whatsappInputMock}>💬 Ask Chutki anything...</div>
+              <div className={styles.whatsappInputMock}>💬 Ask Choti anything...</div>
               <div className={styles.whatsappMic}>🎤</div>
             </div>
           </div>
@@ -274,7 +274,7 @@ export default async function BundlePreviewPage({
             <span>⚡</span>
             <div>
               <strong>Reply within 24 hours</strong>
-              <p>Weekdays 9 AM – 8 PM. Chutki replies personally, no assistants.</p>
+              <p>Weekdays 9 AM – 8 PM. Choti replies personally, no assistants.</p>
             </div>
           </div>
           <div className={styles.whatsappFeature}>
@@ -318,7 +318,7 @@ export default async function BundlePreviewPage({
             <div className={styles.stepNumber}>3</div>
             <div className={styles.stepEmoji}>📄</div>
             <h4>Start tomorrow</h4>
-            <p>Print day 1. Set aside 15 min. Chutki&apos;s teaching note tells you exactly how to introduce it.</p>
+            <p>Print day 1. Set aside 15 min. Choti&apos;s teaching note tells you exactly how to introduce it.</p>
           </div>
           <div className={styles.stepCard}>
             <div className={styles.stepNumber}>4</div>
@@ -330,7 +330,7 @@ export default async function BundlePreviewPage({
 
         <div className={styles.refundNote}>
           💛 <strong>7-day happiness guarantee:</strong> Try it for a week. If it&apos;s not right for your child,
-          message Chutki on WhatsApp for a full refund. No questions.
+          message Choti on WhatsApp for a full refund. No questions.
         </div>
       </section>
 

@@ -1,8 +1,8 @@
 import styles from '@/styles/legal.module.css';
 
 export const metadata = {
-  title: 'Terms of Service | Chutki Ki Duniya',
-  description: 'The rules for using Chutki Ki Duniya. Written to be readable, not to trick you.',
+  title: 'Terms of Service | Choti Ki Duniya',
+  description: 'The rules for using Choti Ki Duniya. Written to be readable, not to trick you.',
 };
 
 export default function TermsPage() {
@@ -24,7 +24,7 @@ export default function TermsPage() {
 
         <h2>1. Welcome</h2>
         <p>
-          These Terms govern your use of Chutki Ki Duniya (&quot;the Service&quot;, &quot;we&quot;,
+          These Terms govern your use of Choti Ki Duniya (&quot;the Service&quot;, &quot;we&quot;,
           &quot;us&quot;). By using the Service, you agree to these Terms. If you don&apos;t agree,
           please don&apos;t use the Service. These Terms form a binding agreement under the Indian
           Contract Act 1872.
@@ -54,7 +54,7 @@ export default function TermsPage() {
           <li>When you buy a bundle, you get lifetime personal access to that bundle&apos;s content.</li>
           <li>Same rules as free sheets — personal family use only, no reselling.</li>
           <li>You can re-download from your dashboard anytime.</li>
-          <li>&quot;Lifetime&quot; means as long as Chutki Ki Duniya continues to operate. If we ever shut down, we&apos;ll give you 90 days notice to download everything.</li>
+          <li>&quot;Lifetime&quot; means as long as Choti Ki Duniya continues to operate. If we ever shut down, we&apos;ll give you 90 days notice to download everything.</li>
         </ul>
 
         <h3>Don&apos;t do these things</h3>
@@ -80,12 +80,12 @@ export default function TermsPage() {
         </ul>
 
         <h2>5. WhatsApp support group conduct</h2>
-        <p>Bundle purchases include access to a WhatsApp support group with Chutki. Please:</p>
+        <p>Bundle purchases include access to a WhatsApp support group with Choti. Please:</p>
         <ul>
           <li>Keep conversations kind, constructive, and parent-to-parent</li>
           <li>Don&apos;t share personal numbers or addresses of other members publicly</li>
           <li>Don&apos;t promote your own products/services without asking first</li>
-          <li>Respect Chutki&apos;s time — she&apos;ll respond within 24 hours on weekdays</li>
+          <li>Respect Choti&apos;s time — she&apos;ll respond within 24 hours on weekdays</li>
           <li>If you&apos;re abusive or repeatedly off-topic, we reserve the right to remove you from the group (without refund, for repeat violations)</li>
         </ul>
 
@@ -109,7 +109,7 @@ export default function TermsPage() {
 
         <h2>8. Intellectual property</h2>
         <p>
-          All content on Chutki Ki Duniya (sheets, guides, audio, videos, website design) is owned
+          All content on Choti Ki Duniya (sheets, guides, audio, videos, website design) is owned
           by us or used under license. Your purchase or free download gives you usage rights as
           described in Section 3, not ownership.
         </p>
@@ -138,7 +138,7 @@ export default function TermsPage() {
         <h2>12. Contact</h2>
         <p>
           Questions, concerns, or just want to say hi? Email us at{' '}
-          <a href="mailto:hello@chutkikiduniya.com">hello@chutkikiduniya.com</a> or visit our{' '}
+          <a href="mailto:hello@chotikiduniya.com">hello@chotikiduniya.com</a> or visit our{' '}
           <a href="/contact">Contact page</a>.
         </p>
       </div>

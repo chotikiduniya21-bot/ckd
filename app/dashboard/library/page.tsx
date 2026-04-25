@@ -113,7 +113,7 @@ export default function LibraryPage() {
                   <div className={styles.communityIcon}>💬</div>
                   <div className={styles.communityContent}>
                     <strong>WhatsApp Support Group</strong>
-                    <p>Ask Chutki questions anytime. Monthly live Q&amp;A with all bundle members.</p>
+                    <p>Ask Choti questions anytime. Monthly live Q&amp;A with all bundle members.</p>
                   </div>
                   <a href="#" className={styles.communityBtn}>Join →</a>
                 </div>

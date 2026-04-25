@@ -43,7 +43,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "A Montessori teacher's rant about India's preschool obsession.",
     emoji: "💬",
     color: "yellow",
-    strategyNote: "Chutki's personal POV = trust-building. Emotional share triggers."
+    strategyNote: "Choti's personal POV = trust-building. Emotional share triggers."
   },
   {
     id: 4,
@@ -87,7 +87,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "The stuff parenting books won't tell you. From the classroom floor.",
     emoji: "😤",
     color: "purple",
-    strategyNote: "Chutki's experience = unbeatable credibility. Search volume: massive."
+    strategyNote: "Choti's experience = unbeatable credibility. Search volume: massive."
   },
   {
     id: 8,

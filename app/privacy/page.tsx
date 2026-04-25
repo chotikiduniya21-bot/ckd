@@ -1,7 +1,7 @@
 import styles from '@/styles/legal.module.css';
 
 export const metadata = {
-  title: 'Privacy Policy | Chutki Ki Duniya',
+  title: 'Privacy Policy | Choti Ki Duniya',
   description: "How we handle your data and your child's privacy. Written in plain language.",
 };
 
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
 
         <h2>1. Who we are</h2>
         <p>
-          Chutki Ki Duniya (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) is an educational
+          Choti Ki Duniya (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) is an educational
           content platform for children aged 2–8, operated from India. This Privacy Policy explains
           what data we collect when you use our website and services, and how we use it.
         </p>
@@ -110,7 +110,7 @@ export default function PrivacyPage() {
           <li>Get your data in a portable, machine-readable format</li>
         </ul>
         <p>
-          To exercise any of these rights, email us at <a href="mailto:hello@chutkikiduniya.com">hello@chutkikiduniya.com</a>.
+          To exercise any of these rights, email us at <a href="mailto:hello@chotikiduniya.com">hello@chotikiduniya.com</a>.
           We respond within 7 working days.
         </p>
 
@@ -137,14 +137,14 @@ export default function PrivacyPage() {
 
         <h2>12. Contact us</h2>
         <p>
-          Questions about this policy? Email <a href="mailto:hello@chutkikiduniya.com">hello@chutkikiduniya.com</a>
+          Questions about this policy? Email <a href="mailto:hello@chotikiduniya.com">hello@chotikiduniya.com</a>
           {' '}or visit our <a href="/contact">Contact page</a>.
         </p>
       </div>
 
       <div className={styles.legalFooter}>
         <p>
-          By using Chutki Ki Duniya, you agree to this Privacy Policy and our{' '}
+          By using Choti Ki Duniya, you agree to this Privacy Policy and our{' '}
           <a href="/terms">Terms of Service</a>.
         </p>
       </div>

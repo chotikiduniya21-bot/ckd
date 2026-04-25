@@ -21,7 +21,7 @@ export interface BundlePreview {
   certMessage: string;
 
   // WhatsApp conversation preview
-  whatsappSamples: Array<{ from: 'parent' | 'chutki'; text: string; time: string }>;
+  whatsappSamples: Array<{ from: 'parent' | 'choti'; text: string; time: string }>;
 }
 
 export const bundlePreviews: Record<string, BundlePreview> = {
@@ -40,7 +40,7 @@ export const bundlePreviews: Record<string, BundlePreview> = {
       "Extreme pressure — offer a softer pencil (2B instead of HB).",
       "Frustration after 10 min — stop. Come back tomorrow.",
     ],
-    guideSampleNote: "Tip from Chutki: Children often hold a pencil wrong because adults around them do too. Check your own grip — that's the one they'll copy.",
+    guideSampleNote: "Tip from Choti: Children often hold a pencil wrong because adults around them do too. Check your own grip — that's the one they'll copy.",
 
     scheduleSampleWeekLabel: 'Week 1 — Pre-writing foundations',
     scheduleSampleDays: [
@@ -56,10 +56,10 @@ export const bundlePreviews: Record<string, BundlePreview> = {
     certMessage: 'for completing 30 days of the Writing Starter journey\nwith confidence, patience, and a beautiful pencil grip.',
 
     whatsappSamples: [
-      { from: 'parent', text: 'Hi Chutki didi, my 4yo holds pencil with whole fist. Tried the tissue trick, still doing it. Help?', time: '9:14 AM' },
-      { from: 'chutki', text: 'That is very normal at 4! Do not force it. Switch to thick crayons for 1 week, then try tripod again. 90% kids self-correct by age 5.', time: '9:22 AM' },
+      { from: 'parent', text: 'Hi Choti didi, my 4yo holds pencil with whole fist. Tried the tissue trick, still doing it. Help?', time: '9:14 AM' },
+      { from: 'choti', text: 'That is very normal at 4! Do not force it. Switch to thick crayons for 1 week, then try tripod again. 90% kids self-correct by age 5.', time: '9:22 AM' },
       { from: 'parent', text: 'Oh interesting! Will try. He loves crayons anyway 😊', time: '9:24 AM' },
-      { from: 'chutki', text: 'Exactly — let the grip come naturally. Writing is a 2-year journey, not 30 days. Your job is just to keep it fun 💛', time: '9:26 AM' },
+      { from: 'choti', text: 'Exactly — let the grip come naturally. Writing is a 2-year journey, not 30 days. Your job is just to keep it fun 💛', time: '9:26 AM' },
     ],
   },
 
@@ -78,7 +78,7 @@ export const bundlePreviews: Record<string, BundlePreview> = {
       "Saying the next number before touching — slow it down together.",
       "Confusion after 5 — stop at 5 today. Ninjas level up slowly.",
     ],
-    guideSampleNote: "Tip from Chutki: 'Touch-counting' is more important than fast counting. A child who can slowly count 5 real things understands numbers. A child who recites 1-20 quickly may not.",
+    guideSampleNote: "Tip from Choti: 'Touch-counting' is more important than fast counting. A child who can slowly count 5 real things understands numbers. A child who recites 1-20 quickly may not.",
 
     scheduleSampleWeekLabel: 'Week 1 — Numbers 1 to 5',
     scheduleSampleDays: [
@@ -94,10 +94,10 @@ export const bundlePreviews: Record<string, BundlePreview> = {
     certMessage: 'for completing 35 sheets of the Number Ninja Pack\nwith curiosity, persistence, and ninja-level counting skills.',
 
     whatsappSamples: [
-      { from: 'parent', text: 'Chutki ji, my daughter can count to 20 but gets confused when I ask to give me 4 spoons. She gives random number. Why?', time: '6:02 PM' },
-      { from: 'chutki', text: 'This is called "rote vs cardinal counting" — super common. She knows the song but not the meaning yet. Day 1 sheet will fix exactly this!', time: '6:10 PM' },
+      { from: 'parent', text: 'Choti ji, my daughter can count to 20 but gets confused when I ask to give me 4 spoons. She gives random number. Why?', time: '6:02 PM' },
+      { from: 'choti', text: 'This is called "rote vs cardinal counting" — super common. She knows the song but not the meaning yet. Day 1 sheet will fix exactly this!', time: '6:10 PM' },
       { from: 'parent', text: 'Oh wow, I thought she was being careless 😅', time: '6:11 PM' },
-      { from: 'chutki', text: 'Haha never careless, just a different skill. Give her 2 weeks of Number Ninja and you will see. 💛', time: '6:14 PM' },
+      { from: 'choti', text: 'Haha never careless, just a different skill. Give her 2 weeks of Number Ninja and you will see. 💛', time: '6:14 PM' },
     ],
   },
 
@@ -116,7 +116,7 @@ export const bundlePreviews: Record<string, BundlePreview> = {
       "Whispering answers — ask them to 'tell the toy' instead of you. Often works.",
       "Refusing completely — do it through play. Pretend to be a shopkeeper.",
     ],
-    guideSampleNote: "Tip from Chutki: Schools are not testing your child's knowledge. They are watching if your child can function in a new setting for 10 minutes. That's it.",
+    guideSampleNote: "Tip from Choti: Schools are not testing your child's knowledge. They are watching if your child can function in a new setting for 10 minutes. That's it.",
 
     scheduleSampleWeekLabel: 'Week 1 — Social readiness',
     scheduleSampleDays: [
@@ -133,9 +133,9 @@ export const bundlePreviews: Record<string, BundlePreview> = {
 
     whatsappSamples: [
       { from: 'parent', text: 'Interview is in 10 days 😨 My son gets very shy. Will the bundle help in time?', time: '8:45 AM' },
-      { from: 'chutki', text: 'Yes, 10 days is plenty! Focus on week 1 (social) + week 6 (mock interview). Skip other weeks for now, come back to them later.', time: '8:52 AM' },
+      { from: 'choti', text: 'Yes, 10 days is plenty! Focus on week 1 (social) + week 6 (mock interview). Skip other weeks for now, come back to them later.', time: '8:52 AM' },
       { from: 'parent', text: 'Thank you so much. Should I be worried he\'ll freeze?', time: '8:54 AM' },
-      { from: 'chutki', text: 'Listen — even if he freezes, schools are kind. They understand. Your job is to make HIM feel safe. He will do fine ❤️', time: '8:56 AM' },
+      { from: 'choti', text: 'Listen — even if he freezes, schools are kind. They understand. Your job is to make HIM feel safe. He will do fine ❤️', time: '8:56 AM' },
     ],
   },
 
@@ -154,7 +154,7 @@ export const bundlePreviews: Record<string, BundlePreview> = {
       "Asking 'Why Hindi, Mumma?' — answer: 'Because Nani speaks it with love.'",
       "Getting bored — Hindi should be 5 min of joy, not 20 min of drilling.",
     ],
-    guideSampleNote: "Tip from Chutki: If you're not confident in Hindi yourself, that's okay. Do it *with* your child, not *for* them. Children love learning alongside a struggling parent.",
+    guideSampleNote: "Tip from Choti: If you're not confident in Hindi yourself, that's okay. Do it *with* your child, not *for* them. Children love learning alongside a struggling parent.",
 
     scheduleSampleWeekLabel: 'Week 1 — Varnamala part 1 (अ to औ)',
     scheduleSampleDays: [
@@ -170,10 +170,10 @@ export const bundlePreviews: Record<string, BundlePreview> = {
     certMessage: 'for learning सारी वर्णमाला in 21 days\nwith curiosity, rhythm, and love for our mother tongue.',
 
     whatsappSamples: [
-      { from: 'parent', text: 'Chutki ji, my daughter was born in Bangalore, speaks only English at home. Is it too late for Hindi?', time: '7:30 PM' },
-      { from: 'chutki', text: 'Not at all! At 4-5 she can still pick up Hindi like a native speaker. Just 10 min a day, consistently. That\'s all.', time: '7:38 PM' },
+      { from: 'parent', text: 'Choti ji, my daughter was born in Bangalore, speaks only English at home. Is it too late for Hindi?', time: '7:30 PM' },
+      { from: 'choti', text: 'Not at all! At 4-5 she can still pick up Hindi like a native speaker. Just 10 min a day, consistently. That\'s all.', time: '7:38 PM' },
       { from: 'parent', text: 'What if I don\'t speak Hindi well myself?', time: '7:39 PM' },
-      { from: 'chutki', text: 'Use the audio pack in the bundle — I read every letter. You learn together with her. Double bonus 😄', time: '7:42 PM' },
+      { from: 'choti', text: 'Use the audio pack in the bundle — I read every letter. You learn together with her. Double bonus 😄', time: '7:42 PM' },
     ],
   },
 
@@ -192,7 +192,7 @@ export const bundlePreviews: Record<string, BundlePreview> = {
       "Copying siblings — separate them today. Bird's-eye views should be personal.",
       "Finishing in 2 minutes — 'Can you add what's under the bed?' works every time.",
     ],
-    guideSampleNote: "Tip from Chutki: Summer sheets should never feel like school. If your child isn't smiling by minute 5, stop. We'll try again tomorrow.",
+    guideSampleNote: "Tip from Choti: Summer sheets should never feel like school. If your child isn't smiling by minute 5, stop. We'll try again tomorrow.",
 
     scheduleSampleWeekLabel: 'Week 1 — Summer warmup',
     scheduleSampleDays: [
@@ -208,10 +208,10 @@ export const bundlePreviews: Record<string, BundlePreview> = {
     certMessage: 'for completing 56 days of screen-free summer learning\nwith curiosity, boredom turned into fun, and zero tantrums.',
 
     whatsappSamples: [
-      { from: 'parent', text: 'Chutki didi, summer start hua but mera beta bore ho raha 2 ghante me. Kya karun?', time: '11:15 AM' },
-      { from: 'chutki', text: 'Haha, classic! Summer boredom is actually good — that\'s when creativity starts. Let him be bored for 20 min first. Then suggest today\'s sheet.', time: '11:22 AM' },
+      { from: 'parent', text: 'Choti didi, summer start hua but mera beta bore ho raha 2 ghante me. Kya karun?', time: '11:15 AM' },
+      { from: 'choti', text: 'Haha, classic! Summer boredom is actually good — that\'s when creativity starts. Let him be bored for 20 min first. Then suggest today\'s sheet.', time: '11:22 AM' },
       { from: 'parent', text: 'Lekin guilt feel hota hai screen bina 😅', time: '11:24 AM' },
-      { from: 'chutki', text: 'Wo guilt humari generation ka hai. Bachpan mein hum bhi bore hote the, kuch nahi hua 😄 Trust the process!', time: '11:27 AM' },
+      { from: 'choti', text: 'Wo guilt humari generation ka hai. Bachpan mein hum bhi bore hote the, kuch nahi hua 😄 Trust the process!', time: '11:27 AM' },
     ],
   },
 
@@ -230,7 +230,7 @@ export const bundlePreviews: Record<string, BundlePreview> = {
       "Eating paint — normal for under-3s. Keep washable paint within licking safety.",
       "\"I'm done\" in 2 min — 'Can you add 3 dots?' always extends engagement.",
     ],
-    guideSampleNote: "Tip from Chutki: Art that looks messy to adults is often perfect process-art. Focus on *how* they worked, not what they made.",
+    guideSampleNote: "Tip from Choti: Art that looks messy to adults is often perfect process-art. Focus on *how* they worked, not what they made.",
 
     scheduleSampleWeekLabel: 'Week 1 — Explore textures',
     scheduleSampleDays: [
@@ -247,9 +247,9 @@ export const bundlePreviews: Record<string, BundlePreview> = {
 
     whatsappSamples: [
       { from: 'parent', text: 'My daughter\'s art looks very "scribbly" while others in WhatsApp group share proper drawings. Should I be worried?', time: '4:02 PM' },
-      { from: 'chutki', text: 'NO! Please stop comparing. At 4-5, scribbles = healthy brain development. Neat drawings often mean the kid is copying, not creating.', time: '4:10 PM' },
+      { from: 'choti', text: 'NO! Please stop comparing. At 4-5, scribbles = healthy brain development. Neat drawings often mean the kid is copying, not creating.', time: '4:10 PM' },
       { from: 'parent', text: 'Oh wow, I had it completely backwards 😳', time: '4:11 PM' },
-      { from: 'chutki', text: 'Common mistake! Process > product always. Keep doing what you\'re doing. She\'s flourishing. 💛', time: '4:13 PM' },
+      { from: 'choti', text: 'Common mistake! Process > product always. Keep doing what you\'re doing. She\'s flourishing. 💛', time: '4:13 PM' },
     ],
   },
 };

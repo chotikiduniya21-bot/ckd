@@ -7,10 +7,10 @@ Written for someone who has pushed to GitHub before and deployed something via V
 
 ## What you'll end up with
 
-- Your site live at `https://chutki-ki-duniya.vercel.app` (or similar)
+- Your site live at `https://choti-ki-duniya.vercel.app` (or similar)
 - Mumbai-based server (fast for Indian users)
 - Automatic rebuilds: every time you `git push`, Vercel redeploys in ~60 seconds
-- Ready to add `chutkikiduniya.com` as a custom domain later
+- Ready to add `chotikiduniya.com` as a custom domain later
 
 **What will NOT work yet:**
 - Real user signups (login is fake, uses localStorage)
@@ -43,9 +43,9 @@ node --version
 
 ### Step 2: Unzip the project
 
-1. Unzip `chutki-ki-duniya-v3.zip`
+1. Unzip `choti-ki-duniya-v3.zip`
 2. You'll get a folder called `ckd-source`
-3. **Rename it** to `chutki-ki-duniya` (or whatever you like)
+3. **Rename it** to `choti-ki-duniya` (or whatever you like)
 4. Move it to wherever you keep your projects
 
 ### Step 3: Open the project in your terminal
@@ -53,15 +53,15 @@ node --version
 Open your terminal and navigate to the folder:
 
 ```bash
-cd ~/path/to/chutki-ki-duniya
+cd ~/path/to/choti-ki-duniya
 ```
 
 On Mac, if the folder is on your Desktop, it would be:
 ```bash
-cd ~/Desktop/chutki-ki-duniya
+cd ~/Desktop/choti-ki-duniya
 ```
 
-On Windows, similar but use `C:\Users\YourName\Desktop\chutki-ki-duniya`.
+On Windows, similar but use `C:\Users\YourName\Desktop\choti-ki-duniya`.
 
 ### Step 4: Install the project's dependencies
 
@@ -85,7 +85,7 @@ You should see:
 ✓ Ready in 1.8s
 ```
 
-Open `http://localhost:3000` in your browser. **You should see the Chutki Ki Duniya homepage.** 🎉
+Open `http://localhost:3000` in your browser. **You should see the Choti Ki Duniya homepage.** 🎉
 
 Click around:
 - Try `/activity-sheets` → see Free Forever section
@@ -105,8 +105,8 @@ To stop the local server, press `Ctrl+C` in the terminal.
 1. Go to [github.com](https://github.com) and sign in
 2. Click the green **"New"** button (or go to github.com/new)
 3. Fill in:
-   - **Repository name:** `chutki-ki-duniya`
-   - **Description:** (optional) "Website for Chutki Ki Duniya"
+   - **Repository name:** `choti-ki-duniya`
+   - **Description:** (optional) "Website for Choti Ki Duniya"
    - **Private** (pick this — keep the code private for now)
    - **Leave everything else unchecked** — don't add a README, .gitignore, or license (we already have them)
 4. Click **"Create repository"**
@@ -141,10 +141,10 @@ git branch -M main
 
 This names the default branch "main" (GitHub expects this).
 
-Now grab the URL from your GitHub repo page — it looks like `https://github.com/YOUR-USERNAME/chutki-ki-duniya.git`. Then:
+Now grab the URL from your GitHub repo page — it looks like `https://github.com/YOUR-USERNAME/choti-ki-duniya.git`. Then:
 
 ```bash
-git remote add origin https://github.com/YOUR-USERNAME/chutki-ki-duniya.git
+git remote add origin https://github.com/YOUR-USERNAME/choti-ki-duniya.git
 ```
 
 (Replace `YOUR-USERNAME` with your actual GitHub username.)
@@ -160,7 +160,7 @@ This uploads everything to GitHub. You may be asked for your GitHub username and
 2. Scroll way down → **Developer settings** (left sidebar)
 3. **Personal access tokens** → **Tokens (classic)**
 4. **Generate new token (classic)**
-5. Name: "chutki-ki-duniya"
+5. Name: "choti-ki-duniya"
 6. Expiration: 90 days (or whatever you prefer)
 7. Check the box for **repo** (top of permissions list)
 8. Scroll down → **Generate token**
@@ -182,7 +182,7 @@ Once the push succeeds, refresh your GitHub repo page. **You should see all your
 ### Step 9: Import your repo
 
 1. On Vercel dashboard, click **"Add New..."** → **"Project"**
-2. Vercel lists your GitHub repos → find **`chutki-ki-duniya`** → click **"Import"**
+2. Vercel lists your GitHub repos → find **`choti-ki-duniya`** → click **"Import"**
 3. On the configuration screen:
    - **Framework Preset:** should auto-detect as "Next.js" ✓
    - **Root Directory:** leave as `./`
@@ -200,7 +200,7 @@ Total: ~1–2 minutes.
 
 When done, you'll see confetti 🎉 and a preview of your site.
 
-Click the URL. **Your site is live on the internet.** Something like `chutki-ki-duniya-abc123.vercel.app`.
+Click the URL. **Your site is live on the internet.** Something like `choti-ki-duniya-abc123.vercel.app`.
 
 ---
 
@@ -208,14 +208,14 @@ Click the URL. **Your site is live on the internet.** Something like `chutki-ki-
 
 ### Step 10: Get the clean Vercel URL
 
-By default, Vercel gives you something ugly like `chutki-ki-duniya-abc123.vercel.app`. You can change it:
+By default, Vercel gives you something ugly like `choti-ki-duniya-abc123.vercel.app`. You can change it:
 
 1. Go to your project → **Settings** → **Domains**
 2. The top domain is your URL. Click **Edit** to rename it
-3. Try `chutki-ki-duniya.vercel.app` (or `chutkikiduniya.vercel.app`)
+3. Try `choti-ki-duniya.vercel.app` (or `chotikiduniya.vercel.app`)
 4. If taken, try variations
 
-This is free and lets you share the URL with Chutki, friends, etc.
+This is free and lets you share the URL with Choti, friends, etc.
 
 ### Step 11: Add your custom domain (when ready)
 
@@ -223,14 +223,14 @@ This is free and lets you share the URL with Chutki, friends, etc.
 
 When you're ready:
 
-1. Make sure you own `chutkikiduniya.com` (buy from GoDaddy, Namecheap, etc., if you haven't)
-2. In Vercel: **Settings** → **Domains** → type `chutkikiduniya.com` → click **Add**
+1. Make sure you own `chotikiduniya.com` (buy from GoDaddy, Namecheap, etc., if you haven't)
+2. In Vercel: **Settings** → **Domains** → type `chotikiduniya.com` → click **Add**
 3. Vercel shows you DNS records you need to add
 4. Go to wherever you bought the domain (GoDaddy/Namecheap/etc.)
 5. Find **DNS Settings** for your domain
 6. Add the records Vercel told you to add (usually an `A` record and a `CNAME`)
 7. Wait 10 minutes to a few hours for DNS to propagate
-8. Your site now serves at `chutkikiduniya.com` with free automatic SSL (the little padlock)
+8. Your site now serves at `chotikiduniya.com` with free automatic SSL (the little padlock)
 
 ---
 
@@ -282,7 +282,7 @@ Stop. Don't panic. Tell me which service/key, and we'll rotate it (replace with 
 
 ## What to do once you're live
 
-1. **Share the Vercel URL with Chutki** — get her reaction to the design
+1. **Share the Vercel URL with Choti** — get her reaction to the design
 2. **Take screenshots for Instagram/WhatsApp** — build hype before launch
 3. **Show me the live URL** — I can check it looks right on all screen sizes
 4. **Come back for Part 2: Clerk (real login)** — so users aren't fake anymore
@@ -301,7 +301,7 @@ Stop. Don't panic. Tell me which service/key, and we'll rotate it (replace with 
 - **Vercel** — A hosting service for Next.js sites.
 - **deploy** — Publishing your latest code to the live website.
 - **environment variable (env var)** — A secret value (API key, password) stored outside your code.
-- **DNS** — The internet phonebook that maps `chutkikiduniya.com` → a server IP address.
+- **DNS** — The internet phonebook that maps `chotikiduniya.com` → a server IP address.
 - **SSL / HTTPS** — Encryption that gives you the padlock icon. Vercel adds this automatically, for free.
 
 ---

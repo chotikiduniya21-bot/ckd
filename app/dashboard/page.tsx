@@ -32,7 +32,7 @@ export default function DashboardOverview() {
             Hi {user.profile.first_name}, ready to learn today? 🎉
           </h1>
           <p className={styles.welcomeSub}>
-            Here&apos;s everything happening in your Chutki Ki Duniya account.
+            Here&apos;s everything happening in your Choti Ki Duniya account.
           </p>
         </div>
         <div className={styles.welcomeEmoji}>🎈</div>
@@ -131,7 +131,7 @@ export default function DashboardOverview() {
               You&apos;ve downloaded {downloadedFreeSheets.length} free sheets.
               The {suggestedBundle.title} bundle organizes {suggestedBundle.sheetCount}+ sheets
               into a proper learning sequence, adds a parent guide, and unlocks WhatsApp support
-              with Chutki. ₹{suggestedBundle.price} — one-time, lifetime access.
+              with Choti. ₹{suggestedBundle.price} — one-time, lifetime access.
             </p>
             <Link href="/activity-sheets#bundles" className={styles.upsellBtn}>
               See All Bundles →

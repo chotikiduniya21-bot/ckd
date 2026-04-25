@@ -5,7 +5,7 @@ import { AuthProvider } from '@/lib/auth';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Chutki Ki Duniya — Where Little Minds Bloom',
+  title: 'Choti Ki Duniya — Where Little Minds Bloom',
   description:
     'Rhymes, stories, and activity sheets for Indian kids aged 2–8. Montessori-inspired learning from a real teacher.',
 };

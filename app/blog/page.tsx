@@ -24,7 +24,7 @@ export default function BlogPage() {
           The <span className="rainbow-word">Parent Blog</span>
         </h1>
         <p>
-          Real parenting advice from Chutki — a Montessori teacher with 8+ years of classroom experience.
+          Real parenting advice from Choti — a Montessori teacher with 8+ years of classroom experience.
           No fluff, no Pinterest-perfect nonsense. Just what actually works for Indian families.
         </p>
       </section>

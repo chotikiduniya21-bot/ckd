@@ -139,7 +139,7 @@ const handleDelete = async () => {
         </div>
         <p className={styles.dangerNote}>
           Deleting your account is permanent. All downloads, purchase history, and waitlist
-          entries will be removed. Contact support@chutkikiduniya.com if you need help.
+          entries will be removed. Contact support@chotikiduniya.com if you need help.
         </p>
       </div>
 

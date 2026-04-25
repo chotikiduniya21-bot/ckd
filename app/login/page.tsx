@@ -59,7 +59,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           <div className={styles.loginLeft}>
             <div className={styles.brandMark}>
               <div className={styles.mascot}>🌸</div>
-              <div className={styles.brandText}>Chutki Ki Duniya</div>
+              <div className={styles.brandText}>Choti Ki Duniya</div>
             </div>
             <h1 className={styles.welcome}>
               Almost there! <span>📬</span>
@@ -118,7 +118,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         <div className={styles.loginLeft}>
           <div className={styles.brandMark}>
             <div className={styles.mascot}>🌸</div>
-            <div className={styles.brandText}>Chutki Ki Duniya</div>
+            <div className={styles.brandText}>Choti Ki Duniya</div>
           </div>
           <h1 className={styles.welcome}>
             {mode === 'login' ? (

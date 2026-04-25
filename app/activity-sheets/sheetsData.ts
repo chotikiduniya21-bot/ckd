@@ -16,7 +16,7 @@ export interface FreeSheet {
   category: string;
 }
 
-// Launch set: 12 free sheets. Chutki adds 10-15 new per week.
+// Launch set: 12 free sheets. Choti adds 10-15 new per week.
 export const freeSheets: FreeSheet[] = [
   { id: 101, title: 'Letter A Tracing', ageRange: '3–5', pages: 4,
     color: 'red', emoji: '✏️', description: 'Single-letter starter with picture words.',
@@ -90,7 +90,7 @@ export const universalExtras: BundleExtra[] = [
   {
     icon: '💬',
     title: 'WhatsApp Support',
-    description: 'Private group where you can ask Chutki questions. Monthly Q&A video calls included.',
+    description: 'Private group where you can ask Choti questions. Monthly Q&A video calls included.',
   },
   {
     icon: '🔄',
@@ -197,7 +197,7 @@ export const bundles: Bundle[] = [
     tag: 'Save ₹300',
     featured: true,
     description:
-      'Everything schools actually test for — designed by Chutki after 8 years watching admission rounds. Your child will know colors, shapes, numbers, manners, and be confident answering a stranger\'s questions.',
+      'Everything schools actually test for — designed by Choti after 8 years watching admission rounds. Your child will know colors, shapes, numbers, manners, and be confident answering a stranger\'s questions.',
     whatYouGet: [
       'Core concepts (colors, shapes, numbers)',
       'Self-awareness ("What is your name?")',
@@ -235,8 +235,8 @@ export const bundles: Bundle[] = [
       'Simple sentence building',
     ],
     bonusExtras: [
-      { icon: '🎵', title: 'Chutki\'s Hindi Rhymes Audio Pack',
-        description: '20 classic Hindi rhymes in Chutki\'s voice — perfect for car rides and bedtime.' },
+      { icon: '🎵', title: 'Choti\'s Hindi Rhymes Audio Pack',
+        description: '20 classic Hindi rhymes in Choti\'s voice — perfect for car rides and bedtime.' },
     ],
   },
   {

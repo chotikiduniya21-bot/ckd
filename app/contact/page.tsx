@@ -36,19 +36,19 @@ export default function ContactPage() {
         <div className={styles.contactGrid}>
           <div className={styles.contactCard}>
             <strong>General queries</strong>
-            <p><a href="mailto:hello@chutkikiduniya.com">hello@chutkikiduniya.com</a></p>
+            <p><a href="mailto:hello@chotikiduniya.com">hello@chotikiduniya.com</a></p>
           </div>
           <div className={styles.contactCard}>
             <strong>Support &amp; refunds</strong>
-            <p><a href="mailto:support@chutkikiduniya.com">support@chutkikiduniya.com</a></p>
+            <p><a href="mailto:support@chotikiduniya.com">support@chotikiduniya.com</a></p>
           </div>
           <div className={styles.contactCard}>
             <strong>Partnerships</strong>
-            <p><a href="mailto:partners@chutkikiduniya.com">partners@chutkikiduniya.com</a></p>
+            <p><a href="mailto:partners@chotikiduniya.com">partners@chotikiduniya.com</a></p>
           </div>
           <div className={styles.contactCard}>
             <strong>Press &amp; media</strong>
-            <p><a href="mailto:press@chutkikiduniya.com">press@chutkikiduniya.com</a></p>
+            <p><a href="mailto:press@chotikiduniya.com">press@chotikiduniya.com</a></p>
           </div>
         </div>
 
@@ -108,15 +108,15 @@ export default function ContactPage() {
 
         <div className={styles.callout}>
           <strong>Note:</strong> The form above is connected to our email system — but if you prefer,
-          just email us directly. Replies come from a real human (usually Chutki or Ash), never a bot.
+          just email us directly. Replies come from a real human (usually Choti or Ash), never a bot.
         </div>
 
         <h2>Business information</h2>
         <p>
-          <strong>Chutki Ki Duniya</strong><br />
+          <strong>Choti Ki Duniya</strong><br />
           Educational content platform for children aged 2–8<br />
           Operating from India<br />
-          Website: <a href="https://chutkikiduniya.com">chutkikiduniya.com</a>
+          Website: <a href="https://chotikiduniya.com">chotikiduniya.com</a>
         </p>
 
         <h2>Follow us</h2>
@@ -124,9 +124,9 @@ export default function ContactPage() {
           We publish new activities regularly on YouTube and share behind-the-scenes on Instagram.
         </p>
         <ul>
-          <li><strong>YouTube:</strong> <a href="#">@ChutkiKiDuniya</a> (8L+ subscribers)</li>
-          <li><strong>Instagram:</strong> <a href="#">@chutkikiduniya</a></li>
-          <li><strong>Facebook:</strong> <a href="#">/chutkikiduniya</a></li>
+          <li><strong>YouTube:</strong> <a href="#">@ChotiKiDuniya</a> (8L+ subscribers)</li>
+          <li><strong>Instagram:</strong> <a href="#">@chotikiduniya</a></li>
+          <li><strong>Facebook:</strong> <a href="#">/chotikiduniya</a></li>
         </ul>
       </div>
 

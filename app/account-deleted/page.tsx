@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styles from './goodbye.module.css';
 
 export const metadata = {
-  title: 'Account Deleted | Chutki Ki Duniya',
+  title: 'Account Deleted | Choti Ki Duniya',
   description: 'Your account has been permanently deleted.',
 };
 
@@ -46,7 +46,7 @@ export default function AccountDeletedPage() {
           </Link>
 
           <a
-            href="https://www.youtube.com/@ChutkiKiDuniya"
+            href="https://www.youtube.com/@ChotiKiDuniya"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.optionCard}
@@ -64,7 +64,7 @@ export default function AccountDeletedPage() {
         </div>
 
         <p className={styles.parting}>
-          Thank you for being part of Chutki Ki Duniya. 💛<br />
+          Thank you for being part of Choti Ki Duniya. 💛<br />
           We hope our paths cross again.
         </p>
       </div>

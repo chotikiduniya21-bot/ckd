@@ -11,15 +11,15 @@
  * 1. npm install @aws-sdk/client-s3 @aws-sdk/s3-request-presigner
  *
  * 2. Create R2 bucket at dash.cloudflare.com → R2
- *    - Bucket name: "chutki-sheets" (private, NOT public)
+ *    - Bucket name: "choti-sheets" (private, NOT public)
  *    - Generate API tokens: "R2 Token" with Object Read permission
  *
  * 3. Add to .env.local:
  *    R2_ACCOUNT_ID=your-account-id
  *    R2_ACCESS_KEY_ID=your-access-key
  *    R2_SECRET_ACCESS_KEY=your-secret
- *    R2_BUCKET_NAME=chutki-sheets
- *    R2_PUBLIC_URL=https://chutki-sheets.yourdomain.com  (optional CDN)
+ *    R2_BUCKET_NAME=choti-sheets
+ *    R2_PUBLIC_URL=https://choti-sheets.yourdomain.com  (optional CDN)
  *
  * 4. Replace getSignedDownloadUrl() below with the R2 implementation
  *    (commented-out code at the bottom of this file).
@@ -122,7 +122,7 @@ export async function getSignedDownloadUrl(
  * Real PDF bytes so browsers open it natively.
  */
 function generatePlaceholderPdf(sheetId: string, fileName: string): string {
-  const content = `Chutki Ki Duniya - ${fileName}\nSheet ID: ${sheetId}\nThis is a demo PDF placeholder.\nIn production, the real PDF is served from Cloudflare R2.`;
+  const content = `Choti Ki Duniya - ${fileName}\nSheet ID: ${sheetId}\nThis is a demo PDF placeholder.\nIn production, the real PDF is served from Cloudflare R2.`;
 
   // Minimal valid PDF with one page of text
   const pdf = [

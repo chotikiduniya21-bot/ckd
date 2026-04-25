@@ -15,7 +15,7 @@ export default function ActivitySheetsPage() {
         </h1>
         <p>
           No trial. No email wall. No catch. Every individual activity sheet
-          Chutki makes is 100% free to download. We make money through bundles that
+          Choti makes is 100% free to download. We make money through bundles that
           add structure, guides, and support — not by locking up content.
         </p>
       </section>
@@ -58,7 +58,7 @@ export default function ActivitySheetsPage() {
           <p>
             <strong>Want a structured plan instead of 50 separate downloads?</strong> Our bundles
             solve specific goals — writing, numbers, Hindi, summer boredom. Each one comes with a
-            parent guide, daily schedule, and WhatsApp support from Chutki.
+            parent guide, daily schedule, and WhatsApp support from Choti.
           </p>
         </div>
       </section>
@@ -85,7 +85,7 @@ export default function ActivitySheetsPage() {
               <li className={styles.compareDim}>✖ No teaching guidance</li>
               <li className={styles.compareDim}>✖ No daily plan</li>
               <li className={styles.compareDim}>✖ No progress tracking</li>
-              <li className={styles.compareDim}>✖ No support from Chutki</li>
+              <li className={styles.compareDim}>✖ No support from Choti</li>
               <li className={styles.compareDim}>✖ No completion certificate</li>
             </ul>
           </div>
@@ -104,8 +104,8 @@ export default function ActivitySheetsPage() {
               <li>✅ <strong>Daily Schedule</strong> — know exactly what to do</li>
               <li>✅ <strong>Progress Tracker</strong> — printable checklist</li>
               <li>✅ <strong>Completion Certificate</strong> — for your child</li>
-              <li>✅ <strong>WhatsApp Support</strong> — ask Chutki anything</li>
-              <li>✅ <strong>Monthly Q&amp;A calls</strong> — live with Chutki</li>
+              <li>✅ <strong>WhatsApp Support</strong> — ask Choti anything</li>
+              <li>✅ <strong>Monthly Q&amp;A calls</strong> — live with Choti</li>
               <li>✅ <strong>Lifetime updates</strong> — free forever</li>
             </ul>
           </div>
@@ -149,7 +149,7 @@ export default function ActivitySheetsPage() {
           </div>
           <div className={styles.testimonial}>
             <div className={styles.stars}>⭐⭐⭐⭐⭐</div>
-            <p>&quot;Writing Starter pack ne 30 din me bahut fark dal diya. Beta ab confidently likhta hai. WhatsApp group se Chutki didi se tips bhi milte rehte hain.&quot;</p>
+            <p>&quot;Writing Starter pack ne 30 din me bahut fark dal diya. Beta ab confidently likhta hai. WhatsApp group se Choti didi se tips bhi milte rehte hain.&quot;</p>
             <div className={styles.testimonialAuthor}>— Rohan, Pune</div>
           </div>
           <div className={styles.testimonial}>

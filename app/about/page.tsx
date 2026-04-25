@@ -7,7 +7,7 @@ export default function AboutPage() {
       <section className="page-hero">
         <div className="page-hero-sticker">🌸 Meet the team</div>
         <h1>
-          Hi, we&apos;re <span className="rainbow-word">Chutki Ki Duniya</span>
+          Hi, we&apos;re <span className="rainbow-word">Choti Ki Duniya</span>
         </h1>
         <p>
           One real teacher, one cheerful mascot, one mission — to make early learning joyful
@@ -23,10 +23,10 @@ export default function AboutPage() {
           </div>
           <div className={styles.meetText}>
             <div className="sticker" style={{ background: 'var(--yellow)' }}>🌸 The mascot</div>
-            <h2>Little Chutki (that&apos;s me in the sticker!)</h2>
+            <h2>Little Choti (that&apos;s me in the sticker!)</h2>
             <p>
               I&apos;m the cheerful face you&apos;ll see on our activity sheets, books, and toys.
-              I&apos;m not real-life Chutki — she&apos;s the wonderful teacher behind the channel.
+              I&apos;m not real-life Choti — she&apos;s the wonderful teacher behind the channel.
               I&apos;m here to make the learning feel like play, and to sit on the cover of every
               worksheet like a tiny cheering squad. 🎈
             </p>
@@ -38,13 +38,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className={styles.chutkiSection}>
-        <div className={styles.chutkiGrid}>
-          <div className={styles.chutkiText}>
+      <section className={styles.chotiSection}>
+        <div className={styles.chotiGrid}>
+          <div className={styles.chotiText}>
             <div className="sticker" style={{ background: 'var(--pink)' }}>👩‍🏫 The teacher</div>
-            <h2>Chutki — the real teacher behind it all</h2>
+            <h2>Choti — the real teacher behind it all</h2>
             <p>
-              Chutki is a Montessori-trained educator with 8+ years of classroom experience.
+              Choti is a Montessori-trained educator with 8+ years of classroom experience.
               She started the YouTube channel because she saw a gap: most Indian kids&apos;
               content was imported cartoons with no real teacher, no real connection, and no
               real learning sequence.
@@ -68,12 +68,12 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          <div className={styles.chutkiPhoto}>
+          <div className={styles.chotiPhoto}>
             <div className={styles.photoFrame}>
               <div className={styles.photoInner}>
                 <div className={styles.photoPlaceholder}>
                   <div>📷</div>
-                  <div className={styles.photoNote}>Chutki&apos;s photo goes here</div>
+                  <div className={styles.photoNote}>Choti&apos;s photo goes here</div>
                 </div>
               </div>
               <div className={styles.photoTag}>Real teacher. Real classroom. Real results.</div>
