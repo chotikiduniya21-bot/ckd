@@ -58,7 +58,9 @@ interface AuthContextValue {
     email: string;
     password: string;
   }) => Promise<{ success: boolean; error?: string }>;
-  signOut: () => Promise<void>;
+signOut: () => Promise<void>;
+  resetPassword: (email: string) => Promise<{ success: boolean; error?: string }>;
+  updatePassword: (newPassword: string) => Promise<{ success: boolean; error?: string }>;
   refreshUser: () => Promise<void>;
   recordFreeDownload: (sheetId: string) => Promise<void>;
 }
@@ -246,7 +248,36 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     await supabase.auth.signOut();
     setUser(null);
   }, [supabase]);
-const recordFreeDownload = useCallback(async (sheetId: string) => {
+const resetPassword = async (email: string) => {
+    try {
+      const redirectTo = `${window.location.origin}/reset-password`;
+      const { error } = await supabase.auth.resetPasswordForEmail(email, {
+        redirectTo,
+      });
+      if (error) {
+        return { success: false, error: error.message };
+      }
+      return { success: true };
+    } catch (err) {
+      console.error('Reset password error:', err);
+      return { success: false, error: 'Something went wrong. Please try again.' };
+    }
+  };
+
+  const updatePassword = async (newPassword: string) => {
+    try {
+      const { error } = await supabase.auth.updateUser({ password: newPassword });
+      if (error) {
+        return { success: false, error: error.message };
+      }
+      return { success: true };
+    } catch (err) {
+      console.error('Update password error:', err);
+      return { success: false, error: 'Something went wrong. Please try again.' };
+    }
+  };
+
+  const recordFreeDownload = useCallback(async (sheetId: string) => {
     if (!user) return;
 
     // Insert into database
@@ -268,7 +299,7 @@ const recordFreeDownload = useCallback(async (sheetId: string) => {
     } : prev);
   }, [user, supabase]);
   return (
-<AuthContext.Provider value={{ user, loading, signUp, signIn, signOut, refreshUser, recordFreeDownload }}>
+<AuthContext.Provider value={{ user, loading, signUp, signIn, signOut, refreshUser, resetPassword, updatePassword, recordFreeDownload }}>
       {children}
     </AuthContext.Provider>
   );
