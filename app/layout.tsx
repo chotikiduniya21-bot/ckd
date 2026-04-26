@@ -1,4 +1,7 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { AuthProvider } from '@/lib/auth';
@@ -87,6 +90,28 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
         </AuthProvider>
+
+        {/* Vercel built-in analytics + speed insights */}
+        <Analytics />
+        <SpeedInsights />
+
+        {/* Google Analytics — production only */}
+        {process.env.NODE_ENV === 'production' && (
+          <>
+            <Script
+              src="https://www.googletagmanager.com/gtag/js?id=G-CC2SC89XVC"
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-CC2SC89XVC');
+              `}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );
