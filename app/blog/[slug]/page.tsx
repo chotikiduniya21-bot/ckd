@@ -52,21 +52,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     author: {
       '@type': 'Person',
       name: 'Choti',
-      url: 'https://chotikiduniya.com/about',
+      url: 'https://www.chotikiduniya.com/about',
     },
     publisher: {
       '@type': 'Organization',
       name: 'Choti Ki Duniya',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://chotikiduniya.com/og/default.png',
+        url: 'https://www.chotikiduniya.com/og/default.png',
       },
     },
     datePublished: post.lastUpdated || '2026-04-26',
     dateModified: post.lastUpdated || '2026-04-26',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://chotikiduniya.com/blog/${post.slug}`,
+      '@id': `https://www.chotikiduniya.com/blog/${post.slug}`,
     },
     keywords: post.keywords?.join(', '),
     inLanguage: 'en-IN',

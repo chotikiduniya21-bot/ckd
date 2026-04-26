@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import { AuthProvider } from '@/lib/auth';
 import '@/styles/globals.css';
 
-const SITE_URL = 'https://chotikiduniya.com';
+const SITE_URL = 'https://www.chotikiduniya.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

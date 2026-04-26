@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { blogPosts } from './blog/blogData';
 
-const SITE_URL = 'https://chotikiduniya.com';
+const SITE_URL = 'https://www.chotikiduniya.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

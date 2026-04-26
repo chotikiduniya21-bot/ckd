@@ -155,7 +155,7 @@ export default function ContactPage() {
           <strong>Choti Ki Duniya</strong><br />
           Educational content platform for children aged 2–8<br />
           Operating from India<br />
-          Website: <a href="https://chotikiduniya.com">chotikiduniya.com</a>
+          Website: <a href="https://www.chotikiduniya.com">chotikiduniya.com</a>
         </p>
 
         <h2>Follow us</h2>
