@@ -1,11 +1,32 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import { Fredoka, Patrick_Hand, Nunito } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { AuthProvider } from '@/lib/auth';
 import '@/styles/globals.css';
+
+// Self-host fonts via next/font (no runtime fetch from Google)
+const fredoka = Fredoka({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-fredoka',
+  display: 'swap',
+});
+const patrickHand = Patrick_Hand({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-patrick-hand',
+  display: 'swap',
+});
+const nunito = Nunito({
+  subsets: ['latin'],
+  weight: ['400', '600', '700', '800', '900'],
+  variable: '--font-nunito',
+  display: 'swap',
+});
 
 const SITE_URL = 'https://www.chotikiduniya.com';
 
@@ -83,7 +104,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-      <html lang="en" data-scroll-behavior="smooth">
+      <html lang="en" data-scroll-behavior="smooth" className={`${fredoka.variable} ${patrickHand.variable} ${nunito.variable}`}>
       <body>
         <AuthProvider>
           <Navbar />
