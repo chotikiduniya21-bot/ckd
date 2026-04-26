@@ -49,12 +49,12 @@ export default function SearchModal({ open, onClose }: SearchModalProps) {
 
     const blogResults: SearchResult[] = blogPosts.map((p) => ({
       type: 'blog',
-      id: String(p.id),
+      id: p.slug,
       title: p.title,
-      subtitle: p.excerpt,
+      subtitle: p.description,
       emoji: '📝',
-      href: '/blog',
-      meta: `${p.category} · ${p.readTime}`,
+      href: `/blog/${p.slug}`,
+      meta: p.category ?? 'Article',
     }));
 
     return [...sheetResults, ...bundleResults, ...blogResults];

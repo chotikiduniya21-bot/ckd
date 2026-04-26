@@ -1,0 +1,593 @@
+/* ============================================================
+   Blog Post Content Styles (ckd-* classes)
+   Used by HTML inserted via dangerouslySetInnerHTML in blog posts.
+   These are global classes (not CSS modules) since they appear
+   in HTML strings.
+   ============================================================ */
+
+/* Eyebrow + small meta text */
+.ckd-eyebrow {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 14px;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px dashed rgba(42, 27, 61, 0.12);
+}
+.ckd-meta {
+  font-size: 13px;
+  color: var(--ink-soft);
+  text-align: center;
+  margin-top: 32px;
+  padding-top: 18px;
+  border-top: 2px dashed rgba(42, 27, 61, 0.12);
+  font-weight: 500;
+}
+.ckd-source-strip {
+  font-size: 13px;
+  color: var(--ink-soft);
+  background: #FFF8EE;
+  border: 2px solid rgba(42, 27, 61, 0.1);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin: 18px 0;
+}
+
+/* Quick Answer / Verdict / Honest boxes — yellow highlight */
+.ckd-verdict-box,
+.ckd-quick-answer,
+.ckd-answer-bar,
+.ckd-honest-box {
+  background: #FFF8DA;
+  border: 3px solid var(--yellow);
+  border-radius: 16px;
+  padding: 22px 24px;
+  margin: 28px 0;
+  box-shadow: 5px 5px 0 var(--shadow);
+}
+.ckd-verdict-label,
+.ckd-qa-tag,
+.ckd-answer-tag,
+.ckd-honest-tag {
+  display: inline-block;
+  background: var(--ink);
+  color: white;
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.ckd-answer-strip {
+  background: #E5F0FF;
+  border-left: 5px solid var(--blue, #4A9EFF);
+  padding: 14px 18px;
+  margin: 22px 0;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Tip / Callout boxes — variants */
+.ckd-tip-box,
+.ckd-callout-info {
+  background: #FFF8EE;
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 24px 0;
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+.ckd-tip-amber, .ckd-callout-info { background: #FFF4D6; border-color: #F59E0B; }
+.ckd-tip-blue { background: #DBEAFE; border-color: #3B82F6; }
+.ckd-tip-pink { background: #FCE7F3; border-color: #EC4899; }
+.ckd-tip-purple { background: #EDE9FE; border-color: #8B5CF6; }
+.ckd-tip-from-choti { background: #FFF0F5; border-color: var(--red); }
+.ckd-callout-warning,
+.ckd-block-warning,
+.ckd-warning-box {
+  background: #FEF3C7;
+  border: 2.5px solid #DC2626;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 24px 0;
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+
+/* Myth/Truth grid */
+.ckd-myth-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+.ckd-myth-card,
+.ckd-myth-item {
+  background: #FEE2E2;
+  border: 2.5px solid #DC2626;
+  border-radius: 14px;
+  padding: 16px 18px;
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+.ckd-truth-card {
+  background: #DCFCE7;
+  border: 2.5px solid #16A34A;
+  border-radius: 14px;
+  padding: 16px 18px;
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+.ckd-myth-tag, .ckd-myth-x {
+  display: inline-block;
+  background: #DC2626;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 13px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.ckd-truth-tag {
+  display: inline-block;
+  background: #16A34A;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 13px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.ckd-myth-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 22px 0;
+}
+
+/* Pullquote */
+.ckd-pullquote {
+  margin: 30px 0;
+  padding: 24px 28px;
+  background: #FFF4F8;
+  border-left: 5px solid var(--red);
+  border-radius: 12px;
+}
+.ckd-pullquote blockquote {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+/* Classroom note */
+.ckd-classroom-note {
+  background: #EDE9FE;
+  border: 3px dashed #8B5CF6;
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin: 28px 0;
+}
+.ckd-cn-tag {
+  display: inline-block;
+  background: #8B5CF6;
+  color: white;
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 13px;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+/* Criteria / Checklist cards */
+.ckd-criteria-card,
+.ckd-checklist-card {
+  background: #FFF8EE;
+  border: 2.5px solid var(--ink);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin: 24px 0;
+  box-shadow: 5px 5px 0 var(--shadow);
+}
+.ckd-checklist-pink { background: #FCE7F3; border-color: #EC4899; }
+.ckd-checklist-purple { background: #EDE9FE; border-color: #8B5CF6; }
+.ckd-checklist-title {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+.ckd-checklist-note {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-top: 10px;
+  font-style: italic;
+}
+.ckd-criteria-row {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(42, 27, 61, 0.1);
+}
+.ckd-criteria-row:last-child { border-bottom: none; }
+.ckd-num,
+.ckd-principle-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--yellow);
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+
+/* CTA bands */
+.ckd-cta-band {
+  margin: 36px 0;
+  padding: 28px 30px;
+  background: linear-gradient(135deg, var(--yellow), var(--orange, #FF8A3D));
+  border: 3px solid var(--ink);
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 6px 6px 0 var(--shadow);
+}
+.ckd-cta-amber { background: linear-gradient(135deg, #FFD23F, #FF8A3D); }
+.ckd-cta-green { background: linear-gradient(135deg, #4CD964, #2EC4B6); }
+.ckd-cta-pink { background: linear-gradient(135deg, #FF7EB9, #FF4E6A); }
+.ckd-cta-purple { background: linear-gradient(135deg, #9B5DE5, #FF7EB9); }
+.ckd-cta-band p {
+  margin: 0 0 6px 0;
+  color: var(--ink);
+  font-family: 'Fredoka', sans-serif;
+}
+.ckd-cta-link {
+  display: inline-block;
+  margin-top: 14px;
+  background: var(--ink);
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.15s;
+}
+.ckd-cta-link:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Activity cards (Montessori activities post) */
+.ckd-activity-card {
+  background: white;
+  border: 3px solid var(--ink);
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin: 24px 0;
+  box-shadow: 5px 5px 0 var(--shadow);
+}
+.ckd-activity-blue { background: #DBEAFE; }
+.ckd-activity-green { background: #DCFCE7; }
+.ckd-activity-pink { background: #FCE7F3; }
+.ckd-activity-purple { background: #EDE9FE; }
+.ckd-activity-header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.ckd-activity-emoji {
+  font-size: 36px;
+  flex-shrink: 0;
+}
+.ckd-activity-title {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--ink);
+  margin: 0;
+}
+.ckd-activity-meta {
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* Author card (end of post) */
+.ckd-author-card {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  background: #FFF8EE;
+  border: 2.5px solid var(--ink);
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin: 36px 0 24px;
+  box-shadow: 5px 5px 0 var(--shadow);
+}
+.ckd-author-photo {
+  width: 64px;
+  height: 64px;
+  background: var(--yellow);
+  border: 2.5px solid var(--ink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+/* Vocabulary grid (Hindi words post) */
+.ckd-vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 22px 0;
+}
+.ckd-vocab-row {
+  background: white;
+  border: 2px solid rgba(42, 27, 61, 0.15);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ckd-hi {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.ckd-rom {
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.ckd-en {
+  font-size: 14px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* Script cards (Hindi conversation examples) */
+.ckd-script-card {
+  background: #F0F9FF;
+  border: 2.5px solid #3B82F6;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 24px 0;
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+.ckd-script-tag {
+  display: inline-block;
+  background: #3B82F6;
+  color: white;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.ckd-script-hi {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 6px 0;
+}
+.ckd-script-en {
+  font-size: 15px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.ckd-script-note {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-top: 10px;
+}
+
+/* Skill table (writing readiness post) */
+.ckd-skill-table {
+  margin: 24px 0;
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 5px 5px 0 var(--shadow);
+}
+.ckd-skill-header {
+  background: var(--yellow);
+  padding: 14px 18px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--ink);
+  border-bottom: 2.5px solid var(--ink);
+}
+.ckd-skill-row {
+  padding: 14px 18px;
+  border-bottom: 1px dashed rgba(42, 27, 61, 0.15);
+  background: white;
+}
+.ckd-skill-row:last-child { border-bottom: none; }
+
+/* Mistake / Red flag boxes */
+.ckd-mistake-box,
+.ckd-redflag-card {
+  background: #FEE2E2;
+  border: 2.5px solid #DC2626;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 24px 0;
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+.ckd-mistake-tag,
+.ckd-redflag-title {
+  display: inline-block;
+  background: #DC2626;
+  color: white;
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.ckd-redflag-note {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Game card */
+.ckd-game-card {
+  background: #DCFCE7;
+  border: 2.5px solid #16A34A;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 24px 0;
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+.ckd-game-tag {
+  display: inline-block;
+  background: #16A34A;
+  color: white;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* Principle / Section blocks */
+.ckd-principle-card {
+  background: white;
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 18px 0;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+.ckd-section-block {
+  margin: 32px 0;
+  padding: 24px;
+  background: #FFF8EE;
+  border-radius: 16px;
+  border: 2px dashed rgba(42, 27, 61, 0.15);
+}
+.ckd-section-tag {
+  display: inline-block;
+  background: var(--ink);
+  color: white;
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* Warning lists */
+.ckd-warning-list {
+  background: #FEF3C7;
+  border-left: 5px solid #DC2626;
+  padding: 18px 22px;
+  margin: 24px 0;
+  border-radius: 8px;
+}
+.ckd-warning-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.ckd-warning-x {
+  color: #DC2626;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Tip box icon */
+.ckd-callout-icon {
+  font-size: 24px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+/* FAQ — structured Q&A */
+.ckd-faq {
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.ckd-faq-item {
+  background: #FFF8EE;
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  padding: 18px 22px;
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+.ckd-faq-q {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--ink);
+  margin-bottom: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.ckd-faq-q::before {
+  content: 'Q.';
+  color: var(--red);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.ckd-faq-a {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink);
+  padding-left: 24px;
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .ckd-myth-grid {
+    grid-template-columns: 1fr;
+  }
+  .ckd-vocab-grid {
+    grid-template-columns: 1fr;
+  }
+  .ckd-pullquote blockquote {
+    font-size: 17px;
+  }
+  .ckd-author-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ckd-cta-band {
+    padding: 22px 18px;
+  }
+}
