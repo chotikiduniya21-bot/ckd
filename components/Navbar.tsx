@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { useUser } from '@/lib/auth';
@@ -49,7 +50,7 @@ export default function Navbar() {
     <>
       <nav className={styles.nav}>
         <Link href="/" className={styles.logo}>
-          <div className={`${styles.logoCircle} wobble`}>🌸</div>
+          <div className={`${styles.logoCircle} wobble`}><Image src="/mascot.png" alt="" width={32} height={32} priority style={{ display: 'block', objectFit: 'contain' }} /></div>
           <span>Choti Ki Duniya</span>
         </Link>
 
@@ -109,7 +110,7 @@ export default function Navbar() {
         <div className={styles.mobileMenu}>
           <div className={styles.mobileMenuHeader}>
             <Link href="/" className={styles.logo} onClick={() => setMenuOpen(false)}>
-              <div className={styles.logoCircle}>🌸</div>
+              <div className={styles.logoCircle}><Image src="/mascot.png" alt="" width={32} height={32} priority style={{ display: 'block', objectFit: 'contain' }} /></div>
               <span>Choti Ki Duniya</span>
             </Link>
             <button

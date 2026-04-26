@@ -1,5 +1,5 @@
 /* HERO */
-.hero { position: relative; padding: 60px 6% 100px; overflow: hidden; }
+.hero { position: relative; padding: 60px 6% 100px; overflow: hidden; max-width: 100vw; }
 .heroGrid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -33,7 +33,8 @@
   box-shadow: 8px 8px 0 var(--shadow);
   z-index: 0;
 }
-.mascotInner { position: relative; z-index: 2; }
+.mascotInner { position: relative; z-index: 2; max-width: 100%; }
+.mascotInner :global(img) { max-width: 100%; height: auto; }
 .floatingItem {
   position: absolute;
   font-size: 40px;
@@ -477,6 +478,14 @@
     width: 220px !important;
     height: 220px !important;
   }
+  /* Force mascot image to fit inside the smaller circle */
+  .mascotInner :global(img) {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  /* Keep floating items inside the visible area on small phones */
+  .fi3 { left: 0% !important; }
+  .fi5 { right: 0% !important; }
 
   /* Stats — single column, tighter */
   .statsGrid {
@@ -521,4 +530,9 @@
     width: 180px !important;
     height: 180px !important;
   }
+  .mascotInner :global(img) {
+    width: 160px !important;
+    height: 160px !important;
+  }
+  .hero { padding: 40px 4% 60px; }
 }

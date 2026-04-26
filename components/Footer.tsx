@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -10,7 +11,7 @@ export default function Footer() {
         {/* Brand column */}
         <div className={styles.brandCol}>
           <Link href="/" className={styles.footerLogo}>
-            <div className={`${styles.logoCircle} wobble`}>🌸</div>
+            <div className={`${styles.logoCircle} wobble`}><Image src="/mascot.png" alt="" width={28} height={28} style={{ display: 'block', objectFit: 'contain' }} /></div>
             <span>Choti Ki Duniya</span>
           </Link>
           <p className={styles.tagline}>
