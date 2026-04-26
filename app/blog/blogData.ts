@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "7-classic-hindi-rhymes-for-toddlers",
     title: "Hindi Rhymes for Toddlers \u2014 7 Classics Every Indian Kid Should Grow Up With",
-    description: "A Montessori teacher's pick of 7 timeless Hindi rhymes for toddlers \u2014 with Devanagari, romanized, and English meanings, plus the real reason classics still beat YouTube auto-play.",
+    description: "A Montessori-inspired educator's pick of 7 timeless Hindi rhymes for toddlers \u2014 with Devanagari, romanized, and English meanings, plus the real reason classics still beat YouTube auto-play.",
     category: "Hindi Learning",
     ageRange: "2-5",
     lastUpdated: "2026-04-26",
@@ -79,7 +79,7 @@ export const blogPosts: BlogPost[] = [
       <text x="360" y="32" text-anchor="middle" font-weight="700" fill="#9D174D">What every classic does that an algorithm can't</text>
       <text x="360" y="58" text-anchor="middle">It assumes a grown-up is sitting next to the child.</text>
       <text x="360" y="80" text-anchor="middle" font-style="italic" fill="#6B21A8">The rhyme is the excuse. The relationship is the lesson.</text>
-      <text x="360" y="100" text-anchor="middle" font-size="11" fill="#7C3AED">— Choti, 8+ yrs Montessori</text>
+      <text x="360" y="100" text-anchor="middle" font-size="11" fill="#7C3AED">— Choti's classroom</text>
     </g>
   </g>
 </svg></p>
@@ -113,7 +113,7 @@ Take her out, she dies
 - Ask: <em>"मछली कहाँ रहती है?"</em> (Where does the fish live?) — a real question, not a quiz.</p>
 <div class="ckd-classroom-note">
   <div class="ckd-cn-tag">CHOTI'S CLASSROOM NOTE</div>
-  <p>This is the rhyme I sing on Day 1 with new students. Within 4 minutes, even the shyest child is mouthing "रानी है". I have never seen it fail in 8 years.</p>
+  <p>This is the rhyme I sing on Day 1 with new students. Within 4 minutes, even the shyest child is mouthing "रानी है". I have never seen it fail.</p>
 </div>
 
 <hr>
@@ -417,7 +417,7 @@ Eat bananas and roti
 <div class="ckd-author-card">
   <div class="ckd-author-photo">👩🏽‍🏫</div>
   <div>
-    <strong>Choti</strong> · Montessori-trained early childhood educator · 8+ years teaching Hindi rhymes, stories, and pre-literacy to children aged 2–8. Founder of <a href="/about">Choti Ki Duniya</a> (8 lakh+ YouTube family).
+    <strong>Choti</strong> · Montessori-inspired early childhood educator focused on Hindi rhymes, stories, and pre-literacy for children aged 2–8. Founder of <a href="/about">Choti Ki Duniya</a> (8 lakh+ YouTube family).
   </div>
 </div>
 
@@ -426,7 +426,7 @@ Eat bananas and roti
   {
     slug: "why-4-year-olds-shouldnt-trace-letters",
     title: "Is Your Toddler 'Behind' on Writing? Why 4-Year-Olds Shouldn't Be Tracing Letters Yet",
-    description: "A Montessori teacher explains why pencil-tracing at age 4 can actually delay handwriting \u2014 and the 5 hand-strengthening activities that build real writing readiness.",
+    description: "A Montessori-inspired educator explains why pencil-tracing at age 4 can actually delay handwriting \u2014 and the 5 hand-strengthening activities that build real writing readiness.",
     category: "Child Development",
     ageRange: "3-6",
     lastUpdated: "2026-04-26",
@@ -781,7 +781,7 @@ Eat bananas and roti
 <div class="ckd-author-card">
   <div class="ckd-author-photo">👩🏽‍🏫</div>
   <div>
-    <strong>Choti</strong> · Montessori-trained early childhood educator · 8+ years working with children aged 2–8 on pre-literacy, fine motor development, and writing readiness. Founder of <a href="/about">Choti Ki Duniya</a>. Cross-checked against AAP developmental milestones, AOTA paediatric OT guidance, and Montessori curriculum standards (AMI/AMS).
+    <strong>Choti</strong> · Montessori-inspired early childhood educator focused on pre-literacy, fine motor development, and writing readiness for children aged 2–8. Founder of <a href="/about">Choti Ki Duniya</a>. Cross-checked against AAP developmental milestones, AOTA paediatric OT guidance, and Montessori curriculum standards (AMI/AMS).
   </div>
 </div>
 
@@ -790,7 +790,7 @@ Eat bananas and roti
   {
     slug: "honest-screen-time-guide-hindi-teacher",
     title: "How to Handle Screen Time Honestly \u2014 A Hindi-Speaking Teacher's Real Take",
-    description: "Forget the 'no screens ever' lie. A Montessori teacher (and YouTube creator) shares the honest screen-time framework she uses with her own family \u2014 including Hindi conversation scripts for setting limits without tantrums.",
+    description: "Forget the 'no screens ever' lie. A Montessori-inspired educator (and YouTube creator) shares the honest screen-time framework she uses with her own family \u2014 including Hindi conversation scripts for setting limits without tantrums.",
     category: "Parenting",
     ageRange: "1-6",
     lastUpdated: "2026-04-26",
@@ -1099,7 +1099,7 @@ You don't need to apologize. You need a structure. Give yourself 2 designated sc
 <div class="ckd-author-card">
   <div class="ckd-author-photo">👩🏽‍🏫</div>
   <div>
-    <strong>Choti</strong> · Montessori-trained early childhood educator and YouTube creator (8 lakh+ subscribers). 8+ years working with children aged 2–8 across screens-on and screens-off classroom environments. Founder of <a href="/about">Choti Ki Duniya</a>. Cross-referenced with AAP 2026 screen-time guidance and WHO sedentary-behaviour recommendations for under-5s.
+    <strong>Choti</strong> · Montessori-inspired early childhood educator and YouTube creator (8 lakh+ subscribers) focused on children aged 2–8. Founder of <a href="/about">Choti Ki Duniya</a>. Cross-referenced with AAP 2026 screen-time guidance and WHO sedentary-behaviour recommendations for under-5s.
   </div>
 </div>
 
@@ -1108,7 +1108,7 @@ You don't need to apologize. You need a structure. Give yourself 2 designated sc
   {
     slug: "first-100-hindi-words-for-toddlers",
     title: "The First 100 Hindi Words Every 3-Year-Old Should Know (Categorized + Devanagari)",
-    description: "A Montessori teacher's curated list of the first 100 Hindi words for toddlers \u2014 organized by category, with Devanagari, romanization, English meaning, and the right order to teach them in.",
+    description: "A Montessori-inspired educator's curated list of the first 100 Hindi words for toddlers \u2014 organized by category, with Devanagari, romanization, English meaning, and the right order to teach them in.",
     category: "Hindi Learning",
     ageRange: "2-4",
     lastUpdated: "2026-04-26",
@@ -1125,7 +1125,7 @@ You don't need to apologize. You need a structure. Give yourself 2 designated sc
 <h2>Why 100? Why these 100?</h2>
 <p>A typical 3-year-old comprehends around 500–3000 words across all the languages they hear. Of those, only a small number are <em>high-frequency</em> — the words that show up in every meal, every bath, every bedtime routine.</p>
 <p>The 100 words below are the ones that show up <em>most often in a Hindi-speaking household</em>. If your child knows these, the rest of Hindi unfolds easily.</p>
-<p>I built this list using two principles every Montessori teacher learns early:</p>
+<p>I built this list using two principles every educator learns early:</p>
 <div class="ckd-principle-card">
   <div class="ckd-principle-num">1</div>
   <div>
@@ -1592,7 +1592,7 @@ At age 3, your child may comprehend all 100 of these words but only <em>say</em>
 <div class="ckd-author-card">
   <div class="ckd-author-photo">👩🏽‍🏫</div>
   <div>
-    <strong>Choti</strong> · Montessori-trained early childhood educator · 8+ years teaching Hindi vocabulary, pre-literacy, and bilingual development to children aged 2–8. Founder of <a href="/about">Choti Ki Duniya</a>. List curated from classroom usage frequency, AAP language milestones, and Indian early childhood curriculum frameworks (NCERT NIPUN Bharat).
+    <strong>Choti</strong> · Montessori-inspired early childhood educator focused on Hindi vocabulary, pre-literacy, and bilingual development for children aged 2–8. Founder of <a href="/about">Choti Ki Duniya</a>. List curated from classroom usage frequency, AAP language milestones, and Indian early childhood curriculum frameworks (NCERT NIPUN Bharat).
   </div>
 </div>
 
@@ -1601,7 +1601,7 @@ At age 3, your child may comprehend all 100 of these words but only <em>say</em>
   {
     slug: "5-montessori-activities-with-home-items",
     title: "5 Montessori Activities You Can Set Up Today With Stuff Already in Your Kitchen",
-    description: "A Montessori teacher's 5 favourite home activities for ages 2\u20135 \u2014 using only items you already own. No expensive wood toys, no shopping list, just real Montessori principles applied at your kitchen counter.",
+    description: "A Montessori-inspired educator's 5 favourite home activities for ages 2\u20135 \u2014 using only items you already own. No expensive wood toys, no shopping list, just real Montessori principles applied at your kitchen counter.",
     category: "Montessori",
     ageRange: "2-5",
     lastUpdated: "2026-04-26",
@@ -1610,7 +1610,7 @@ At age 3, your child may comprehend all 100 of these words but only <em>say</em>
 
 <p>Walk into a "Montessori" toy store today and you'll see ₹4,500 wooden pouring sets, ₹2,800 sorting trays, and a "complete sensorial kit" for ₹12,000.</p>
 <p>You don't need any of it.</p>
-<p>I've taught Montessori for 8 years. The most powerful activities I've ever set up — the ones that hold a 3-year-old's focus for 40 unbroken minutes — used a steel katori, a paani ki bottle, and some rajma.</p>
+<p>I've spent years working with toddlers in Montessori-inspired classrooms. The most powerful activities I've ever set up — the ones that hold a 3-year-old's focus for 40 unbroken minutes — used a steel katori, a paani ki bottle, and some rajma.</p>
 <p>This article is the 5 activities I would set up <em>today</em> if I had a toddler at home and zero budget.</p>
 <div class="ckd-quick-answer">
   <div class="ckd-qa-tag">⚡ THE QUICK ANSWER</div>
@@ -2002,7 +2002,7 @@ At age 3, your child may comprehend all 100 of these words but only <em>say</em>
   </div>
   <div class="ckd-warning-item">
     <div class="ckd-warning-x">✗</div>
-    <div><strong>Don't film the moment.</strong> The phone disrupts focus more than any other interruption I have observed in 8 years.</div>
+    <div><strong>Don't film the moment.</strong> The phone disrupts focus more than any other interruption I've seen in classrooms.</div>
   </div>
   <div class="ckd-warning-item">
     <div class="ckd-warning-x">✗</div>
@@ -2066,7 +2066,7 @@ At age 3, your child may comprehend all 100 of these words but only <em>say</em>
 <div class="ckd-author-card">
   <div class="ckd-author-photo">👩🏽‍🏫</div>
   <div>
-    <strong>Choti</strong> · Montessori-trained early childhood educator · 8+ years setting up and running Montessori environments for children aged 2–8 in Indian homes and classrooms. Founder of <a href="/about">Choti Ki Duniya</a>. Activities cross-checked against AMI (Association Montessori Internationale) practical-life curriculum and Indian early childhood pedagogical norms.
+    <strong>Choti</strong> · Montessori-inspired early childhood educator focused on Montessori environments for children aged 2–8 in Indian homes and classrooms. Founder of <a href="/about">Choti Ki Duniya</a>. Activities cross-checked against AMI (Association Montessori Internationale) practical-life curriculum and Indian early childhood pedagogical norms.
   </div>
 </div>
 

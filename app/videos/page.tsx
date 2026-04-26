@@ -20,7 +20,7 @@ export default function VideosPage() {
             Watch <span className={styles.titleAccent}>Choti</span> in action
           </h1>
           <p className={styles.heroSubtitle}>
-            8+ years of Montessori experience, 800,000+ subscribers, 1 billion+ views.
+            Montessori-inspired teaching, 8 lakh+ subscribers, 1 billion+ views.
             Real teaching by a real educator — no cartoon characters, just heart. 💛
           </p>
          <div className={styles.heroCtaRow}>

@@ -3,9 +3,9 @@ import styles from './about.module.css';
 
 
 export const metadata = {
-  title: 'About Choti — Montessori Teacher with 8+ Years of Classroom Experience',
+  title: 'About Choti — Educator & Creator of Choti Ki Duniya',
   description:
-    'Meet Choti — a Montessori-trained early childhood educator with 8+ years working with kids 2-8. Learn about her teaching philosophy, why she started Choti Ki Duniya, and the four pillars behind her work.',
+    'Meet Choti — a Montessori-inspired early childhood educator focused on kids 2-8. Learn about her teaching philosophy, why she started Choti Ki Duniya, and the four pillars behind her work.',
   alternates: { canonical: '/about' },
 };
 
@@ -52,7 +52,7 @@ export default function AboutPage() {
             <div className="sticker" style={{ background: 'var(--pink)' }}>👩‍🏫 The teacher</div>
             <h2>Choti — the real teacher behind it all</h2>
             <p>
-              Choti is a Montessori-trained educator with 8+ years of classroom experience.
+              Choti is a Montessori-inspired educator focused on Indian families raising kids 2-8.
               She started the YouTube channel because she saw a gap: most Indian kids&apos;
               content was imported cartoons with no real teacher, no real connection, and no
               real learning sequence.

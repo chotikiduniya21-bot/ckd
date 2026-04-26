@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: '%s | Choti Ki Duniya',
   },
   description:
-    'Free Montessori-inspired activity sheets, Hindi rhymes, and stories for Indian kids aged 2-8. Made by Choti, a real teacher with 8+ years of classroom experience. 8 lakh+ YouTube family.',
+    'Free Montessori-inspired activity sheets, Hindi rhymes, and stories for Indian kids aged 2-8. Made by Choti, a Montessori-inspired educator. 8 lakh+ YouTube family.',
   keywords: [
     'free activity sheets for kids',
     'hindi rhymes for toddlers',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: 'Choti Ki Duniya',
     title: 'Choti Ki Duniya — Where Little Minds Bloom',
     description:
-      'Free Montessori-inspired activity sheets, Hindi rhymes & stories for kids 2-8. By a real teacher with 8+ years of experience.',
+      'Free Montessori-inspired activity sheets, Hindi rhymes & stories for kids 2-8. By a Montessori-inspired educator.',
     images: [
       {
         url: '/og/default.png',

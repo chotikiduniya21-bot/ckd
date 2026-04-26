@@ -192,7 +192,7 @@ export const bundles: Bundle[] = [
     tag: 'Save ₹300',
     featured: true,
     description:
-      'Everything schools actually test for — designed by Choti after 8 years watching admission rounds. Your child will know colors, shapes, numbers, manners, and be confident answering a stranger\'s questions.',
+      'Everything schools actually test for — designed by Choti based on her experience preparing children for school admissions. Your child will know colors, shapes, numbers, manners, and be confident answering a stranger\'s questions.',
     whatYouGet: [
       'Core concepts (colors, shapes, numbers)',
       'Self-awareness ("What is your name?")',

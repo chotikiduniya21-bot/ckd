@@ -7,7 +7,7 @@ import styles from './blog.module.css';
 export const metadata = {
   title: 'Parent Blog — Real Parenting Advice from a Montessori Teacher',
   description:
-    'Real parenting advice from Choti, a Montessori-trained teacher with 8+ years of classroom experience. Hindi rhymes, screen time, writing readiness, Montessori at home, and more — for Indian families raising kids 2-8.',
+    'Real parenting advice from Choti, a Montessori-inspired educator and creator of Choti Ki Duniya. Hindi rhymes, screen time, writing readiness, Montessori at home, and more — for Indian families raising kids 2-8.',
   alternates: { canonical: '/blog' },
 };
 
@@ -70,7 +70,7 @@ export default function BlogPage() {
           The <span className="rainbow-word">Parent Blog</span>
         </h1>
         <p>
-          Real parenting advice from Choti — a Montessori teacher with 8+ years of classroom experience.
+          Real parenting advice from Choti — a Montessori-inspired educator and creator of Choti Ki Duniya.
           No fluff, no Pinterest-perfect nonsense. Just what actually works for Indian families.
         </p>
       </section>
