@@ -3,6 +3,14 @@ import Mascot from '@/components/Mascot';
 import { chotiVideos } from './videos/videosData';
 import styles from './page.module.css';
 
+
+export const metadata = {
+  title: 'Choti Ki Duniya — Free Activity Sheets, Hindi Rhymes & Montessori Learning for Kids 2-8',
+  description:
+    'Where little minds bloom big & bright! Free Montessori-inspired activity sheets, Hindi rhymes, stories, and YouTube videos for Indian kids aged 2-8. By Choti, a real teacher with 8+ years of classroom experience and 8 lakh+ YouTube subscribers.',
+  alternates: { canonical: '/' },
+};
+
 const CHANNEL_URL = 'https://www.youtube.com/@ChutkiKiDuniya_21';
 
 export default function Home() {

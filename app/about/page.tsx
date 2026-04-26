@@ -1,6 +1,14 @@
 import Mascot from '@/components/Mascot';
 import styles from './about.module.css';
 
+
+export const metadata = {
+  title: 'About Choti — Montessori Teacher with 8+ Years of Classroom Experience',
+  description:
+    'Meet Choti — a Montessori-trained early childhood educator with 8+ years working with kids 2-8. Learn about her teaching philosophy, why she started Choti Ki Duniya, and the four pillars behind her work.',
+  alternates: { canonical: '/about' },
+};
+
 export default function AboutPage() {
   return (
     <>

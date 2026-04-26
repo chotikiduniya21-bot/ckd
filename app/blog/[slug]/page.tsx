@@ -43,8 +43,52 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   const heroBg = heroColorMap[post.category || 'Default'] || heroColorMap.Default;
 
+  // Build Article schema
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.description,
+    author: {
+      '@type': 'Person',
+      name: 'Choti',
+      url: 'https://chotikiduniya.com/about',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Choti Ki Duniya',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://chotikiduniya.com/og/default.png',
+      },
+    },
+    datePublished: post.lastUpdated || '2026-04-26',
+    dateModified: post.lastUpdated || '2026-04-26',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://chotikiduniya.com/blog/${post.slug}`,
+    },
+    keywords: post.keywords?.join(', '),
+    inLanguage: 'en-IN',
+  };
+
+  // Extract FAQs from HTML for FAQ schema
+  const faqSchema = extractFaqSchema(post.html);
+
   return (
     <>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
       {/* COLORFUL HERO BAND */}
       <section className={styles.hero} style={{ background: heroBg }}>
         <div className={styles.heroInner}>
@@ -78,6 +122,30 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       </article>
     </>
   );
+}
+
+function extractFaqSchema(html: string) {
+  // Pull each Q/A pair from the structured ckd-faq HTML
+  const itemPattern = /<div class="ckd-faq-item">\s*<div class="ckd-faq-q">([\s\S]*?)<\/div>\s*<div class="ckd-faq-a">([\s\S]*?)<\/div>\s*<\/div>/g;
+  const matches: Array<{ q: string; a: string }> = [];
+  let m: RegExpExecArray | null;
+  while ((m = itemPattern.exec(html)) !== null) {
+    const stripTags = (s: string) => s.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+    matches.push({ q: stripTags(m[1]), a: stripTags(m[2]) });
+  }
+  if (matches.length === 0) return null;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: matches.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a,
+      },
+    })),
+  };
 }
 
 function formatDate(iso: string): string {

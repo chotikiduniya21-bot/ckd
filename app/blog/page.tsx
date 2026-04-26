@@ -3,6 +3,14 @@ import { blogPosts } from './blogData';
 import styles from './blog.module.css';
 
 // Map category name → background gradient
+
+export const metadata = {
+  title: 'Parent Blog — Real Parenting Advice from a Montessori Teacher',
+  description:
+    'Real parenting advice from Choti, a Montessori-trained teacher with 8+ years of classroom experience. Hindi rhymes, screen time, writing readiness, Montessori at home, and more — for Indian families raising kids 2-8.',
+  alternates: { canonical: '/blog' },
+};
+
 const categoryColorMap: Record<string, string> = {
   'Hindi Learning': 'linear-gradient(135deg, #FF8A3D, #FFD23F)',
   'Child Development': 'linear-gradient(135deg, #4A9EFF, #9B5DE5)',
