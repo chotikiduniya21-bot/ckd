@@ -5,6 +5,7 @@ import styles from './videos.module.css';
 export const metadata = {
   title: 'Watch on YouTube | Choti Ki Duniya',
   description: 'Hand-picked videos from Choti — Hindi rhymes, alphabets, counting, and stories for ages 2-8.',
+  alternates: { canonical: '/videos' },
 };
 
 const CHANNEL_URL = 'https://www.youtube.com/@ChutkiKiDuniya_21';

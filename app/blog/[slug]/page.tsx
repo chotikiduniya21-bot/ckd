@@ -27,6 +27,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${post.title} | Choti Ki Duniya`,
     description: post.description,
     keywords: post.keywords?.join(', '),
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,

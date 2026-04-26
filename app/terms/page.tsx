@@ -3,6 +3,7 @@ import styles from '@/styles/legal.module.css';
 export const metadata = {
   title: 'Terms of Service | Choti Ki Duniya',
   description: 'The rules for using Choti Ki Duniya. Written to be readable, not to trick you.',
+  alternates: { canonical: '/terms' },
 };
 
 export default function TermsPage() {
