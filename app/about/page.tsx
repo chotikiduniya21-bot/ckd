@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Mascot from '@/components/Mascot';
 import styles from './about.module.css';
 
@@ -63,26 +64,30 @@ export default function AboutPage() {
             </p>
             <div className={styles.credentials}>
               <div className={styles.credential}>
-                <div className={styles.credNum}>8+</div>
-                <div className={styles.credLabel}>Years teaching Montessori</div>
-              </div>
-              <div className={styles.credential}>
-                <div className={styles.credNum}>200+</div>
-                <div className={styles.credLabel}>Students taught in-person</div>
-              </div>
-              <div className={styles.credential}>
                 <div className={styles.credNum}>8L+</div>
-                <div className={styles.credLabel}>YouTube family</div>
+                <div className={styles.credLabel}>YouTube subscribers</div>
+              </div>
+              <div className={styles.credential}>
+                <div className={styles.credNum}>100Cr+</div>
+                <div className={styles.credLabel}>Total video views</div>
+              </div>
+              <div className={styles.credential}>
+                <div className={styles.credNum}>2024</div>
+                <div className={styles.credLabel}>Channel started</div>
               </div>
             </div>
           </div>
           <div className={styles.chotiPhoto}>
             <div className={styles.photoFrame}>
               <div className={styles.photoInner}>
-                <div className={styles.photoPlaceholder}>
-                  <div>📷</div>
-                  <div className={styles.photoNote}>Choti&apos;s photo goes here</div>
-                </div>
+                <Image
+                  src="/choti.jpg"
+                  alt="Choti — early childhood educator and creator of Choti Ki Duniya"
+                  width={760}
+                  height={1014}
+                  priority
+                  style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }}
+                />
               </div>
               <div className={styles.photoTag}>Real teacher. Real classroom. Real results.</div>
             </div>
