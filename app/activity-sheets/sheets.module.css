@@ -785,3 +785,119 @@
 @media (max-width: 500px) {
   .freeGrid, .bundlesGrid, .proofGrid { grid-template-columns: 1fr; }
 }
+
+/* ==== Category filter pills ==== */
+.categoryPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.pill {
+  background: white;
+  color: var(--ink);
+  border: 2.5px solid var(--ink);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 var(--shadow);
+  transition: all 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.pill:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--shadow);
+}
+.pillActive {
+  background: var(--yellow);
+  font-weight: 600;
+}
+.pillCount {
+  background: rgba(42, 27, 61, 0.08);
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.pillActive .pillCount {
+  background: rgba(42, 27, 61, 0.15);
+}
+
+/* ==== Category section ==== */
+.categorySection {
+  margin-bottom: 50px;
+}
+.categoryHeader {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--ink);
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 3px dashed rgba(42, 27, 61, 0.15);
+}
+
+@media (max-width: 600px) {
+  .categoryPills {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 8px;
+    margin: 0 -5% 24px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .pill {
+    flex-shrink: 0;
+    font-size: 14px;
+    padding: 7px 14px;
+  }
+  .categoryHeader {
+    font-size: 22px;
+  }
+}
+
+/* ==== Category header row with "See all" link ==== */
+.categoryHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 3px dashed rgba(42, 27, 61, 0.15);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.categoryHeaderRow .categoryHeader {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.viewAllLink {
+  background: none;
+  border: none;
+  color: var(--red);
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 8px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.viewAllLink:hover {
+  background: rgba(255, 78, 106, 0.08);
+}
+
+@media (max-width: 600px) {
+  .viewAllLink {
+    font-size: 14px;
+  }
+}
