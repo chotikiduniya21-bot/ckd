@@ -89,6 +89,11 @@ export const freeSheets: FreeSheet[] = [
   { id: 169, title: 'Morning Routine 6', ageRange: '3–6', pages: 1, color: 'blue', emoji: '🌅', description: 'A tracing sheet built around daily routine activities. Builds pencil control while teaching life skills and sequence.', downloads: 'Free download', category: 'Daily Routine' },
   { id: 170, title: 'Morning Routine 7', ageRange: '3–6', pages: 1, color: 'purple', emoji: '🌅', description: 'A tracing sheet built around daily routine activities. Builds pencil control while teaching life skills and sequence.', downloads: 'Free download', category: 'Daily Routine' },
   { id: 171, title: 'Morning Routine 8', ageRange: '3–6', pages: 1, color: 'pink', emoji: '🌅', description: 'A tracing sheet built around daily routine activities. Builds pencil control while teaching life skills and sequence.', downloads: 'Free download', category: 'Daily Routine' },
+  { id: 172, title: 'Match the fruits', ageRange: '3–6', pages: 1, color: 'red', emoji: '🍎', description: 'Draw a line to match the fruits. Builds visual discrimination, focus, and categorization skills.', downloads: 'Free download', category: 'Matching' },
+  { id: 173, title: 'Match the vegetables', ageRange: '3–6', pages: 1, color: 'orange', emoji: '🥕', description: 'Draw a line to match the vegetables. Builds visual discrimination, focus, and categorization skills.', downloads: 'Free download', category: 'Matching' },
+  { id: 174, title: 'Match the flowers', ageRange: '3–6', pages: 1, color: 'pink', emoji: '🌸', description: 'Draw a line to match the flowers. Builds visual discrimination, focus, and categorization skills.', downloads: 'Free download', category: 'Matching' },
+  { id: 175, title: 'Match the animals', ageRange: '3–6', pages: 1, color: 'green', emoji: '🐾', description: 'Draw a line to match the animals. Builds visual discrimination, focus, and categorization skills.', downloads: 'Free download', category: 'Matching' },
+  { id: 176, title: 'Match the shapes', ageRange: '3–6', pages: 1, color: 'teal', emoji: '🔷', description: 'Draw a line to match the shapes. Builds visual discrimination, focus, and categorization skills.', downloads: 'Free download', category: 'Matching' },
 ];
 
 // ==========================================================================
