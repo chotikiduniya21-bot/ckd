@@ -11,7 +11,7 @@ export const metadata = {
   alternates: { canonical: '/' },
 };
 
-const CHANNEL_URL = 'https://www.youtube.com/@ChutkiKiDuniya_21';
+const CHANNEL_URL = 'https://www.youtube.com/@ChotikiDuniya_21';
 
 export default function Home() {
   return (

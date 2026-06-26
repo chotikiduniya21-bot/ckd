@@ -8,7 +8,7 @@ export const metadata = {
   alternates: { canonical: '/videos' },
 };
 
-const CHANNEL_URL = 'https://www.youtube.com/@ChutkiKiDuniya_21';
+const CHANNEL_URL = 'https://www.youtube.com/@ChotikiDuniya_21';
 
 export default function VideosPage() {
   return (

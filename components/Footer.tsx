@@ -19,9 +19,9 @@ export default function Footer() {
             Free activity sheets, Montessori-inspired bundles, real teacher support.
           </p>
           <div className={styles.socialRow}>
-            <a href="https://www.youtube.com/@ChutkiKiDuniya_21" target="_blank" rel="noopener noreferrer" className={styles.socialBtn} aria-label="YouTube" title="YouTube">▶</a>
-            <a href="https://www.instagram.com/chutkikiduniya21/" target="_blank" rel="noopener noreferrer" className={styles.socialBtn} aria-label="Instagram" title="Instagram">📷</a>
-            <a href="https://www.facebook.com/chutkikiduniya/" target="_blank" rel="noopener noreferrer" className={styles.socialBtn} aria-label="Facebook" title="Facebook">f</a>
+            <a href="https://www.youtube.com/@ChotikiDuniya_21" target="_blank" rel="noopener noreferrer" className={styles.socialBtn} aria-label="YouTube" title="YouTube">▶</a>
+            <a href="https://www.instagram.com/chotikiduniya21/" target="_blank" rel="noopener noreferrer" className={styles.socialBtn} aria-label="Instagram" title="Instagram">📷</a>
+            <a href="https://www.facebook.com/chotikiduniya/" target="_blank" rel="noopener noreferrer" className={styles.socialBtn} aria-label="Facebook" title="Facebook">f</a>
           </div>
         </div>
 

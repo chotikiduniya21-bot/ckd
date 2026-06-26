@@ -1088,7 +1088,7 @@ You don't need to apologize. You need a structure. Give yourself 2 designated sc
 <div class="ckd-cta-band ckd-cta-green">
   <p><strong>Want a quality alternative to junk YouTube?</strong></p>
   <p>My YouTube channel is built around exactly the principles in this article — slow-paced, real teacher, songs in Hindi, co-viewable.</p>
-  <a href="https://www.youtube.com/@ChutkiKiDuniya_21" class="ckd-cta-link">→ Watch on YouTube (free)</a>
+  <a href="https://www.youtube.com/@ChotikiDuniya_21" class="ckd-cta-link">→ Watch on YouTube (free)</a>
 </div>
 
 <p>You may also like:
@@ -3213,7 +3213,7 @@ False. The human brain is built for multilingualism. Most people on Earth grow u
 <h2>What to do this week — concrete, specific, actually possible</h2>
 <p>Not a 20-point programme. Three things.</p>
 <p><strong>1. Have one Hindi meal this week.</strong> One meal where everyone (including the phone-checking adult) speaks only Hindi. See what happens. Most families find it surprisingly warm and funny.</p>
-<p><strong>2. Find one Hindi-language YouTube channel for your child.</strong> Replace one English-language watch session with it. Children adjust faster than parents expect. <a href="https://www.youtube.com/@ChutkiKiDuniya_21">Choti Ki Duniya</a> is a good start.</p>
+<p><strong>2. Find one Hindi-language YouTube channel for your child.</strong> Replace one English-language watch session with it. Children adjust faster than parents expect. <a href="https://www.youtube.com/@ChotikiDuniya_21">Choti Ki Duniya</a> is a good start.</p>
 <p><strong>3. Stop correcting the code-switching.</strong> Every time your child mixes and you say "say it properly in English/Hindi" — you are not clarifying. You are adding anxiety to the exact moment they are communicating. Respond to the content. Let the language sort itself out.</p>
 <div class="ckd-cta-band ckd-cta-purple">
   <p><strong>Building Hindi vocabulary at home?</strong></p>
