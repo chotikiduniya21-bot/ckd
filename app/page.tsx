@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Mascot from '@/components/Mascot';
 import { chotiVideos } from './videos/videosData';
 import styles from './page.module.css';
@@ -76,6 +77,41 @@ export default function Home() {
             <div className={styles.statNumber}>500+</div>
             <div className={styles.statLabel}>Songs &amp; stories 🎵</div>
           </div>
+        </div>
+      </section>
+
+      {/* SHEET PREVIEWS */}
+      <section className={styles.sheetPeek}>
+        <div className="section-head">
+          <div className="section-eyebrow">~ Free forever ~</div>
+          <h2>Print. Play. Learn. 🖍️</h2>
+          <p>Real activity sheets, made by Choti. Every single one is free — no email, no catch.</p>
+        </div>
+        <div className={styles.sheetPeekGrid}>
+          {[
+            { id: 101, title: 'Color the Puppy' },
+            { id: 111, title: 'Count the Fruits' },
+            { id: 121, title: 'Trace Number 1' },
+            { id: 131, title: 'Letter A — Trace & Color' },
+            { id: 164, title: 'Morning Routine' },
+            { id: 172, title: 'Match the Fruits' },
+          ].map((s, i) => (
+            <Link key={s.id} href="/activity-sheets" className={styles.sheetPeekCard} style={{ '--tilt': `${(i % 2 === 0 ? -1.5 : 1.5)}deg` } as React.CSSProperties}>
+              <div className={styles.sheetPeekImgWrap}>
+                <Image
+                  src={`/sheet-thumbs/${s.id}.png`}
+                  alt={`${s.title} — free printable activity sheet`}
+                  fill
+                  sizes="(max-width: 700px) 45vw, 200px"
+                  className={styles.sheetPeekImg}
+                />
+              </div>
+              <span className={styles.sheetPeekTitle}>{s.title}</span>
+            </Link>
+          ))}
+        </div>
+        <div className={styles.sheetPeekCta}>
+          <Link href="/activity-sheets" className="btn-primary">Browse all 76 free sheets →</Link>
         </div>
       </section>
 
