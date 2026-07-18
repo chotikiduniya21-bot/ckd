@@ -155,6 +155,11 @@
   position: relative;
   filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.2));
 }
+.freeThumbImg {
+  object-fit: cover;
+  object-position: top center;
+  background: #fff;
+}
 .freePageBadge {
   position: absolute;
   bottom: 10px; left: 10px;

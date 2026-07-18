@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import Image from 'next/image';
 import { useDownload } from '@/lib/useDownload';
 import DownloadToast from '@/components/DownloadToast';
 import SignupPrompt from '@/components/SignupPrompt';
@@ -56,7 +57,13 @@ export default function FreeSheetsGrid({ sheets }: { sheets: FreeSheet[] }) {
         className={styles.freeThumb}
         style={{ background: colorMap[sheet.color] }}
       >
-        <div className={styles.freeEmoji}>{sheet.emoji}</div>
+        <Image
+          src={`/sheet-thumbs/${sheet.id}.png`}
+          alt={`${sheet.title} — free printable activity sheet for kids ages ${sheet.ageRange}`}
+          fill
+          sizes="(max-width: 700px) 90vw, 300px"
+          className={styles.freeThumbImg}
+        />
         <div className={styles.freePageBadge}>{sheet.pages} pages</div>
       </div>
       <div className={styles.freeBody}>
