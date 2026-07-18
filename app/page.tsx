@@ -35,11 +35,11 @@ export default function Home() {
             </h1>
             <p className={styles.heroSubtitle}>
               Rhymes, stories, alphabets &amp; activities — the Montessori way.
-              Join millions of families learning, playing, and giggling with us. 🌈
+              Join 8 lakh+ families learning, playing, and giggling with us. 🌈
             </p>
             <div className={styles.heroCtas}>
-              <a href={CHANNEL_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">▶ Watch on YouTube</a>
-              <Link href="/activity-sheets" className="btn-secondary">✏️ Free Activity Sheets</Link>
+              <Link href="/activity-sheets" className="btn-primary">✏️ Get Free Activity Sheets</Link>
+              <a href={CHANNEL_URL} target="_blank" rel="noopener noreferrer" className="btn-secondary">▶ Watch on YouTube</a>
             </div>
           </div>
 
@@ -69,8 +69,8 @@ export default function Home() {
             <div className={styles.statLabel}>Happy views ✨</div>
           </div>
           <div className={styles.stat}>
-            <div className={styles.statNumber}>8+ yrs</div>
-            <div className={styles.statLabel}>Montessori magic 🌱</div>
+            <div className={styles.statNumber}>200+</div>
+            <div className={styles.statLabel}>Cities, India &amp; beyond 🌍</div>
           </div>
           <div className={styles.stat}>
             <div className={styles.statNumber}>500+</div>
@@ -168,7 +168,7 @@ export default function Home() {
             <div className={styles.phaseSubhead}>Free forever. Structured when you need it.</div>
             <ul className={styles.phaseList}>
               <li>All individual sheets free — forever</li>
-              <li>10–15 new free sheets every week</li>
+              <li>New free sheets added regularly</li>
               <li>Paid bundles add guides &amp; support</li>
               <li>Hindi + English · Ages 2–8</li>
             </ul>
@@ -186,7 +186,7 @@ export default function Home() {
               <li>Themed learning kits</li>
               <li>Pan-India shipping</li>
             </ul>
-            <a href="#subscribe" className="btn-secondary">Notify Me</a>
+            <a href="#subscribe" className="btn-secondary">Get Early Access</a>
           </div>
         </div>
       </section>

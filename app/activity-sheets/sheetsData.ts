@@ -16,7 +16,7 @@ export interface FreeSheet {
   category: string;
 }
 
-// Launch set: 12 free sheets. Choti adds 10-15 new per week.
+// 76 free sheets across 7 categories. IDs continue from 177+.
 export const freeSheets: FreeSheet[] = [
   { id: 101, title: 'Color the Puppy', ageRange: '2–5', pages: 1, color: 'pink', emoji: '🐶', description: 'A friendly puppy ready to be colored. Builds crayon control and color recognition.', downloads: 'Free download', category: 'Coloring' },
   { id: 102, title: 'Color the Cat', ageRange: '2–5', pages: 1, color: 'orange', emoji: '🐱', description: 'A friendly cat ready to be colored. Builds crayon control and color recognition.', downloads: 'Free download', category: 'Coloring' },

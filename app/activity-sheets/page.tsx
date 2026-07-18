@@ -41,7 +41,7 @@ export default function ActivitySheetsPage() {
               </div>
             </div>
             <p className={styles.freeSubtitle}>
-              Start with these. We add <strong>10–15 new free sheets every week</strong> — letters,
+              Start with these. We keep adding <strong>new free sheets</strong> — letters,
               numbers, Hindi, life skills, colouring. Click, download, print, share with friends.
               Yours forever.
             </p>
