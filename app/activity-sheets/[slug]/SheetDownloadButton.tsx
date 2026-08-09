@@ -18,7 +18,7 @@ export default function SheetDownloadButton({ sheetId }: { sheetId: string }) {
         onClose={closeSignupPrompt}
       />
       <button onClick={() => download(sheetId, 'free')} disabled={busy} className={styles.downloadBtn}>
-        {busy ? '⏳ Preparing…' : '⬇ Download PDF — free'}
+        {busy ? '⏳ Preparing…' : '⬇ Download the free PDF'}
       </button>
       <p className={styles.downloadNote}>No sign-up, no email. Print on plain A4 paper.</p>
     </>

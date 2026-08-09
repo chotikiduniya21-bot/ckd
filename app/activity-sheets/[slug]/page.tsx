@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: found.content.metaTitle,
       description: found.content.metaDescription,
       type: 'article',
-      images: [{ url: `/sheet-thumbs/${found.id}.png`, width: 452, height: 640, alt: `${found.content.h1} — Choti Ki Duniya` }],
+      images: [{ url: `/sheet-thumbs/${found.id}.png`, width: 452, height: 640, alt: `${found.content.h1}, Choti Ki Duniya` }],
     },
   };
 }
@@ -109,7 +109,7 @@ export default async function SheetPage({ params }: { params: Promise<{ slug: st
             <div className={styles.preview}>
               <Image
                 src={`/sheet-thumbs/${id}.png`}
-                alt={`${content.h1} — printable worksheet preview`}
+                alt={`${content.h1}, printable worksheet preview`}
                 width={452}
                 height={640}
                 priority
@@ -138,37 +138,39 @@ export default async function SheetPage({ params }: { params: Promise<{ slug: st
         </div>
 
         <section className={styles.section}>
-          <h2>About this sheet</h2>
+          <h2 className={styles.sectionTitle}>About this sheet</h2>
+          <p className={styles.sectionLead}>What is on the page, and how to get the most out of it.</p>
           {content.body.map((p, i) => (<p key={i} className={styles.para}>{p}</p>))}
         </section>
 
         <section className={styles.section}>
-          <h2>What your child practises</h2>
+          <h2 className={styles.sectionTitle}>What your child practises</h2>
+          <p className={styles.sectionLead}>{content.skillsIntro}</p>
           <ul className={styles.skills}>
             {content.skills.map((s) => (<li key={s}>{s}</li>))}
           </ul>
         </section>
 
         <section className={styles.section}>
-          <h2>Common questions</h2>
+          <h2 className={styles.sectionTitle}>Common questions</h2>
           {content.faqs.map((f) => (
             <div key={f.q} className={styles.faq}>
-              <h3>{f.q}</h3>
-              <p>{f.a}</p>
+              <h3 className={styles.faqQ}>{f.q}</h3>
+              <p className={styles.faqA}>{f.a}</p>
             </div>
           ))}
         </section>
 
         {siblings.length > 0 && (
           <section className={styles.section}>
-            <h2>More {sheet.category.toLowerCase()} sheets</h2>
+            <h2 className={styles.sectionTitle}>More {sheet.category.toLowerCase()} sheets</h2>
             <div className={styles.siblings}>
               {siblings.map((s) => (
                 <Link key={s.id} href={`/activity-sheets/${sheetContent[s.id].slug}`} className={styles.sibling}>
                   <div className={styles.siblingThumb}>
                     <Image
                       src={`/sheet-thumbs/${s.id}.png`}
-                      alt={`${s.title} — free printable activity sheet`}
+                      alt={`${s.title}, free printable activity sheet`}
                       fill
                       sizes="140px"
                       className={styles.siblingImg}
