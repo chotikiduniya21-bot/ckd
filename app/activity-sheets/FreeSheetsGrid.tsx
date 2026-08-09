@@ -55,24 +55,46 @@ export default function FreeSheetsGrid({ sheets }: { sheets: FreeSheet[] }) {
   const renderSheet = (sheet: FreeSheet) => (
     <div key={sheet.id} className={styles.freeCard}>
       <div className={styles.freeRibbon}>FREE</div>
-      <div
-        className={styles.freeThumb}
-        style={{ background: colorMap[sheet.color] }}
-      >
-        <Image
-          src={`/sheet-thumbs/${sheet.id}.png`}
-          alt={`${sheet.title} — free printable activity sheet for kids ages ${sheet.ageRange}`}
-          fill
-          sizes="(max-width: 700px) 90vw, 300px"
-          className={styles.freeThumbImg}
-        />
-        <div className={styles.freePageBadge}>{sheet.pages} pages</div>
-      </div>
+      {sheetContent[sheet.id] ? (
+        <Link
+          href={`/activity-sheets/${sheetContent[sheet.id].slug}`}
+          className={styles.freeThumb}
+          style={{ background: colorMap[sheet.color] }}
+          aria-label={`${sheet.title}, see details`}
+        >
+          <Image
+            src={`/sheet-thumbs/${sheet.id}.png`}
+            alt={`${sheet.title}, free printable activity sheet for kids ages ${sheet.ageRange}`}
+            fill
+            sizes="(max-width: 700px) 90vw, 300px"
+            className={styles.freeThumbImg}
+          />
+          <div className={styles.freePageBadge}>{sheet.pages} pages</div>
+          <div className={styles.freeThumbHint}>See details →</div>
+        </Link>
+      ) : (
+        <div
+          className={styles.freeThumb}
+          style={{ background: colorMap[sheet.color] }}
+        >
+          <Image
+            src={`/sheet-thumbs/${sheet.id}.png`}
+            alt={`${sheet.title}, free printable activity sheet for kids ages ${sheet.ageRange}`}
+            fill
+            sizes="(max-width: 700px) 90vw, 300px"
+            className={styles.freeThumbImg}
+          />
+          <div className={styles.freePageBadge}>{sheet.pages} pages</div>
+        </div>
+      )}
       <div className={styles.freeBody}>
         <div className={styles.freeAge}>Ages {sheet.ageRange}</div>
         <h3 className={styles.freeCardTitle}>
           {sheetContent[sheet.id] ? (
-            <Link href={`/activity-sheets/${sheetContent[sheet.id].slug}`}>
+            <Link
+              href={`/activity-sheets/${sheetContent[sheet.id].slug}`}
+              className={styles.freeCardTitleLink}
+            >
               {sheet.title}
             </Link>
           ) : (
@@ -81,7 +103,16 @@ export default function FreeSheetsGrid({ sheets }: { sheets: FreeSheet[] }) {
         </h3>
         <p className={styles.freeDesc}>{sheet.description}</p>
         <div className={styles.freeFooter}>
-          <span className={styles.freeDownloads}>⬇ {sheet.downloads}</span>
+          {sheetContent[sheet.id] ? (
+            <Link
+              href={`/activity-sheets/${sheetContent[sheet.id].slug}`}
+              className={styles.freeDetailsLink}
+            >
+              See details →
+            </Link>
+          ) : (
+            <span className={styles.freeDownloads}>⬇ {sheet.downloads}</span>
+          )}
           <button
             onClick={() => download(String(sheet.id), 'free')}
             disabled={isDownloading}

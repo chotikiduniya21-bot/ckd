@@ -906,3 +906,44 @@
     font-size: 14px;
   }
 }
+
+/* ===== Sheet detail affordances ===== */
+.freeCardTitleLink {
+  color: var(--purple);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+.freeCardTitleLink:hover { color: var(--red); }
+
+.freeDetailsLink {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--purple);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.freeDetailsLink:hover { color: var(--red); }
+
+.freeThumbHint {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  background: rgba(42,27,61,0.86);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+  padding: 7px 6px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.18s, transform 0.18s;
+  z-index: 3;
+}
+.freeCard:hover .freeThumbHint,
+.freeThumb:focus-visible .freeThumbHint {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (hover: none) {
+  .freeThumbHint { opacity: 1; transform: translateY(0); }
+}
