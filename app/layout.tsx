@@ -38,18 +38,6 @@ export const metadata: Metadata = {
   },
   description:
     'Free Montessori-inspired activity sheets, Hindi rhymes, and stories for Indian kids aged 2-8. Made by Choti, a Montessori-inspired educator. 8 lakh+ YouTube family.',
-  keywords: [
-    'free activity sheets for kids',
-    'hindi rhymes for toddlers',
-    'montessori activities india',
-    'preschool worksheets india',
-    'free printables for kids',
-    'hindi learning for toddlers',
-    'kids activity sheets',
-    'montessori at home india',
-    'choti ki duniya',
-    'early childhood education india',
-  ],
   authors: [{ name: 'Choti', url: SITE_URL }],
   creator: 'Choti Ki Duniya',
   publisher: 'Choti Ki Duniya',
@@ -66,21 +54,12 @@ export const metadata: Metadata = {
     title: 'Choti Ki Duniya — Where Little Minds Bloom',
     description:
       'Free Montessori-inspired activity sheets, Hindi rhymes & stories for kids 2-8. By a Montessori-inspired educator.',
-    images: [
-      {
-        url: '/og/default.png',
-        width: 1200,
-        height: 630,
-        alt: 'Choti Ki Duniya — Where Little Minds Bloom',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Choti Ki Duniya — Where Little Minds Bloom',
     description:
       'Free Montessori-inspired activity sheets, Hindi rhymes & stories for kids 2-8.',
-    images: ['/og/default.png'],
   },
   robots: {
     index: true,
