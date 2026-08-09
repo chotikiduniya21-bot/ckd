@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { blogPosts } from './blog/blogData';
+import { sheetContent, publishedSheetIds } from './activity-sheets/sheetContent';
 
 const SITE_URL = 'https://www.chotikiduniya.com';
 
@@ -33,5 +34,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...blogUrls, ...legalPages];
+  const sheetUrls: MetadataRoute.Sitemap = publishedSheetIds.map((id) => ({
+    url: `${SITE_URL}/activity-sheets/${sheetContent[id].slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.85,
+    images: [`${SITE_URL}/sheet-thumbs/${id}.png`],
+  }));
+
+  return [...staticPages, ...sheetUrls, ...blogUrls, ...legalPages];
 }

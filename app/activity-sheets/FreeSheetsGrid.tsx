@@ -2,10 +2,12 @@
 
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useDownload } from '@/lib/useDownload';
 import DownloadToast from '@/components/DownloadToast';
 import SignupPrompt from '@/components/SignupPrompt';
 import type { FreeSheet } from './sheetsData';
+import { sheetContent } from './sheetContent';
 import styles from './sheets.module.css';
 
 const colorMap: Record<string, string> = {
@@ -68,7 +70,15 @@ export default function FreeSheetsGrid({ sheets }: { sheets: FreeSheet[] }) {
       </div>
       <div className={styles.freeBody}>
         <div className={styles.freeAge}>Ages {sheet.ageRange}</div>
-        <h3 className={styles.freeCardTitle}>{sheet.title}</h3>
+        <h3 className={styles.freeCardTitle}>
+          {sheetContent[sheet.id] ? (
+            <Link href={`/activity-sheets/${sheetContent[sheet.id].slug}`}>
+              {sheet.title}
+            </Link>
+          ) : (
+            sheet.title
+          )}
+        </h3>
         <p className={styles.freeDesc}>{sheet.description}</p>
         <div className={styles.freeFooter}>
           <span className={styles.freeDownloads}>⬇ {sheet.downloads}</span>
