@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { blogPosts, getBlogPostBySlug } from '../blogData';
+import { ORG_ID, PERSON_ID, breadcrumbSchema } from '@/lib/schema';
+import JsonLd from '@/components/JsonLd';
 import styles from './post.module.css';
 import './blog-content.css';
 
@@ -24,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getBlogPostBySlug(slug);
   if (!post) return { title: 'Not found' };
   return {
-    title: `${post.title} | Choti Ki Duniya`,
+    title: post.title,
     description: post.description,
     keywords: post.keywords?.join(', '),
     alternates: {
@@ -52,19 +54,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     '@type': 'Article',
     headline: post.title,
     description: post.description,
-    author: {
-      '@type': 'Person',
-      name: 'Choti',
-      url: 'https://www.chotikiduniya.com/about',
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Choti Ki Duniya',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://www.chotikiduniya.com/og/default.png',
-      },
-    },
+    author: { '@id': PERSON_ID },
+    publisher: { '@id': ORG_ID },
     datePublished: post.lastUpdated || '2026-04-26',
     dateModified: post.lastUpdated || '2026-04-26',
     mainEntityOfPage: {
@@ -77,6 +68,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   // Extract FAQs from HTML for FAQ schema
   const faqSchema = extractFaqSchema(post.html);
+
+  const breadcrumbs = breadcrumbSchema([
+    { name: 'Home', path: '/' },
+    { name: 'Parent Blog', path: '/blog' },
+    { name: post.title, path: `/blog/${post.slug}` },
+  ]);
 
   return (
     <>
@@ -91,6 +88,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
+      <JsonLd data={breadcrumbs} />
 
       {/* COLORFUL HERO BAND */}
       <section className={styles.hero} style={{ background: heroBg }}>

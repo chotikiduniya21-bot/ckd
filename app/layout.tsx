@@ -5,6 +5,8 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import JsonLd from '@/components/JsonLd';
+import { siteGraph } from '@/lib/schema';
 import { AuthProvider } from '@/lib/auth';
 import '@/styles/globals.css';
 
@@ -82,6 +84,8 @@ export default function RootLayout({
   return (
       <html lang="en" data-scroll-behavior="smooth" className={`${fredoka.variable} ${patrickHand.variable} ${nunito.variable}`}>
       <body>
+        <JsonLd data={siteGraph} />
+
         <AuthProvider>
           <Navbar />
           <main>{children}</main>

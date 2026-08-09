@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Mascot from '@/components/Mascot';
+import JsonLd from '@/components/JsonLd';
+import { breadcrumbSchema } from '@/lib/schema';
 import styles from './about.module.css';
 
 
@@ -11,8 +13,14 @@ export const metadata = {
 };
 
 export default function AboutPage() {
+  const breadcrumbs = breadcrumbSchema([
+    { name: 'Home', path: '/' },
+    { name: 'About Choti', path: '/about' },
+  ]);
+
   return (
     <>
+      <JsonLd data={breadcrumbs} />
       <section className="page-hero">
         <div className="page-hero-sticker">🌸 Meet the team</div>
         <h1>
