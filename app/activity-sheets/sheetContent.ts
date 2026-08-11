@@ -367,6 +367,349 @@ export const sheetContent: Record<number, SheetContent> = {
       },
     ],
   },
+  111: {
+    slug: 'count-the-fruits',
+    h1: 'Count the fruits: free printable counting worksheet',
+    metaTitle: 'Free Fruit Counting Worksheet to Print',
+    metaDescription:
+      'A free printable fruit counting worksheet for ages 3 to 6. Seven rows to count and a box to write each number in. Hindi instruction printed on the sheet.',
+    hindi: 'फल',
+    hindiInstruction: 'फलों को गिनें',
+    body: [
+      'Seven rows of fruit, each with a box at the end to write the number in. Strawberries, bananas, oranges, apples, watermelon, grapes and avocados, with a different quantity in every row.',
+      'Start here if your child has not done a counting worksheet before. Fruit is the category young children know best, so nothing on the page needs explaining, and all their attention goes on the counting itself rather than on working out what they are looking at.',
+      'The useful thing to watch is whether your child touches each item as they count. Pointing and touching is not a crutch, it is the actual mechanism that keeps count and object matched one to one. Children who count by looking alone usually lose track past four. If yours is not touching, put their finger on the first item and start them off.',
+      'The rows go up to seven, which is past the point where most children stop being able to see a quantity at a glance and have to count properly. That is deliberate.',
+    ],
+    skillsIntro:
+      'Fruit is the most familiar category, so the effort goes into counting rather than recognising. Here is what that practises.',
+    skills: [
+      'One to one counting with touch',
+      'Writing numerals inside a box',
+      'Counting past five reliably',
+      'Fruit names in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'Which counting worksheet should we start with?',
+        a: 'This one. Fruit is the category children recognise fastest, so none of their attention is spent working out what the pictures are.',
+      },
+      {
+        q: 'My child counts the same item twice. How do I fix that?',
+        a: 'Have them touch each item as they say the number. Losing track usually means they are counting by eye alone, and touching keeps the number and the object matched.',
+      },
+      {
+        q: 'Does my child need to write the numbers themselves?',
+        a: 'Not at first. Plenty of three year olds can count a row correctly but cannot yet form the numeral. Let them say the answer and you write it, then swap once writing is comfortable.',
+      },
+    ],
+  },
+
+  112: {
+    slug: 'count-the-vehicles',
+    h1: 'Count the vehicles: free printable counting worksheet',
+    metaTitle: 'Free Vehicle Counting Worksheet to Print',
+    metaDescription:
+      'Free printable vehicle counting worksheet for ages 3 to 6. Items vary in size deliberately, so children learn that quantity is separate from size. Hindi instruction included.',
+    hindi: 'वाहन',
+    hindiInstruction: 'वाहनों को गिनें',
+    body: [
+      'Five rows of vehicles: fire engines, cars, bicycles, aeroplanes and buses, each row a different quantity, each with a box for the answer.',
+      'This sheet does something the others do not. The vehicles are drawn at very different sizes, so a row of five small bicycles takes up less space than a row of two large aeroplanes. That is not a design accident and it is worth using.',
+      'Young children frequently judge quantity by how much space something fills rather than by how many things there are. Asked which row has more, they will often point at the bigger objects. Counting rows where the small items outnumber the large ones is one of the clearest ways to break that habit, because the answer contradicts the impression.',
+      'It is also the shortest counting sheet at five rows, which makes it a good one for a day when attention is thin.',
+    ],
+    skillsIntro:
+      'The vehicles are drawn at different sizes on purpose. That is what this sheet is really teaching.',
+    skills: [
+      'Separating quantity from size',
+      'Counting a row of large items and a row of small ones',
+      'Finishing a shorter sheet without losing focus',
+      'Vehicle names in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'Why are the vehicles different sizes?',
+        a: 'Deliberately. Young children often judge how many by how much space things fill, so counting five small bicycles against two large aeroplanes challenges that directly.',
+      },
+      {
+        q: 'Is this easier than the other counting sheets?',
+        a: 'It is shorter, with five rows rather than six or seven, so it is a good choice when your child is tired or new to worksheets.',
+      },
+    ],
+  },
+
+  113: {
+    slug: 'count-the-toys',
+    h1: 'Count the toys: free printable counting worksheet',
+    metaTitle: 'Free Toy Counting Worksheet to Print',
+    metaDescription:
+      'Free printable toy counting worksheet for ages 3 to 6. Seven rows including dice and a cricket bat. Hindi instruction printed on the sheet. Free download.',
+    hindi: 'खिलौने',
+    hindiInstruction: 'खिलौनों को गिनें',
+    body: [
+      'Seven rows of toys: robots, spinning tops, dice, dolls, footballs, teddy bears and cricket bats. It is the longest sheet in the counting set.',
+      'The dice row is the interesting one. Dice have dots on them, and a child who has started noticing numbers will often begin counting the dots instead of the dice. That is not a mistake to correct sharply. It is a sign they are looking carefully. Just ask the question again more precisely: how many dice, not how many dots.',
+      'That distinction between counting objects and counting marks on objects is genuinely useful, and no other sheet in this set raises it.',
+      'The cricket bats are here because a toy row full of things Indian children do not own would be a strange thing to print. Seven rows is a lot for a three year old, so splitting the sheet across two sittings is completely reasonable.',
+    ],
+    skillsIntro:
+      'Seven rows makes this the longest counting sheet, and the dice row adds something the others do not.',
+    skills: [
+      'Counting objects rather than marks on them',
+      'Sustaining attention across seven rows',
+      'Answering a more precisely worded question',
+      'Toy names in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'My child counted the dots on the dice instead of the dice.',
+        a: 'That is a good sign rather than an error, because it means they are noticing detail. Just ask again more precisely: how many dice, not how many dots.',
+      },
+      {
+        q: 'Seven rows feels like a lot. Can we split it?',
+        a: 'Yes. Doing three or four rows now and the rest later works perfectly well, and is better than pushing to the end of a sheet your child has stopped enjoying.',
+      },
+    ],
+  },
+
+  114: {
+    slug: 'count-the-shapes',
+    h1: 'Count the shapes: free printable counting worksheet',
+    metaTitle: 'Free Shapes Counting Worksheet to Print',
+    metaDescription:
+      'Free printable shapes counting worksheet for ages 3 to 6, covering stars, triangles, hearts, squares, circles and diamonds. Counting and shape naming together.',
+    hindi: 'आकृतियाँ',
+    hindiInstruction: 'आकृतियों को गिनें',
+    body: [
+      'Rows of stars, triangles, hearts, squares, circles and diamonds, each with a box for the number.',
+      'Every other sheet in this set asks your child to count objects: things with names they already use at home. This one asks them to count shapes, and a shape is an abstraction. A triangle is not a thing in the world, it is a property that lots of different things share.',
+      'That makes this sheet do two jobs at once. Your child counts, and while counting they have to hold in mind what makes a triangle a triangle rather than a diamond. Ask the name of the shape before each row and the sheet becomes a shape lesson with counting attached.',
+      'It is also the most useful sheet here for a child heading into nursery or LKG, because shape naming appears in almost every Indian preschool syllabus and rarely gets practised at home.',
+    ],
+    skillsIntro:
+      'This is the only sheet where the thing being counted is abstract, which makes it do two jobs at once.',
+    skills: [
+      'Naming shapes while counting them',
+      'Telling a diamond from a square',
+      'Working with an abstract category',
+      'Shape names in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'How is this different from the other counting sheets?',
+        a: 'The others count objects your child already knows by name. This one counts shapes, which are abstract properties rather than things, so it practises shape naming at the same time.',
+      },
+      {
+        q: 'Is this useful before nursery or LKG?',
+        a: 'Yes. Shape naming appears in most Indian preschool syllabuses and is rarely practised at home, so it is one of the more directly useful sheets in this set.',
+      },
+    ],
+  },
+
+  115: {
+    slug: 'count-the-clothes',
+    h1: 'Count the clothes: free printable counting worksheet',
+    metaTitle: 'Free Clothes Counting Worksheet to Print',
+    metaDescription:
+      'Free printable clothes counting worksheet for ages 3 to 6. Includes a row with only one item, which is harder for young children than it sounds.',
+    hindi: 'कपड़े',
+    hindiInstruction: 'कपड़ों को गिनें',
+    body: [
+      'Rows of dresses, caps, shorts, t-shirts, shoes, gloves and dungarees, each with a box for the number.',
+      'The row with a single item is the one to pay attention to. After five or six rows of counting groups, a child reaches a row with one thing in it and often hesitates, or writes a larger number, or looks up to check whether it is a trick.',
+      'It is not a trick, and the hesitation is real. Counting has a rhythm to it, and one does not have a rhythm. There is nothing to count along. Children who have settled into the pattern of the sheet have to stop and think about what the question is actually asking, which is a small but genuine shift.',
+      'The shoes and gloves rows are worth a mention too, since both are things that come in pairs. If your child says two for a row of five gloves, they are counting pairs rather than items, which is worth a conversation rather than a correction.',
+    ],
+    skillsIntro:
+      'A row of one and two rows of paired items make this trickier than it first looks.',
+    skills: [
+      'Counting a group of one',
+      'Counting items rather than pairs',
+      'Breaking out of a counting rhythm',
+      'Clothing names in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'Why did my child struggle with the row that has one item?',
+        a: 'Counting has a rhythm and one has no rhythm to it. After several rows of groups, a single item makes children stop and reconsider what the question is asking, which is normal.',
+      },
+      {
+        q: 'My child said two for a row of five gloves.',
+        a: 'They are counting pairs rather than individual items, which is actually quite sophisticated. Worth talking about rather than marking wrong.',
+      },
+    ],
+  },
+
+  116: {
+    slug: 'count-the-treats',
+    h1: 'Count the treats: free printable counting worksheet',
+    metaTitle: 'Free Treats Counting Worksheet to Print',
+    metaDescription:
+      'Free printable treats counting worksheet for ages 3 to 6, with cupcakes, candies and donuts. High motivation for a child who resists worksheets.',
+    hindi: 'ट्रीट्स',
+    hindiInstruction: 'ट्रीट्स को गिनें',
+    body: [
+      'Six rows of cupcakes, ice lollies, sweets, donuts, chocolate bars and popcorn, each with a box for the number.',
+      'There is no developmental reason to count sweets rather than spoons. The reason to print this sheet is motivational, and that is a perfectly good reason. If your child has decided that worksheets are boring, a page of cupcakes buys you several minutes of willing attention that a page of household objects will not.',
+      'Use it accordingly. This is the sheet for a difficult afternoon, or for the first attempt after a child has refused a worksheet, or for a younger sibling who wants to do what the older one is doing.',
+      'One thing worth noticing: the Hindi instruction on this sheet uses ट्रीट्स, a borrowed English word written in Devanagari rather than a native Hindi term. Indian households genuinely speak this way, and seeing it printed is a small, accurate reflection of how the language is actually used at home.',
+    ],
+    skillsIntro:
+      'This sheet earns its place through motivation rather than difficulty. It still practises the following.',
+    skills: [
+      'Counting six rows willingly',
+      'Writing numerals in a box',
+      'Reading a Devanagari loanword',
+      'Food names in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'Is counting sweets teaching my child to want sweets?',
+        a: 'The pictures are cartoon drawings on a worksheet, not food. What the sheet buys you is willing attention from a child who has decided worksheets are boring.',
+      },
+      {
+        q: 'Why is the Hindi word written as ट्रीट्स?',
+        a: 'It is the English word written in Devanagari, which is how most Indian households actually say it. Seeing borrowed words in print is a normal part of reading Hindi today.',
+      },
+    ],
+  },
+
+  117: {
+    slug: 'count-the-drinks',
+    h1: 'Count the drinks: free printable counting worksheet',
+    metaTitle: 'Free Drinks Counting Worksheet to Print',
+    metaDescription:
+      'Free printable drinks counting worksheet for ages 3 to 6. Rows of juice, milk, water and coconuts, with a Hindi instruction line printed on the sheet.',
+    hindi: 'ड्रिंक्स',
+    hindiInstruction: 'ड्रिंक्स को गिनें',
+    body: [
+      'Six rows of drinks: juice glasses, milk bottles, water glasses, lemonade, hot chocolate and coconuts, each with a box for the number.',
+      'The containers here are close to identical in outline. A juice glass and a water glass differ mainly in what colour they are filled with, which means your child has to attend to a smaller difference than on any other sheet in this set. Rows of near-identical items are where miscounting happens most, because the eye slides across them without registering separate objects.',
+      'That makes this a good sheet to use once counting is already reliable elsewhere. If your child counts fruit correctly but goes wrong here, it is not a counting problem. It is an attention problem, and it is worth knowing the difference.',
+      'The coconut row is the one Indian children recognise immediately and most printable worksheets from elsewhere would never include.',
+    ],
+    skillsIntro:
+      'The containers look alike, which makes this more about careful looking than about numbers.',
+    skills: [
+      'Counting near-identical items accurately',
+      'Attending to small visual differences',
+      'Checking an answer by counting twice',
+      'Drink names in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'My child counts fruit correctly but goes wrong on this sheet.',
+        a: 'That is usually attention rather than counting. The containers look alike, so the eye slides across them. Ask for a second count on any row that looks wrong.',
+      },
+      {
+        q: 'What age is this best for?',
+        a: 'Ages 3 to 6, though it works better once your child already counts reliably on the easier sheets like fruit or animals.',
+      },
+    ],
+  },
+
+  118: {
+    slug: 'count-the-objects',
+    h1: 'Count the objects: free printable counting worksheet',
+    metaTitle: 'Free Objects Counting Worksheet to Print',
+    metaDescription:
+      'Free printable everyday objects counting worksheet for ages 3 to 6. Plates, spoons, tables and balloons, with rows counting up to seven.',
+    hindi: 'वस्तुएँ',
+    hindiInstruction: 'वस्तुओं को गिनें',
+    body: [
+      'Six rows of everyday things: plates, bread slices, spoons, tables, toothbrushes and balloons, each with a box for the number.',
+      'This is the plainest sheet in the counting set and that is its purpose. There is nothing here a child will find exciting, which means nothing distracts from the counting either. When you want to know whether your child can actually count without the help of an appealing picture, this is the sheet that tells you.',
+      'The spoons row holds the largest quantity in the set. Long rows of small, similar items are where counting breaks down, so if your child manages the spoons without losing their place they are counting properly rather than recognising familiar small quantities by sight.',
+      'It also pairs naturally with real life. Every object on this page exists in your kitchen, so the same counting can continue at the table afterwards with the actual things.',
+    ],
+    skillsIntro:
+      'The plainest sheet here, which is exactly why it is a useful check on where counting really stands.',
+    skills: [
+      'Counting without an engaging picture to help',
+      'Keeping place in a long row',
+      'Carrying counting into real objects at home',
+      'Household words in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'Why use a sheet with such ordinary pictures?',
+        a: 'Because nothing on it is distracting. If your child counts well here, they are genuinely counting rather than being carried along by an appealing picture.',
+      },
+      {
+        q: 'What should we do after finishing it?',
+        a: 'Count the real versions. Every object on this sheet is in your kitchen, so laying out spoons and counting them again makes the link between the page and the world.',
+      },
+    ],
+  },
+
+  119: {
+    slug: 'count-the-animals',
+    h1: 'Count the animals: free printable counting worksheet',
+    metaTitle: 'Free Animal Counting Worksheet to Print',
+    metaDescription:
+      'Free printable animal counting worksheet for ages 3 to 6. Seven rows including a single crocodile, mixing large and small animals deliberately.',
+    hindi: 'जानवर',
+    hindiInstruction: 'जानवरों को गिनें',
+    body: [
+      'Seven rows of animals: elephants, lions, pandas, kangaroos, rhinos, a crocodile and pigs, each with a box for the number.',
+      'Animals are the second most familiar category after fruit, so this is a comfortable sheet, but two rows do something more.',
+      'The elephants and the pigs are drawn at noticeably different scales, so a row of large animals sits near a row of small ones. Children who judge quantity by how much of the page something fills will get these two rows the wrong way round, which is the point.',
+      'The crocodile row has a single animal in it. As on the clothes sheet, a row of one interrupts the rhythm of counting and makes a child stop and think about what is being asked. Coming near the end of a long sheet, it is a good test of whether they are still paying attention or answering on autopilot.',
+    ],
+    skillsIntro:
+      'A familiar category, with two rows that quietly test whether your child is still thinking.',
+    skills: [
+      'Separating quantity from animal size',
+      'Counting a group of one',
+      'Staying attentive to the end of a long sheet',
+      'Animal names in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'My child said the elephants row had more than the pigs row when it did not.',
+        a: 'They are judging by how much space the animals take up rather than by how many there are. Counting each row out loud with a finger usually settles it.',
+      },
+      {
+        q: 'Is this a good sheet to start with?',
+        a: 'It is a reasonable second sheet. Fruit is the gentler starting point, but animals are almost as familiar and this one has more going on.',
+      },
+    ],
+  },
+
+  120: {
+    slug: 'count-the-insects',
+    h1: 'Count the insects: free printable counting worksheet',
+    metaTitle: 'Free Insect Counting Worksheet to Print',
+    metaDescription:
+      'Free printable insect counting worksheet for ages 3 to 6. Two similar ant rows make this a visual discrimination exercise as well as a counting one.',
+    hindi: 'कीड़े',
+    hindiInstruction: 'कीड़ों को गिनें',
+    body: [
+      'Six rows of insects: caterpillars, ladybirds, ants, snails, butterflies and a second row of ants, each with a box for the number.',
+      'Two rows of ants appear on the same sheet, drawn slightly differently. That repetition is the reason to use this page. A child working quickly will reach the second ant row, recognise it as one they have already done, and either skip it or copy the earlier answer.',
+      'Catching that is more useful than the counting itself. It is the difference between reading a page and assuming a page, and the assuming habit is worth interrupting early, well before it turns up in school work.',
+      'The insects are also small and closely spaced, which makes them harder to separate visually than the fruit or the animals. Expect this sheet to take longer than its six rows suggest.',
+    ],
+    skillsIntro:
+      'Two similar ant rows make this as much about looking carefully as about counting.',
+    skills: [
+      'Telling apart two similar rows',
+      'Counting small, closely spaced items',
+      'Checking rather than assuming an answer',
+      'Insect names in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'Why are there two rows of ants?',
+        a: 'To catch the habit of assuming. A child working fast will recognise the second row and copy the first answer instead of counting it, which is worth noticing.',
+      },
+      {
+        q: 'This sheet takes longer than the others. Is that normal?',
+        a: 'Yes. The insects are small and closely spaced, so separating them by eye is harder than on the fruit or animal sheets even though there are fewer rows.',
+      },
+    ],
+  },
 };
 
 export function getSheetContent(id: number): SheetContent | undefined {
