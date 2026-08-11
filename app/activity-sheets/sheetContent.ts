@@ -710,6 +710,360 @@ export const sheetContent: Record<number, SheetContent> = {
       },
     ],
   },
+  121: {
+    slug: 'trace-number-1',
+    h1: 'Trace the number 1: free printable tracing worksheet',
+    metaTitle: 'Free Number 1 Tracing Worksheet (PDF)',
+    metaDescription:
+      'A free printable number 1 tracing worksheet for ages 3 to 6. The 1 is drawn as a balloon string, with bilingual instructions and the Hindi word एक on the sheet.',
+    hindi: 'एक',
+    hindiInstruction: 'चलो गिनती सीखें!',
+    body: [
+      'The number 1 drawn as a balloon on a string, with a dotted 1 beside it to trace along.',
+      'This is the only digit made from a single straight line, top to bottom, with no curve, no corner and no change of direction. That makes it the right place for any child to begin, and it is worth being clear about why. Every other numeral asks the hand to do at least two things. This one asks it to do one thing well.',
+      'The balloon is doing real work here. A string hangs down from a balloon, which is exactly the direction a 1 is written in, so the picture reminds your child where to start without you having to say it. Children who begin numerals from the bottom develop a habit that becomes hard to undo later, and a top-anchored image is a gentler correction than a spoken instruction.',
+      'The speech bubble shows ONE alongside एक, so the numeral, the English word and the Hindi word appear together on one page.',
+    ],
+    skillsIntro:
+      'One straight stroke, top to bottom. Simple to describe and the foundation for everything after it.',
+    skills: [
+      'Drawing a single controlled vertical line',
+      'Starting a numeral from the top',
+      'Following a dotted guide',
+      'Linking the numeral 1 to एक and one',
+    ],
+    faqs: [
+      {
+        q: 'Which number should my child trace first?',
+        a: 'This one. The 1 is a single straight line with no curve or change of direction, so it is the only numeral that asks the hand to do just one thing.',
+      },
+      {
+        q: 'My child starts the 1 from the bottom. Does it matter?',
+        a: 'It does over time, because bottom-up habits get harder to undo once writing speeds up. The balloon picture helps, since a string naturally hangs downward from the top.',
+      },
+      {
+        q: 'Does this sheet teach Devanagari numerals?',
+        a: 'No. It uses the 1 to 10 forms used in Indian schools, and adds the Hindi number word एक alongside. Devanagari numerals are a separate thing.',
+      },
+    ],
+  },
+
+  122: {
+    slug: 'trace-number-2',
+    h1: 'Trace the number 2: free printable tracing worksheet',
+    metaTitle: 'Free Number 2 Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable number 2 tracing worksheet for ages 3 to 6. The 2 is drawn as a swan, with bilingual instructions and the Hindi word दो printed on the sheet.',
+    hindi: 'दो',
+    hindiInstruction: 'चलो गिनती सीखें!',
+    body: [
+      'The number 2 drawn as a swan, its curved neck forming the top of the digit and its body the base, with a dotted 2 alongside to trace.',
+      'A 2 is the first numeral that changes direction twice in one stroke. The hand starts with a curve to the right, reverses into a diagonal running down and left, then reverses again into a flat line to the right. Three different movements without lifting the pencil.',
+      'That is why it is common for children to produce a 2 that looks like a backwards S, or to stop after the curve. Neither is a mistake worth much concern. It means the hand completed the first movement and has not yet learned to chain the second onto it.',
+      'The swan makes the shape memorable in a way an abstract digit does not. Curved neck, then a body along the water. If your child stalls halfway, naming the parts as they go often gets them through.',
+      'दो appears in the speech bubble beside TWO.',
+    ],
+    skillsIntro:
+      'Two direction changes in a single stroke, which is more than any earlier numeral asks for.',
+    skills: [
+      'Chaining three movements in one stroke',
+      'Reversing direction without lifting the pencil',
+      'Finishing on a straight horizontal line',
+      'Linking the numeral 2 to दो and two',
+    ],
+    faqs: [
+      {
+        q: 'My child writes the 2 backwards. Should I be concerned?',
+        a: 'Not at this age. Reversed numerals are very common up to around six and usually resolve on their own. Tracing over the dotted guide while saying the movement out loud helps more than correction.',
+      },
+      {
+        q: 'Why is the 2 drawn as a swan?',
+        a: 'The curved neck and the body along the water match the two halves of the digit, which gives your child something to remember when the pencil stalls halfway through.',
+      },
+    ],
+  },
+
+  123: {
+    slug: 'trace-number-3',
+    h1: 'Trace the number 3: free printable tracing worksheet',
+    metaTitle: 'Free Number 3 Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable number 3 tracing worksheet for ages 3 to 6. The 3 is drawn as a butterfly, with bilingual instructions and the Hindi word तीन on the sheet.',
+    hindi: 'तीन',
+    hindiInstruction: 'चलो गिनती सीखें!',
+    body: [
+      'The number 3 drawn as a butterfly, its two wings forming the two bumps of the digit, with a dotted 3 alongside.',
+      'A 3 is two curves stacked on top of each other, both opening to the left. The difficulty is not the curve itself, it is that both curves face the same way. Children who have just learned to alternate directions on a 2 often flip the second curve, producing something closer to an E or a backwards 3.',
+      'This is the most commonly reversed digit of the ten, and it stays that way longer than the others. It is not a reading problem and not a warning sign on its own.',
+      'The butterfly helps because a butterfly has two wings on the same side of its body when seen from the side, which is precisely what the two bumps are. Trace the top wing, then the bottom wing, same direction both times.',
+      'तीन appears beside THREE in the speech bubble.',
+    ],
+    skillsIntro:
+      'Two curves facing the same direction, which is what makes this the most reversed digit of the set.',
+    skills: [
+      'Repeating a curve in the same direction',
+      'Stacking two shapes vertically',
+      'Resisting the urge to alternate direction',
+      'Linking the numeral 3 to तीन and three',
+    ],
+    faqs: [
+      {
+        q: 'Why does my child keep writing the 3 backwards?',
+        a: 'Both curves of a 3 face the same way, and children who have just learned to alternate directions on a 2 often flip the second one. It is the most commonly reversed digit and usually settles by six or seven.',
+      },
+      {
+        q: 'Should I correct a reversed 3 every time?',
+        a: 'Constant correction tends to make children write less rather than better. Tracing the dotted guide while saying top wing, bottom wing does more.',
+      },
+    ],
+  },
+
+  124: {
+    slug: 'trace-number-4',
+    h1: 'Trace the number 4: free printable tracing worksheet',
+    metaTitle: 'Free Number 4 Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable number 4 tracing worksheet for ages 3 to 6. The first digit needing two separate strokes. Drawn as a dinosaur, with the Hindi word चार included.',
+    hindi: 'चार',
+    hindiInstruction: 'चलो गिनती सीखें!',
+    body: [
+      'The number 4 drawn as a dinosaur, with a dotted 4 beside it to trace.',
+      'This is where a lot of children stall, and it is worth knowing why before you sit down with the sheet. Every digit up to now has been one continuous stroke. A 4 is not. The pencil comes down and across, then has to lift, move back up to the top, and come down again in a separate line.',
+      'Lifting the pencil and putting it back down in the right place is a genuinely different skill from drawing a shape. It needs the child to hold a plan in mind across a pause. Plenty of four year olds who trace 1, 2 and 3 confidently will produce a 4 with the two strokes in the wrong relationship to each other, because the pause loses them.',
+      'If that happens, do the first stroke together, pause, and point to where the second one starts.',
+      'चार appears beside FOUR in the speech bubble.',
+    ],
+    skillsIntro:
+      'The first numeral that needs the pencil lifted and repositioned, which is a real step up.',
+    skills: [
+      'Writing a numeral in two separate strokes',
+      'Lifting and repositioning the pencil accurately',
+      'Holding a plan across a pause',
+      'Linking the numeral 4 to चार and four',
+    ],
+    faqs: [
+      {
+        q: 'Why does my child manage 1, 2 and 3 but struggle with 4?',
+        a: 'The first three are single continuous strokes. The 4 needs the pencil lifted and put back down in the right place, which is a different skill from drawing a shape.',
+      },
+      {
+        q: 'How can I help with the pencil lift?',
+        a: 'Do the first stroke together, pause deliberately, then point at exactly where the second stroke begins before letting them carry on.',
+      },
+    ],
+  },
+
+  125: {
+    slug: 'trace-number-5',
+    h1: 'Trace the number 5: free printable tracing worksheet',
+    metaTitle: 'Free Number 5 Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable number 5 tracing worksheet for ages 3 to 6. The 5 is drawn as a caterpillar, with bilingual instructions and the Hindi word पाँच on the sheet.',
+    hindi: 'पाँच',
+    hindiInstruction: 'चलो गिनती सीखें!',
+    body: [
+      'The number 5 drawn as a green caterpillar curling into the shape of the digit, with a dotted 5 alongside.',
+      'A 5 combines everything the earlier digits practised. There is a straight line down, a curve to the right at the bottom, and a flat bar across the top that most children add as a second stroke after lifting the pencil.',
+      'The top bar is the part that goes wrong. Because it is added last and separately, it often ends up too long, too short, or floating away from the vertical line it should join. Watch specifically for whether the bar touches the top of the down stroke.',
+      'A 5 is also frequently reversed, usually alongside a reversed 2 and 3. If all three are reversed, that is a consistent pattern rather than three separate problems, and it typically resolves together.',
+      'पाँच appears beside FIVE in the speech bubble.',
+    ],
+    skillsIntro:
+      'A straight line, a curve and a separate top bar, which makes this the most composite digit so far.',
+    skills: [
+      'Combining a straight line with a curve',
+      'Adding a second stroke that joins cleanly',
+      'Judging the length of a horizontal bar',
+      'Linking the numeral 5 to पाँच and five',
+    ],
+    faqs: [
+      {
+        q: 'My child leaves the top bar of the 5 floating.',
+        a: 'That is the most common problem with this digit, because the bar is added last as a separate stroke. Point out where it should touch the top of the down stroke before they start.',
+      },
+      {
+        q: 'My child reverses 2, 3 and 5 but not the others.',
+        a: 'Those three are the digits most often reversed, and reversing all of them is a consistent pattern rather than three separate difficulties. It usually settles together.',
+      },
+    ],
+  },
+
+  126: {
+    slug: 'trace-number-6',
+    h1: 'Trace the number 6: free printable tracing worksheet',
+    metaTitle: 'Free Number 6 Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable number 6 tracing worksheet for ages 3 to 6. The 6 is drawn as a snail shell, with bilingual instructions and the Hindi word छः printed on the sheet.',
+    hindi: 'छः',
+    hindiInstruction: 'चलो गिनती सीखें!',
+    body: [
+      'The number 6 drawn as a snail, its spiral shell forming the loop at the bottom of the digit, with a dotted 6 alongside.',
+      'A 6 is one continuous stroke that curves down from the top and then closes into a loop turning anticlockwise. No pencil lift, no corner, just a long controlled curve that has to finish by meeting itself.',
+      'Closing a loop back onto the line it came from is harder than it looks. The hand has to judge where the curve began while still moving, which is the same judgement needed later for a, d and g. Expect early attempts to leave the loop open or to overshoot past the join.',
+      'The snail is a good mnemonic precisely because a shell spirals inward. Trace down the snail body, then round into the shell.',
+      'Worth pairing with the 9 sheet afterwards, since the two digits loop in opposite directions and comparing them directly makes both clearer.',
+      'छः appears beside SIX in the speech bubble.',
+    ],
+    skillsIntro:
+      'One long curve closing into an anticlockwise loop, which is the same movement letters like a and d need.',
+    skills: [
+      'Closing a loop back onto the starting line',
+      'Controlling a long continuous curve',
+      'Turning anticlockwise deliberately',
+      'Linking the numeral 6 to छः and six',
+    ],
+    faqs: [
+      {
+        q: 'My child leaves the loop of the 6 open.',
+        a: 'Closing a loop means judging where the curve started while the hand is still moving, which is genuinely hard. Tracing the dotted guide slowly a few times does more than explaining it.',
+      },
+      {
+        q: 'Should we do 6 and 9 together?',
+        a: 'Doing them one after the other works well. They loop in opposite directions, so comparing them directly makes the difference clearer than meeting each on its own.',
+      },
+    ],
+  },
+
+  127: {
+    slug: 'trace-number-7',
+    h1: 'Trace the number 7: free printable tracing worksheet',
+    metaTitle: 'Free Number 7 Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable number 7 tracing worksheet for ages 3 to 6. The 7 is drawn as a playground slide, with bilingual instructions and the Hindi word सात included.',
+    hindi: 'सात',
+    hindiInstruction: 'चलो गिनती सीखें!',
+    body: [
+      'The number 7 drawn as a playground slide, the ladder forming the top bar and the slide itself the diagonal, with a dotted 7 alongside.',
+      'After the 6, this one comes as a relief. A 7 has no curves at all. It is a straight line across the top and a straight diagonal down, one continuous stroke with a single sharp corner between them.',
+      'That makes it the second easiest digit after the 1, and a good one to reach for when your child has had a frustrating session on something harder. Finishing a sheet cleanly matters for how willing they are to sit down next time.',
+      'The one thing to watch is the angle of the diagonal. Children often draw it almost vertical, which turns the 7 into something closer to a T. The slide picture helps, since a slide that goes straight down is not much of a slide.',
+      'सात appears beside SEVEN in the speech bubble.',
+    ],
+    skillsIntro:
+      'Two straight lines and one corner, with no curves anywhere. The easiest digit after the 1.',
+    skills: [
+      'Drawing a controlled diagonal line',
+      'Making a sharp corner without lifting the pencil',
+      'Judging the slope of a diagonal',
+      'Linking the numeral 7 to सात and seven',
+    ],
+    faqs: [
+      {
+        q: 'My child draws the 7 almost like a T.',
+        a: 'The diagonal is coming down too steeply. The slide picture helps, because a slide going straight down would not work as a slide.',
+      },
+      {
+        q: 'Is the 7 an easy digit to practise?',
+        a: 'Yes, it is the second easiest after the 1. It is a good one to use after a difficult session, since finishing something cleanly makes the next attempt more likely.',
+      },
+    ],
+  },
+
+  128: {
+    slug: 'trace-number-8',
+    h1: 'Trace the number 8: free printable tracing worksheet',
+    metaTitle: 'Free Number 8 Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable number 8 tracing worksheet for ages 3 to 6. The hardest single-stroke digit, drawn as a knotted rope, with the Hindi word आठ on the sheet.',
+    hindi: 'आठ',
+    hindiInstruction: 'चलो गिनती सीखें!',
+    body: [
+      'The number 8 drawn as a knotted rope, with a dotted 8 beside it to trace.',
+      'This is the hardest of the ten. An 8 is a single unbroken stroke that crosses back through its own middle and closes two loops, one above and one below, in opposite directions. Nothing else in the set asks for that.',
+      'Two things usually go wrong. The stroke crosses in the wrong place, so the top and bottom loops end up different sizes, or the child gives up on the crossing and draws two circles stacked instead. The second is very common and worth noticing rather than correcting sharply, because two stacked circles show the child understands the shape even if the hand cannot yet make it in one movement.',
+      'The rope is an unusually good picture for this. A knot genuinely does cross over itself, which is precisely the movement the digit needs.',
+      'Leave this one until 6 and 9 are comfortable, since both loop directions are needed here.',
+      'आठ appears beside EIGHT in the speech bubble.',
+    ],
+    skillsIntro:
+      'The hardest digit here. One unbroken stroke crossing itself and closing two loops in opposite directions.',
+    skills: [
+      'Crossing a stroke back through its own path',
+      'Closing two loops in one movement',
+      'Turning both clockwise and anticlockwise',
+      'Linking the numeral 8 to आठ and eight',
+    ],
+    faqs: [
+      {
+        q: 'My child draws two circles instead of one 8.',
+        a: 'That is very common and shows they understand the shape even though the hand cannot yet make it in one movement. The single stroke usually arrives a few months later.',
+      },
+      {
+        q: 'When should we try the 8?',
+        a: 'After 6 and 9 are comfortable. The 8 needs both loop directions, so meeting each one separately first makes it much less frustrating.',
+      },
+    ],
+  },
+
+  129: {
+    slug: 'trace-number-9',
+    h1: 'Trace the number 9: free printable tracing worksheet',
+    metaTitle: 'Free Number 9 Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable number 9 tracing worksheet for ages 3 to 6. The 9 is drawn as a lollipop, with bilingual instructions and the Hindi word नौ printed on the sheet.',
+    hindi: 'नौ',
+    hindiInstruction: 'चलो गिनती सीखें!',
+    body: [
+      'The number 9 drawn as a lollipop, the round sweet forming the loop and the stick forming the tail, with a dotted 9 alongside.',
+      'A 9 is a closed loop at the top followed by a straight line coming down from it. The loop turns clockwise, which is the opposite direction from the loop in a 6, and that opposition is the whole reason to do these two sheets near each other.',
+      'Children who have just mastered the 6 often carry the anticlockwise habit into the 9 and end up with a shape that reads as a mirrored 6. Pointing out that one loop sits at the top and the other at the bottom helps more than talking about direction, because top and bottom are easier for a young child to hold in mind than clockwise and anticlockwise.',
+      'The lollipop is a clean mnemonic. Round part first, then the stick straight down.',
+      'नौ appears beside NINE in the speech bubble.',
+    ],
+    skillsIntro:
+      'A clockwise loop with a straight tail, deliberately the opposite of the 6.',
+    skills: [
+      'Turning a loop clockwise',
+      'Attaching a straight line to a closed curve',
+      'Telling a 9 apart from a 6',
+      'Linking the numeral 9 to नौ and nine',
+    ],
+    faqs: [
+      {
+        q: 'My child muddles 6 and 9.',
+        a: 'They loop in opposite directions, which is hard to hold in mind. Talking about where the loop sits, at the top for a 9 and the bottom for a 6, works better than explaining clockwise and anticlockwise.',
+      },
+      {
+        q: 'Which should we practise first, 6 or 9?',
+        a: 'Either, but do them close together. Meeting the two loop directions side by side makes the contrast clearer than learning each in isolation.',
+      },
+    ],
+  },
+
+  130: {
+    slug: 'trace-number-10',
+    h1: 'Trace the number 10: free printable tracing worksheet',
+    metaTitle: 'Free Number 10 Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable number 10 tracing worksheet for ages 3 to 6. The first two-digit number, drawn as a candle and a donut, with the Hindi word दस included.',
+    hindi: 'दस',
+    hindiInstruction: 'चलो गिनती सीखें!',
+    body: [
+      'The number 10 drawn as a candle standing beside a donut, with a dotted 10 alongside to trace.',
+      'This sheet is doing something none of the others do. Every previous number was one symbol. Ten is two symbols standing next to each other, and understanding that is a genuinely bigger idea than any of the stroke work that came before.',
+      'For a young child, the natural assumption is that a bigger number needs a bigger or more complicated symbol. Ten breaks that. It reuses the 1 they already know, puts a 0 after it, and the meaning changes completely. Most children accept this without question at first and only find it strange later, which is fine.',
+      'On the page, the thing to watch is spacing. The 1 and the 0 need to sit close together as one number rather than drifting apart into two separate ones. The candle and donut sitting side by side is the picture that holds them together.',
+      'दस appears beside TEN in the speech bubble.',
+    ],
+    skillsIntro:
+      'The first number written with two symbols, which is a bigger idea than it appears.',
+    skills: [
+      'Writing two numerals as one number',
+      'Spacing digits close together',
+      'Reusing the 1 in a new meaning',
+      'Linking the numeral 10 to दस and ten',
+    ],
+    faqs: [
+      {
+        q: 'Why is 10 harder than 9 if the strokes are easier?',
+        a: 'The strokes are easier, but the idea is bigger. Ten is the first number written with two symbols, and the 1 no longer means one on its own.',
+      },
+      {
+        q: 'My child writes the 1 and 0 far apart.',
+        a: 'Spacing is the main thing to watch on this sheet. The candle and donut sitting side by side helps show that the two symbols belong together as one number.',
+      },
+    ],
+  },
 };
 
 export function getSheetContent(id: number): SheetContent | undefined {
