@@ -1064,6 +1064,313 @@ export const sheetContent: Record<number, SheetContent> = {
       },
     ],
   },
+  131: {
+    slug: 'trace-letter-a',
+    h1: 'Trace and color the letter A: free printable worksheet',
+    metaTitle: 'Free Letter A Tracing Worksheet (PDF)',
+    metaDescription:
+      'A free printable letter A tracing worksheet for ages 3 to 6. Trace a dotted apple and the uppercase A, with a bilingual instruction line on the sheet.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted apple to trace and colour, with a dotted uppercase A beneath it and the line A for Apple.',
+      'Starting the alphabet at A is convention rather than difficulty. An A is actually one of the harder capitals to form: two diagonal lines meeting at a point, then a crossbar between them, three separate strokes in all.',
+      'Diagonals are the last direction young hands master. Children draw confident vertical lines first, then horizontals, and only later manage a line that slants. So an A attempted at three often comes out with the legs uneven or the point rounded off, and none of that is a problem.',
+      'The apple is the more useful half of this page. Tracing a rounded outline before tackling the letter warms the hand up, and colouring it afterwards gives a finished result even if the A itself was hard.',
+      'If your child is struggling here, the C and H sheets are gentler and there is no reason to work through the alphabet in order.',
+    ],
+    skillsIntro:
+      'Two diagonals and a crossbar, which makes A harder than its position in the alphabet suggests.',
+    skills: [
+      'Drawing slanted lines in two directions',
+      'Joining two strokes at a point',
+      'Tracing a rounded outline before a letter',
+      'Linking the letter A to the sound in apple',
+    ],
+    faqs: [
+      {
+        q: 'Does this sheet have lowercase letters too?',
+        a: 'No, this set is uppercase only. Capitals are usually taught first because they are made from simpler, more separated strokes, and most Indian preschools introduce them before lowercase.',
+      },
+      {
+        q: 'My child finds the A difficult. Should we keep going?',
+        a: 'Try the C or H sheet instead. An A needs diagonal lines, which are the last direction young hands manage, so it is a surprisingly hard letter to start on.',
+      },
+      {
+        q: 'Should we work through the alphabet in order?',
+        a: 'There is no need. Grouping letters by how they are formed, such as all the straight-line ones together, tends to work better than A to Z order.',
+      },
+    ],
+    relatedPost: {
+      slug: 'why-4-year-olds-shouldnt-trace-letters',
+      title: "Why 4-year-olds shouldn't be tracing letters yet",
+    },
+  },
+
+  132: {
+    slug: 'trace-letter-b',
+    h1: 'Trace and color the letter B: free printable worksheet',
+    metaTitle: 'Free Letter B Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter B tracing worksheet for ages 3 to 6. Trace a dotted ball and the uppercase B, with a bilingual instruction line printed on the sheet.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted ball to trace and colour, a dotted uppercase B below it, and the line B for Ball.',
+      'A B is a straight line down the left side with two bumps attached to its right, drawn as two strokes. The straight line is easy. The two bumps are where it goes wrong, because they need to be roughly equal and both need to return to the spine rather than floating free.',
+      'B is also half of the most common letter confusion in early writing. B and D share a vertical line on the left and a curve on the right, and the only difference is that one has two bumps and the other has one. Children mix them up for a long time, and it is a shape problem rather than a reading problem.',
+      'The ball is the easiest picture in this part of the alphabet. It is a single circle, so a child who finds the letter hard can still trace and colour something successfully.',
+    ],
+    skillsIntro:
+      'A spine with two bumps attached, and half of the most common letter confusion there is.',
+    skills: [
+      'Attaching curves to a straight spine',
+      'Making two bumps roughly equal',
+      'Telling B apart from D',
+      'Linking the letter B to the sound in ball',
+    ],
+    faqs: [
+      {
+        q: 'My child keeps mixing up B and D.',
+        a: 'Very common, and it is a shape problem rather than a reading one. Both have a straight line on the left and a curve on the right, so the only difference is the number of bumps.',
+      },
+      {
+        q: 'Should we do B and D on the same day?',
+        a: 'Better to space them out at first. Once each is comfortable on its own, putting them side by side deliberately is a useful way to compare.',
+      },
+    ],
+  },
+
+  133: {
+    slug: 'trace-letter-c',
+    h1: 'Trace and color the letter C: free printable worksheet',
+    metaTitle: 'Free Letter C Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter C tracing worksheet for ages 3 to 6. Trace a dotted cat face and the uppercase C. The easiest letter to start with. Bilingual instructions.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted cat face to trace and colour, a dotted uppercase C below, and the line C for Cat.',
+      'If you are picking one letter to start with rather than following the alphabet, pick this one. A C is a single curve, one stroke, no lift, no corner and no join. Nothing else in the alphabet is this simple.',
+      'It is also the shape that four other capitals are built from. G is a C with a bar added, O is a C closed up, Q is an O with a tail, and S is two Cs facing opposite ways. Getting the C curve comfortable makes a noticeable difference to all of them, which is why letter order by shape beats letter order by alphabet.',
+      'The cat face is the harder half of this page. Whiskers are thin straight lines radiating outward, which asks for more control than the letter does. Trace the letter first if your child tires quickly.',
+    ],
+    skillsIntro:
+      'One single curve, the simplest letter in the alphabet and the shape four others are built from.',
+    skills: [
+      'Drawing one continuous anticlockwise curve',
+      'Stopping a curve before it closes',
+      'Tracing thin radiating lines',
+      'Linking the letter C to the sound in cat',
+    ],
+    faqs: [
+      {
+        q: 'Which letter should my child trace first?',
+        a: 'This one. A C is a single curve with no lift, no corner and no join, which makes it the simplest capital there is.',
+      },
+      {
+        q: 'Why does the C matter more than other letters?',
+        a: 'Because G, O, Q and S are all built from the same curve. Getting C comfortable makes those four noticeably easier.',
+      },
+    ],
+  },
+
+  134: {
+    slug: 'trace-letter-d',
+    h1: 'Trace and color the letter D: free printable worksheet',
+    metaTitle: 'Free Letter D Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter D tracing worksheet for ages 3 to 6. Trace a dotted dog face and the uppercase D, with a bilingual instruction line on the sheet.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted dog face with floppy ears to trace and colour, a dotted uppercase D beneath, and the line D for Dog.',
+      'A D is a straight line down and one large curve out and back, two strokes. It is simpler than a B, which needs two bumps, but the two letters are close enough that children confuse them for months.',
+      'The thing worth watching is where the curve rejoins the vertical line. Children often finish the bump short of the bottom, leaving a small gap, or run it past the line entirely. Both are worth pointing at rather than explaining, since the fix is visual.',
+      'The dog is the friendliest picture in this stretch of the alphabet and children usually want to colour it before tracing the letter. Letting them do it in that order is fine. Nothing about the sheet requires the letter to come first.',
+    ],
+    skillsIntro:
+      'A spine and a single large curve, easier than B but easily confused with it.',
+    skills: [
+      'Joining a curve back to a vertical line',
+      'Making one large controlled bump',
+      'Telling D apart from B',
+      'Linking the letter D to the sound in dog',
+    ],
+    faqs: [
+      {
+        q: 'Is D easier than B?',
+        a: 'Yes, because it has one curve rather than two bumps that need to match. Children still confuse the two letters for months, which is normal.',
+      },
+      {
+        q: 'My child wants to colour the dog before tracing the letter.',
+        a: 'That is fine. Nothing about the sheet requires the letter to come first, and a child who has enjoyed the picture is usually more willing to try the letter afterwards.',
+      },
+    ],
+  },
+
+  135: {
+    slug: 'trace-letter-e',
+    h1: 'Trace and color the letter E: free printable worksheet',
+    metaTitle: 'Free Letter E Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter E tracing worksheet for ages 3 to 6. Trace a dotted egg and the uppercase E. Four separate strokes, all straight lines. Bilingual instructions.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted decorated egg to trace and colour, a dotted uppercase E below it, and the line E for Egg.',
+      'An E has more strokes than any other letter in this part of the alphabet: one vertical line and three horizontal bars, four separate movements with a pencil lift between each.',
+      'That sounds harder than it is. Every stroke is a straight line, and straight lines in vertical and horizontal directions are the two young hands manage first. What an E really tests is not control but sequencing, holding in mind that three bars are needed and keeping track of which ones are done.',
+      'Watch for bars of very different lengths, or a middle bar that drifts up or down. Neither matters much at this stage, but both tell you your child is working stroke by stroke rather than seeing the letter as a whole.',
+      'The egg is decorated with wavy bands, which gives some curved tracing to balance a letter made entirely of straight lines.',
+    ],
+    skillsIntro:
+      'Four straight strokes with a pencil lift between each, which makes this a sequencing test more than a control one.',
+    skills: [
+      'Sequencing four separate strokes',
+      'Keeping horizontal bars a similar length',
+      'Lifting and repositioning three times',
+      'Linking the letter E to the sound in egg',
+    ],
+    faqs: [
+      {
+        q: 'My child forgets one of the bars on the E.',
+        a: 'That is a sequencing slip rather than a control problem. Counting the bars out loud while tracing, one, two, three, usually fixes it faster than pointing at the mistake.',
+      },
+      {
+        q: 'Is E hard because it has four strokes?',
+        a: 'Not really. Every stroke is a straight line, which young hands manage early. The difficulty is remembering how many bars are needed and which are done.',
+      },
+    ],
+  },
+
+  136: {
+    slug: 'trace-letter-f',
+    h1: 'Trace and color the letter F: free printable worksheet',
+    metaTitle: 'Free Letter F Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter F tracing worksheet for ages 3 to 6. Trace a dotted flower and the uppercase F, with a bilingual instruction line printed on the sheet.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted flower with petals, a stem and a leaf to trace and colour, a dotted uppercase F beneath, and the line F for Flower.',
+      'An F is an E with the bottom bar removed: one vertical line and two horizontals, three strokes. Doing these two letters near each other makes that relationship obvious, and children who spot it tend to hold both letters more securely afterwards.',
+      'The mistake to expect is an F drawn with three bars, which is to say an E. It happens most when a child has done a lot of E practice recently and the hand carries on with the familiar pattern. Pointing out that the F stops at two is enough.',
+      'The flower is the more demanding tracing on this page. Rounded petals meeting at a centre need the hand to change direction repeatedly, which is different work from the letter and useful in its own right.',
+    ],
+    skillsIntro:
+      'The same letter as E with one bar removed, which makes the pair worth doing together.',
+    skills: [
+      'Stopping a familiar pattern at two rather than three',
+      'Tracing repeated rounded petals',
+      'Changing direction repeatedly in one shape',
+      'Linking the letter F to the sound in flower',
+    ],
+    faqs: [
+      {
+        q: 'My child draws the F with three bars.',
+        a: 'That usually happens after a lot of E practice, because the hand carries on with the familiar pattern. Saying that F stops at two is normally enough.',
+      },
+      {
+        q: 'Should E and F be practised together?',
+        a: 'Yes, they work well as a pair. An F is an E with the bottom bar removed, and children who notice that relationship tend to remember both letters better.',
+      },
+    ],
+  },
+
+  137: {
+    slug: 'trace-letter-g',
+    h1: 'Trace and color the letter G: free printable worksheet',
+    metaTitle: 'Free Letter G Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter G tracing worksheet for ages 3 to 6. Trace a dotted gift box and the uppercase G, with a bilingual instruction line on the sheet.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted gift box with a ribbon and bow to trace and colour, a dotted uppercase G below, and the line G for Gift.',
+      'A G is a C with a horizontal bar tucked into it. If the C sheet has already been done, this one is mostly a matter of adding one short stroke, which is why the two belong near each other.',
+      'The bar is small and it sits inside the curve rather than at an edge, so it needs more placement accuracy than its size suggests. Children often draw it too long, so it pokes out of the letter, or attach it at the wrong height. Neither is worth much correction at this stage.',
+      'The gift box is the most geometric picture in this part of the alphabet: straight edges, right angles, and a ribbon crossing the middle. It is a good contrast to the letter, which is almost all curve, and it gives a child who finds curves hard something they can trace confidently.',
+    ],
+    skillsIntro:
+      'A C with one short bar added, which makes it the natural next letter after C.',
+    skills: [
+      'Adding a short stroke inside a curve',
+      'Judging where a small bar attaches',
+      'Tracing straight edges and right angles',
+      'Linking the letter G to the sound in gift',
+    ],
+    faqs: [
+      {
+        q: 'Which letter should come before G?',
+        a: 'C. A G is a C with a bar tucked inside it, so doing the C sheet first turns this one into a small addition rather than a new shape.',
+      },
+      {
+        q: 'My child draws the bar poking out of the G.',
+        a: 'Common, because the bar sits inside the curve rather than at an edge. It needs more placement accuracy than its size suggests and settles with practice.',
+      },
+    ],
+  },
+
+  138: {
+    slug: 'trace-letter-h',
+    h1: 'Trace and color the letter H: free printable worksheet',
+    metaTitle: 'Free Letter H Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter H tracing worksheet for ages 3 to 6. Trace a dotted hat and the uppercase H. Three straight strokes with no curves at all.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted round hat to trace and colour, a dotted uppercase H beneath it, and the line H for Hat.',
+      'An H is three straight strokes: two verticals with a bar between them. There are no curves, no diagonals and no joins that need to be judged, which makes it one of the two or three easiest capitals in the alphabet.',
+      'It is a good letter for a child who has found A frustrating. Vertical lines are the first direction a hand controls reliably, so an H usually comes out looking like an H on the first attempt, and that matters more for willingness than any single letter does for reading.',
+      'The one thing to watch is the height of the crossbar, which tends to drift towards the top. If it sits high enough the letter starts reading as an A without its point.',
+      'The hat is a curved outline with a brim, so the page still asks for both kinds of movement.',
+    ],
+    skillsIntro:
+      'Three straight strokes, no curves and no diagonals. One of the easiest capitals to get right.',
+    skills: [
+      'Drawing two parallel vertical lines',
+      'Placing a crossbar at mid height',
+      'Building confidence with an achievable letter',
+      'Linking the letter H to the sound in hat',
+    ],
+    faqs: [
+      {
+        q: 'My child got nowhere with A. What should we try?',
+        a: 'This one. An H is three straight strokes with no curves or diagonals, so it usually comes out looking right on the first attempt, which matters for willingness to keep going.',
+      },
+      {
+        q: 'The crossbar keeps drifting to the top.',
+        a: 'Very common. If it sits high enough the letter starts to look like an A without its point. Pointing at the middle of the two verticals before they start is usually enough.',
+      },
+    ],
+  },
+
+  139: {
+    slug: 'trace-letter-i',
+    h1: 'Trace and color the letter I: free printable worksheet',
+    metaTitle: 'Free Letter I Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter I tracing worksheet for ages 3 to 6. Trace a dotted igloo and the uppercase I, with a bilingual instruction line printed on the sheet.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted igloo with block markings to trace and colour, a dotted uppercase I below, and the line I for Igloo.',
+      'The letter is the simplest on this sheet by some distance: a vertical line with a short bar at the top and another at the bottom, three strokes, all straight. Most children who can manage an H can manage an I immediately.',
+      'The picture is the opposite. An igloo is a dome divided into rows of blocks, which is the most detailed tracing in this part of the alphabet, and it is also a building no Indian child has ever seen. That is worth a moment rather than skipping past. Alphabet sets everywhere use igloo for I because almost nothing else does, so it is one of the few letters where the word itself needs explaining before the sound does.',
+      'If your child asks what an igloo is, that conversation is more valuable than the tracing.',
+    ],
+    skillsIntro:
+      'The simplest letter here, paired with the most detailed picture and a word that needs explaining.',
+    skills: [
+      'Drawing a vertical line with bars at both ends',
+      'Tracing a detailed grid of blocks',
+      'Learning a word outside everyday experience',
+      'Linking the letter I to the sound in igloo',
+    ],
+    faqs: [
+      {
+        q: 'Why use an igloo when Indian children have never seen one?',
+        a: 'Very few English words start with I in a way young children recognise, so almost every alphabet set worldwide uses igloo. It is one of the few letters where the word needs explaining before the sound does.',
+      },
+      {
+        q: 'The igloo looks harder than the letter.',
+        a: 'It is. The dome is divided into rows of blocks, making it the most detailed picture in this stretch, while the letter itself is three straight strokes.',
+      },
+    ],
+  },
 };
 
 export function getSheetContent(id: number): SheetContent | undefined {
