@@ -2026,7 +2026,7 @@ export const sheetContent: Record<number, SheetContent> = {
   159: {
     slug: 'line-tracing-loops-and-spirals',
     h1: 'Loops and spirals: free printable line tracing worksheet',
-    metaTitle: 'Free Loop Tracing Worksheet for Kids (PDF)',
+    metaTitle: 'Free Loop Tracing Worksheet (PDF)',
     metaDescription:
       'Free printable loop and spiral tracing worksheet for ages 3 to 5. Practises the curling movement that cursive writing needs later. Bilingual instructions.',
     hindi: 'रेखाएँ ट्रेस करें',
@@ -2060,7 +2060,7 @@ export const sheetContent: Record<number, SheetContent> = {
   160: {
     slug: 'line-tracing-peaks-and-coils',
     h1: 'Peaks and coils: free printable line tracing worksheet',
-    metaTitle: 'Free Zigzag Tracing Worksheet for Kids (PDF)',
+    metaTitle: 'Free Zigzag Tracing Worksheet (PDF)',
     metaDescription:
       'Free printable line tracing worksheet for ages 3 to 5, mixing tight peaks, arches and tall cursive-style coils. Pre-writing practice with bilingual instructions.',
     hindi: 'रेखाएँ ट्रेस करें',
@@ -2094,7 +2094,7 @@ export const sheetContent: Record<number, SheetContent> = {
   161: {
     slug: 'line-tracing-arches-and-swirls',
     h1: 'Arches and swirls: free printable line tracing worksheet',
-    metaTitle: 'Free Curve Tracing Worksheet for Kids (PDF)',
+    metaTitle: 'Free Curve Tracing Worksheet (PDF)',
     metaDescription:
       'Free printable arch and swirl tracing worksheet for ages 3 to 5. Includes a single large arc and a row of decorative spirals. Bilingual instructions on the sheet.',
     hindi: 'रेखाएँ ट्रेस करें',
@@ -2128,7 +2128,7 @@ export const sheetContent: Record<number, SheetContent> = {
   162: {
     slug: 'line-tracing-waves-and-scallops',
     h1: 'Waves and scallops: free printable line tracing worksheet',
-    metaTitle: 'Free Wavy Line Tracing Worksheet (PDF)',
+    metaTitle: 'Free Wavy Line Tracing Worksheet',
     metaDescription:
       'Free printable wavy line tracing worksheet for ages 3 to 5. Rounded loops, scallops and a long tapering spiral. Pre-writing practice with bilingual instructions.',
     hindi: 'रेखाएँ ट्रेस करें',
@@ -2190,6 +2190,282 @@ export const sheetContent: Record<number, SheetContent> = {
       {
         q: 'Should this sheet come first or last?',
         a: 'Last. It makes most sense once the other six sheets are comfortable and your child is ready to think about direction rather than just shape.',
+      },
+    ],
+  },
+  164: {
+    slug: 'morning-routine-toothbrush',
+    h1: 'Help Choti reach her toothbrush: routine tracing worksheet',
+    metaTitle: 'Free Morning Routine Tracing Worksheet',
+    metaDescription:
+      'A free printable morning routine tracing worksheet for ages 3 to 6. Trace a straight line from Choti to her toothbrush. The easiest sheet in the routine set.',
+    hindi: 'छोटी की सुबह की तैयारी',
+    hindiInstruction: 'छोटी को उसके टूथब्रश तक पहुँचने में मदद करें!',
+    body: [
+      'Choti stands at the top of the page and her toothbrush sits at the bottom, with a dotted line running straight down between them.',
+      'This is the first sheet in the morning routine set and the simplest. One straight vertical line, no curves, no corners, and a picture at each end. A two or three year old can complete it on the first try.',
+      'The routine set does something the other tracing sheets do not. Instead of practising a shape for its own sake, each line connects Choti to the next thing she needs to do, so a child is following a story rather than completing an exercise. That difference is worth more than it sounds for a child who has decided worksheets are dull.',
+      'It also gives you a way into the conversation about the actual routine. Doing the sheet before brushing, and naming what comes next, turns a worksheet into a small piece of the morning rather than something separate from it.',
+    ],
+    skillsIntro:
+      'A single vertical line with a purpose at the end of it, which makes this the gentlest sheet in the set.',
+    skills: [
+      'Drawing one controlled vertical line',
+      'Connecting a start point to an end point',
+      'Following a sequence with meaning',
+      'Talking about the morning routine',
+    ],
+    faqs: [
+      {
+        q: 'Which morning routine sheet should we start with?',
+        a: 'This one. It is a single straight line down the page, so a two or three year old can finish it on the first attempt.',
+      },
+      {
+        q: 'How are these different from the line tracing sheets?',
+        a: 'The line connects Choti to something she needs, so your child follows a small story rather than repeating a shape. It works better for children who find plain practice dull.',
+      },
+      {
+        q: 'Can we use these as a routine chart?',
+        a: 'They are tracing sheets rather than a chart, but printing several and putting them up in order works well as a simple visual routine for a young child.',
+      },
+    ],
+  },
+
+  165: {
+    slug: 'morning-routine-bathtub',
+    h1: 'Help Choti reach her bathtub: routine tracing worksheet',
+    metaTitle: 'Free Diagonal Line Tracing Worksheet',
+    metaDescription:
+      'Free printable morning routine tracing worksheet for ages 3 to 6. Trace a long diagonal from Choti to the bathtub, the first slanted line in the set.',
+    hindi: 'छोटी की सुबह की तैयारी',
+    hindiInstruction: 'छोटी को बाथटब तक पहुँचने में मदद करें!',
+    body: [
+      'Choti stands at the top right of the page and the bathtub sits at the bottom left, joined by one long dotted diagonal.',
+      'This is the first slanted line in the routine set, and it is a genuine step up from the toothbrush sheet. Diagonals are the last direction a young hand controls, because they need the wrist and shoulder to move together rather than one at a time.',
+      'What makes it harder still is the length. The line crosses the full width and height of the page in one stroke, so there is no natural place to pause and reset. Expect the line to bow or wander in the middle, which is where control usually gives out.',
+      'If your child is finding it difficult, turning the paper slightly so the diagonal runs more vertically is a fair adjustment rather than cheating. Most adults do the same thing without noticing when writing at an angle.',
+    ],
+    skillsIntro:
+      'One long diagonal across the whole page, which needs the wrist and shoulder working together.',
+    skills: [
+      'Drawing a long diagonal line',
+      'Moving wrist and shoulder together',
+      'Holding a line steady with no pause point',
+      'Following a corner to corner path',
+    ],
+    faqs: [
+      {
+        q: 'Why is the diagonal harder than the straight line?',
+        a: 'Diagonals need the wrist and shoulder moving together rather than one at a time, and they are the last direction a young hand controls.',
+      },
+      {
+        q: 'Can my child turn the paper to make it easier?',
+        a: 'Yes, and it is a sensible adjustment rather than cheating. Most adults rotate the page without noticing when writing at an angle.',
+      },
+    ],
+  },
+
+  166: {
+    slug: 'morning-routine-uniform',
+    h1: 'Help Choti reach her uniform: routine tracing worksheet',
+    metaTitle: 'Free Wavy Path Tracing Worksheet',
+    metaDescription:
+      'Free printable morning routine tracing worksheet for ages 3 to 6. Trace a winding vertical path from Choti down to her school uniform. Bilingual instructions.',
+    hindi: 'छोटी की सुबह की तैयारी',
+    hindiInstruction: 'छोटी को उसकी यूनिफ़ॉर्म तक पहुँचने में मदद करें!',
+    body: [
+      'Choti is at the top and her school uniform at the bottom, connected by a dotted line that winds from side to side as it travels down.',
+      'The line runs vertically like the toothbrush sheet, but it no longer runs straight. It bends left and right on the way down, which means the hand has to keep adjusting direction while still making overall downward progress.',
+      'Holding two things at once, a general direction and a constantly changing local one, is the actual difficulty here, and it is a good marker of where a child is. Children who trace a straight line neatly often either flatten this one into a straight line or wander off the path entirely.',
+      'The uniform at the bottom makes this a useful sheet for a child about to start school or just settling in. Tracing towards a uniform, and talking about the day ahead while doing it, is a gentler way into that conversation than asking directly.',
+    ],
+    skillsIntro:
+      'A winding path that changes direction while still heading downward, which asks for two things at once.',
+    skills: [
+      'Changing direction while keeping overall course',
+      'Following a path rather than a straight route',
+      'Staying on a line that curves unpredictably',
+      'Talking about the school day',
+    ],
+    faqs: [
+      {
+        q: 'My child flattens the wavy line into a straight one.',
+        a: 'Common. Following a path that changes direction while still travelling downward means holding two things in mind, which is harder than either one alone.',
+      },
+      {
+        q: 'Is this a good sheet before starting school?',
+        a: 'Yes. Tracing towards the uniform gives you a natural way to talk about the school day without asking about it directly.',
+      },
+    ],
+  },
+
+  167: {
+    slug: 'morning-routine-breakfast',
+    h1: 'Help Choti reach her breakfast: routine tracing worksheet',
+    metaTitle: 'Free Zigzag Path Tracing Worksheet',
+    metaDescription:
+      'Free printable morning routine tracing worksheet for ages 3 to 6. Trace a sharp zigzag from Choti across to her breakfast bowl. Free download, no email.',
+    hindi: 'छोटी की सुबह की तैयारी',
+    hindiInstruction: 'छोटी को उसके नाश्ते तक पहुँचने में मदद करें!',
+    body: [
+      'Choti is on the left of the page and a bowl of breakfast on the right, joined by a dotted zigzag running across between them.',
+      'The direction changes here are sharp rather than rounded. Where the uniform sheet curved gently, this one turns at points, which means the pencil has to stop completely and set off again at a new angle.',
+      'Stopping cleanly is the skill. Children who are enjoying the movement tend to round off the corners and produce a wave instead of a zigzag, which is a sign of momentum rather than carelessness. Slowing down and pausing at each point is the thing to encourage, and it is directly useful later for letters like M, W and Z.',
+      'This is also the first routine sheet that travels left to right across the page rather than top to bottom, which is the direction all reading and writing will eventually go.',
+    ],
+    skillsIntro:
+      'Sharp corners rather than curves, so the pencil has to stop dead and restart at a new angle.',
+    skills: [
+      'Stopping a stroke completely at a corner',
+      'Setting off again at a new angle',
+      'Working left to right across the page',
+      'Preparing for the M, W and Z shapes',
+    ],
+    faqs: [
+      {
+        q: 'My child rounds off the zigzag corners.',
+        a: 'That is momentum rather than carelessness. Slowing down and pausing at each point is the thing to encourage, and it helps directly with letters like M, W and Z.',
+      },
+      {
+        q: 'Why does left to right matter?',
+        a: 'It is the direction reading and writing will eventually go, so tracing across the page rather than down it is quietly useful practice.',
+      },
+    ],
+  },
+
+  168: {
+    slug: 'morning-routine-school-bag',
+    h1: 'Help Choti reach her school bag: routine tracing worksheet',
+    metaTitle: 'Free Curved Path Tracing Worksheet',
+    metaDescription:
+      'Free printable morning routine tracing worksheet for ages 3 to 6. Trace a gentle rolling wave from Choti across to her school bag. Bilingual instructions.',
+    hindi: 'छोटी की सुबह की तैयारी',
+    hindiInstruction: 'छोटी को उसके स्कूल बैग तक पहुँचने में मदद करें!',
+    body: [
+      'Choti stands on the left and her school bag on the right, connected by a dotted line that rolls in gentle waves across the page.',
+      'After the sharp corners of the breakfast sheet, this is deliberately smooth. The line rises and falls without ever stopping, so the pencil keeps moving throughout and there is nothing to judge except staying on the path.',
+      'Alternating a sharp sheet with a smooth one is worth doing on purpose. The two movements use the hand differently, and a child who has just concentrated hard on stopping at corners usually finds a continuous curve relaxing rather than tiring.',
+      'It also travels left to right like the breakfast sheet, so the two work well as a pair on the same day if your child has the appetite for it.',
+    ],
+    skillsIntro:
+      'A smooth continuous wave with nothing to judge except staying on the path.',
+    skills: [
+      'Keeping a pencil moving without stopping',
+      'Following a gently rising and falling line',
+      'Recovering after a demanding sheet',
+      'Tracing left to right across a page',
+    ],
+    faqs: [
+      {
+        q: 'Should we do this after the breakfast sheet?',
+        a: 'It works well. The two movements use the hand differently, so a smooth continuous curve feels relaxing after concentrating on sharp corners.',
+      },
+      {
+        q: 'Is this sheet too easy for a five year old?',
+        a: 'Possibly, on its own. Ask them to trace it slowly and stay exactly on the dots rather than finishing quickly, and it becomes a control exercise again.',
+      },
+    ],
+  },
+
+  169: {
+    slug: 'morning-routine-shoes',
+    h1: 'Help Choti reach her shoes: routine tracing worksheet',
+    metaTitle: 'Free Step Path Tracing Worksheet',
+    metaDescription:
+      'Free printable morning routine tracing worksheet for ages 3 to 6. Trace a staircase path of right angles from Choti down to her shoes. Free download.',
+    hindi: 'छोटी की सुबह की तैयारी',
+    hindiInstruction: 'छोटी को उसके जूतों तक पहुँचने में मदद करें!',
+    body: [
+      'Choti is at the top and a pair of shoes at the bottom, joined by a dotted path that descends in a series of square steps.',
+      'This is the most structured line in the routine set. Every turn is a right angle, alternating between horizontal and vertical, which means the hand has to switch direction cleanly and repeatedly with no curve to carry it round.',
+      'Right angle turns are harder than they look, because there is no momentum to help. The pencil has to arrive, stop, and go again at ninety degrees. Corners that round off or overshoot are ordinary and worth expecting.',
+      'The staircase shape also happens to be excellent preparation for the capital E, F, H, L and T, all of which are built entirely from horizontal and vertical strokes meeting at right angles.',
+    ],
+    skillsIntro:
+      'A staircase of right angles, with no curve to carry the hand round the corners.',
+    skills: [
+      'Turning cleanly at a right angle',
+      'Alternating horizontal and vertical strokes',
+      'Stopping without overshooting a corner',
+      'Preparing for the E, F, H, L and T letters',
+    ],
+    faqs: [
+      {
+        q: 'Why are right angle turns difficult?',
+        a: 'There is no momentum to help. The pencil has to arrive, stop completely, and set off again at ninety degrees, unlike a curve which carries the hand round.',
+      },
+      {
+        q: 'Which letters does this help with?',
+        a: 'E, F, H, L and T. All of them are built entirely from horizontal and vertical strokes meeting at right angles, which is exactly what this path practises.',
+      },
+    ],
+  },
+
+  170: {
+    slug: 'morning-routine-school-bus',
+    h1: 'Help Choti reach her school bus: routine tracing worksheet',
+    metaTitle: 'Free Loop Path Tracing Worksheet',
+    metaDescription:
+      'Free printable morning routine tracing worksheet for ages 3 to 6. Trace a path of tall standing loops from Choti up to her school bus. Bilingual instructions.',
+    hindi: 'छोटी की सुबह की तैयारी',
+    hindiInstruction: 'छोटी को उसकी स्कूल बस तक पहुँचने में मदद करें!',
+    body: [
+      'Choti stands at the lower left and a yellow school bus at the upper right, connected by a dotted path of tall standing loops.',
+      'This is where the routine set gets properly difficult. The loops rise and fall while the whole path travels upward and across, so the hand is doing a repeated local movement and a steady overall one at the same time.',
+      'A loop also crosses back over its own path, which is the movement that separates writing from drawing. Nothing earlier in this set asks for it. If your child has done the loops and spirals line tracing sheet, this is the same skill inside a story.',
+      'Expect loops that do not close, or a path that flattens out as it goes. Both are normal and neither is worth correcting hard.',
+      'The bus is also the point in the morning where a child either makes it out of the door or does not, which tends to make this the sheet they recognise fastest.',
+    ],
+    skillsIntro:
+      'Tall repeated loops climbing across the page, which is the hardest movement in this set.',
+    skills: [
+      'Crossing a stroke back over its own path',
+      'Repeating a loop while travelling upward',
+      'Closing loops rather than leaving them open',
+      'Combining a local and an overall movement',
+    ],
+    faqs: [
+      {
+        q: 'My child’s loops do not close.',
+        a: 'Normal, and not worth correcting hard. Closing a loop means judging where the stroke started while the hand is still moving, which is genuinely difficult.',
+      },
+      {
+        q: 'Which sheet should come before this one?',
+        a: 'The loops and spirals line tracing sheet, if you have used it. It practises the same crossing movement without the added job of travelling across the page.',
+      },
+    ],
+  },
+
+  171: {
+    slug: 'morning-routine-classroom',
+    h1: 'Help Choti reach her classroom: routine tracing worksheet',
+    metaTitle: 'Free Spiral Path Tracing Worksheet',
+    metaDescription:
+      'Free printable morning routine tracing worksheet for ages 3 to 6. Trace a path of tight coils from Choti to her classroom. The last sheet in the routine set.',
+    hindi: 'छोटी की सुबह की तैयारी',
+    hindiInstruction: 'छोटी को उसकी कक्षा तक पहुँचने में मदद करें!',
+    body: [
+      'Choti is on the left and her classroom desk on the right, joined by a dotted path of tightly wound coils running across the page.',
+      'This is the last sheet in the morning routine set and the most demanding. The coils are smaller and packed closer than the loops on the school bus sheet, which means less room for error and a continuous movement that cannot pause between turns.',
+      'Tight repeated coils are the closest thing in the whole collection to continuous cursive movement. A child who can trace this row is producing, in a small way, exactly the motion joined-up writing is built from, several years before anyone asks for it.',
+      'The set also finishes where the morning does. Toothbrush, bath, uniform, breakfast, bag, shoes, bus, classroom is the actual order of an Indian school morning, and doing the eight sheets in that sequence over a week or two makes the routine visible to a child who is still learning what comes next.',
+    ],
+    skillsIntro:
+      'Tight coils packed close together, the most demanding movement in the routine set.',
+    skills: [
+      'Producing tightly wound repeated coils',
+      'Sustaining a movement without pausing',
+      'Working accurately in a small space',
+      'Preparing for continuous cursive movement',
+    ],
+    faqs: [
+      {
+        q: 'What order should the eight routine sheets be done in?',
+        a: 'Toothbrush, bath, uniform, breakfast, school bag, shoes, school bus, classroom. That is the order of an actual school morning and the sheets get harder along the way.',
+      },
+      {
+        q: 'Is this the hardest sheet in the set?',
+        a: 'Yes. The coils are smaller and closer together than the school bus loops, so there is less room for error and no chance to pause between turns.',
       },
     ],
   },
