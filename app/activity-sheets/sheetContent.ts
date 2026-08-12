@@ -1676,6 +1676,277 @@ export const sheetContent: Record<number, SheetContent> = {
       },
     ],
   },
+  149: {
+    slug: 'trace-letter-s',
+    h1: 'Trace and color the letter S: free printable worksheet',
+    metaTitle: 'Free Letter S Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter S tracing worksheet for ages 3 to 6. Trace a dotted shoe and the uppercase S, one of the two most reversed letters in the alphabet.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted shoe with laces to trace and colour, a dotted uppercase S below, and the line S for Shoe.',
+      'An S is one continuous stroke that curves one way and then immediately curves back the other. No lift, no corner, just a reversal in the middle of a single movement, and that reversal is what makes it one of the hardest letters here.',
+      'It is also, along with Z, the letter children reverse most. A backwards S is a perfectly balanced shape, so nothing about it looks wrong on the page, and children will happily produce it for a year or more without noticing.',
+      'The useful preparation is not more S practice. It is the C sheet, because an S is two Cs facing opposite directions stacked on each other. Children who can draw a confident C already have half the movement.',
+      'The shoe is a long horizontal outline with laces, which is different work again and a good warm up before the letter.',
+    ],
+    skillsIntro:
+      'One stroke that reverses direction halfway, which makes it one of the two most reversed letters.',
+    skills: [
+      'Reversing a curve mid stroke',
+      'Stacking two opposite curves',
+      'Tracing a long horizontal outline',
+      'Linking the letter S to the sound in shoe',
+    ],
+    faqs: [
+      {
+        q: 'My child writes S backwards constantly.',
+        a: 'A reversed S is a balanced shape, so nothing about it looks wrong. Children produce it for a year or more without noticing, and it is not a warning sign on its own.',
+      },
+      {
+        q: 'What helps more than repeating the S?',
+        a: 'The C sheet. An S is two Cs facing opposite ways, so a confident C means half the movement is already there.',
+      },
+    ],
+  },
+
+  150: {
+    slug: 'trace-letter-t',
+    h1: 'Trace and color the letter T: free printable worksheet',
+    metaTitle: 'Free Letter T Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter T tracing worksheet for ages 3 to 6. Trace a dotted tomato and the uppercase T. Two straight strokes, one of the easiest capitals.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted tomato with a leafy top to trace and colour, a dotted uppercase T beneath, and the line T for Tomato.',
+      'A T is a horizontal bar across the top and a vertical line hanging from its centre. Two strokes, both straight, and it sits with C, H and L among the easiest capitals in the alphabet.',
+      'The one judgement it asks for is where the vertical joins the bar. It needs to come down from the middle, and children who are working quickly often drop it closer to one end, which produces something reading as an off balance L or a backwards one.',
+      'Coming directly after the S, this is a good pairing by accident. A child who has just wrestled with a double reversing curve gets a letter they can complete on the first try.',
+      'The tomato is worth a mention. Alphabet sets usually reach for tiger or train, and a tomato is something your child has seen being cut in the kitchen that morning.',
+    ],
+    skillsIntro:
+      'Two straight strokes with one judgement to make, which puts this among the easiest capitals.',
+    skills: [
+      'Hanging a vertical from the centre of a bar',
+      'Judging the midpoint of a line',
+      'Recovering confidence after a hard letter',
+      'Linking the letter T to the sound in tomato',
+    ],
+    faqs: [
+      {
+        q: 'My child joins the T stem near one end of the bar.',
+        a: 'Common when working quickly. The stem needs to drop from the middle, and pointing at the midpoint of the bar before they start is usually enough.',
+      },
+      {
+        q: 'Is T a good letter after a difficult one?',
+        a: 'Yes. It is two straight strokes, so a child who has just struggled with S or K can finish this one on the first attempt.',
+      },
+    ],
+  },
+
+  151: {
+    slug: 'trace-letter-u',
+    h1: 'Trace and color the letter U: free printable worksheet',
+    metaTitle: 'Free Letter U Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter U tracing worksheet for ages 3 to 6. Trace a dotted umbrella and the uppercase U, with a bilingual instruction line on the sheet.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted umbrella with panels and a curved handle to trace and colour, a dotted uppercase U below, and the line U for Umbrella.',
+      'A U is a single stroke: down one side, round the bottom, and up the other. The curve at the base is gentle and there is no join to close, which makes it considerably easier than the O it superficially resembles.',
+      'The thing to watch is the two sides staying parallel. Children often let the second side drift outward, producing a shape closer to a V with a rounded base. Not worth correcting hard, but worth noticing whether the width stays even.',
+      'A U is also a J with both sides the same length, so doing these two near each other is useful. The J hook and the U base are the same movement, one carried further than the other.',
+      'The umbrella handle is the best part of this page. It is a hook curving in the same direction as the bottom of the letter, so tracing the picture rehearses the letter without anyone having to say so.',
+    ],
+    skillsIntro:
+      'One stroke with a gentle base curve, easier than it looks and closely related to the J.',
+    skills: [
+      'Keeping two sides of a curve parallel',
+      'Rounding a base without a corner',
+      'Tracing a hook shape in the picture',
+      'Linking the letter U to the sound in umbrella',
+    ],
+    faqs: [
+      {
+        q: 'My child draws the U like a rounded V.',
+        a: 'The second side is drifting outward. Keeping the width even matters more than the curve itself, and it settles as control improves.',
+      },
+      {
+        q: 'Is U related to any other letter?',
+        a: 'To J. A U is essentially a J with both sides the same length, so the hook and the base are the same movement carried different distances.',
+      },
+    ],
+  },
+
+  152: {
+    slug: 'trace-letter-v',
+    h1: 'Trace and color the letter V: free printable worksheet',
+    metaTitle: 'Free Letter V Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter V tracing worksheet for ages 3 to 6. Trace a dotted vase and the uppercase V. Two diagonals meeting at a single point.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted vase holding a flower to trace and colour, a dotted uppercase V below, and the line V for Vase.',
+      'A V is two diagonal strokes meeting at a point at the bottom. Fewer strokes than most letters, but diagonals are the direction young hands manage last, and a meeting point has to be aimed at rather than simply reached.',
+      'What usually happens is a V that is too wide and shallow, or one where the two lines cross past each other at the base instead of stopping. Both are ordinary. The point closing cleanly is one of the later things to arrive.',
+      'V is worth doing before W rather than after. A W is two Vs side by side, so a child who can close one point has a much easier time with the letter that needs three.',
+      'The vase is unusually well matched here, since its lower half tapers to a narrow base in the same way the letter does. Tracing it is direct preparation.',
+    ],
+    skillsIntro:
+      'Two diagonals meeting at a point, and the letter that W is built from.',
+    skills: [
+      'Aiming two diagonals at one meeting point',
+      'Stopping a stroke rather than crossing past it',
+      'Tracing a tapering shape',
+      'Linking the letter V to the sound in vase',
+    ],
+    faqs: [
+      {
+        q: 'My child draws the V too wide.',
+        a: 'Very common, along with the two lines crossing past each other at the base. A cleanly closed point is one of the later things to arrive and is not worth pushing.',
+      },
+      {
+        q: 'Should V come before W?',
+        a: 'Yes. A W is two Vs side by side, so closing one point cleanly makes the letter with three points much less frustrating.',
+      },
+    ],
+  },
+
+  153: {
+    slug: 'trace-letter-w',
+    h1: 'Trace and color the letter W: free printable worksheet',
+    metaTitle: 'Free Letter W Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter W tracing worksheet for ages 3 to 6. Trace a dotted watch and the uppercase W. Four diagonals and three points to judge.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted wristwatch with a strap and clock face to trace and colour, a dotted uppercase W beneath, and the line W for Watch.',
+      'A W is four diagonal strokes with three points between them, two at the bottom and one in the middle at the top. That is more direction changes than any other letter in the alphabet.',
+      'Expect it to come out uneven for a long while. The two halves are rarely the same width at first, and the middle point often does not rise as high as the outer edges. Neither matters at this stage.',
+      'The pairing to be careful about is W and M. One is the other upside down, and children who learn both close together frequently produce the wrong one. If you have done the M sheet recently, leave this a few weeks.',
+      'The watch is the most detailed picture in the last stretch of the alphabet, with a strap, a round face and hands. It is a slow sheet rather than a quick one.',
+    ],
+    skillsIntro:
+      'Four diagonals and three points, which is more direction changes than any other letter.',
+    skills: [
+      'Chaining four diagonal strokes',
+      'Judging three separate meeting points',
+      'Keeping two halves an even width',
+      'Linking the letter W to the sound in watch',
+    ],
+    faqs: [
+      {
+        q: 'My child writes W as an M.',
+        a: 'They are the same shape inverted, so this is very common. If you have done the M sheet recently, leave a few weeks before coming to this one.',
+      },
+      {
+        q: 'The two halves of the W are different sizes.',
+        a: 'Expected for a long time, and so is a middle point that does not rise as high as the outer edges. Neither is worth correcting at this age.',
+      },
+    ],
+  },
+
+  154: {
+    slug: 'trace-letter-x',
+    h1: 'Trace and color the letter X: free printable worksheet',
+    metaTitle: 'Free Letter X Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter X tracing worksheet for ages 3 to 6. Trace a dotted xylophone and the uppercase X. Two diagonals crossing at the centre.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted xylophone with bars and beaters to trace and colour, a dotted uppercase X below, and the line X for Xylophone.',
+      'An X is two diagonals crossing in the middle. It is the only letter where two strokes cross rather than meet, and that turns out to be easier than meeting, because a crossing point is more forgiving than a join. There is no gap to close.',
+      'The usual result is a crossing that sits too high or too low, giving a lopsided X. Perfectly normal and rarely worth mentioning.',
+      'Worth being honest about the word. Xylophone is a difficult, unfamiliar term and the X in it does not even make the sound the letter usually makes. Almost every alphabet set uses it because English gives no better option for young children. If your child cannot say it, that is entirely reasonable, and the letter shape is the useful part of this page.',
+      'The xylophone itself is good tracing though: a row of bars of decreasing length, which is steady repeated practice.',
+    ],
+    skillsIntro:
+      'Two diagonals crossing rather than meeting, which is more forgiving than it looks.',
+    skills: [
+      'Crossing two strokes at a centre point',
+      'Drawing diagonals in both directions',
+      'Tracing a row of bars of changing length',
+      'Recognising the letter X by shape',
+    ],
+    faqs: [
+      {
+        q: 'Why is xylophone used when children cannot say it?',
+        a: 'English offers almost nothing else beginning with X that a young child would know, so nearly every alphabet set uses it. The letter shape is the useful part of this sheet rather than the word.',
+      },
+      {
+        q: 'Is X a hard letter to draw?',
+        a: 'Easier than K or W. The two strokes cross rather than meet, and a crossing point is more forgiving than a join because there is no gap to close.',
+      },
+    ],
+  },
+
+  155: {
+    slug: 'trace-letter-y',
+    h1: 'Trace and color the letter Y: free printable worksheet',
+    metaTitle: 'Free Letter Y Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter Y tracing worksheet for ages 3 to 6. Trace a dotted yo-yo and the uppercase Y, with a bilingual instruction line printed on the sheet.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted yo-yo on a looping string to trace and colour, a dotted uppercase Y beneath, and the line Y for Yo-Yo.',
+      'A Y is a V with a stem hanging below it, three strokes. If the V sheet is done, this is one addition rather than a new shape, in the same way an R is a P with a leg.',
+      'The stem is where it goes wrong. It has to drop from the exact point where the two diagonals meet, and children often attach it slightly to one side, which makes the letter lean. Worth pointing at the join before they start rather than correcting afterwards.',
+      'A Y is also one of the easier letters to say aloud while writing, because the shape and the sound both begin at the top and travel down. Saying it while tracing helps more here than on most letters.',
+      'The yo-yo string is a long looping curve, the closest thing in this set to freehand line practice, and children usually enjoy tracing it more than the letter.',
+    ],
+    skillsIntro:
+      'A V with a stem added, so one more addition to a shape the hand already knows.',
+    skills: [
+      'Attaching a stem at a meeting point',
+      'Keeping a letter upright rather than leaning',
+      'Tracing a long looping curve',
+      'Linking the letter Y to the sound in yo-yo',
+    ],
+    faqs: [
+      {
+        q: 'My child attaches the Y stem to one side.',
+        a: 'That makes the letter lean. The stem needs to drop from the exact point where the diagonals meet, so pointing at that join before they begin works better than fixing it afterwards.',
+      },
+      {
+        q: 'Which letter should come before Y?',
+        a: 'V. A Y is a V with a stem added, so learning the V first turns this into a single addition rather than a whole new shape.',
+      },
+    ],
+  },
+
+  156: {
+    slug: 'trace-letter-z',
+    h1: 'Trace and color the letter Z: free printable worksheet',
+    metaTitle: 'Free Letter Z Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter Z tracing worksheet for ages 3 to 6. Trace a dotted zoo gate and the uppercase Z, the last sheet in the alphabet set.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted zoo gate with an arched sign to trace and colour, a dotted uppercase Z below, and the line Z for Zoo.',
+      'A Z is three strokes drawn without lifting: across the top, down the diagonal, and across the bottom. All straight lines, and the only real difficulty is the diagonal, which runs down and to the left, the opposite way from the diagonal in an N.',
+      'That opposition is why Z joins S as one of the two most reversed letters. A backwards Z is a balanced shape and looks perfectly fine on the page, so children rarely spot it themselves.',
+      'The two bars should be roughly the same length. Children often make the bottom one longer, which tips the letter forward.',
+      'This is the last sheet in the alphabet set, and it is worth marking. Finishing twenty six letters is a real thing for a young child, whether it took two months or eight, and the zoo gate makes a reasonable finishing line to colour.',
+    ],
+    skillsIntro:
+      'Three straight strokes with a diagonal running the opposite way to the one in N.',
+    skills: [
+      'Drawing a diagonal down and to the left',
+      'Keeping two bars a similar length',
+      'Completing a letter in one continuous movement',
+      'Linking the letter Z to the sound in zoo',
+    ],
+    faqs: [
+      {
+        q: 'My child writes Z backwards.',
+        a: 'Z and S are the two most reversed letters. A backwards Z looks balanced on the page, so children rarely notice it themselves. It settles with time rather than correction.',
+      },
+      {
+        q: 'We have finished all 26 letters. What next?',
+        a: 'The number tracing sheets are a natural next step, since they use the same strokes in new combinations. There is also no harm in going back through the letters your child found hardest.',
+      },
+    ],
+  },
 };
 
 export function getSheetContent(id: number): SheetContent | undefined {
