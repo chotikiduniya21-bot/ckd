@@ -1371,6 +1371,311 @@ export const sheetContent: Record<number, SheetContent> = {
       },
     ],
   },
+  140: {
+    slug: 'trace-letter-j',
+    h1: 'Trace and color the letter J: free printable worksheet',
+    metaTitle: 'Free Letter J Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter J tracing worksheet for ages 3 to 6. Trace a dotted jelly and the uppercase J, with a bilingual instruction line printed on the sheet.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted jelly with ridged sides to trace and colour, a dotted uppercase J below, and the line J for Jelly.',
+      'A J is a straight line down that hooks to the left at the bottom. One stroke, and the only difficulty is which way the hook turns.',
+      'Getting it backwards is the standard mistake, and it produces something that reads as a U with a long side. Unlike most letter errors this one has a simple explanation: the hook curls in the opposite direction from every other bottom curve a child has drawn so far, since a C, a G and an O all turn the other way.',
+      'That makes J worth doing shortly after those, not because it is similar but because it is deliberately opposite, and the contrast is what makes it stick.',
+      'The jelly is a good tracing shape. The ridges are repeated vertical lines of the same length, which is quietly useful practice for the letter directly above them.',
+    ],
+    skillsIntro:
+      'A straight line with a hook that turns the opposite way from every curve learned so far.',
+    skills: [
+      'Hooking a curve to the left',
+      'Reversing a familiar curve direction',
+      'Tracing repeated lines of equal length',
+      'Linking the letter J to the sound in jelly',
+    ],
+    faqs: [
+      {
+        q: 'My child hooks the J the wrong way.',
+        a: 'Expected, because the hook turns opposite to the curves in C, G and O. Doing J shortly after those letters makes the contrast clearer than correcting it on its own.',
+      },
+      {
+        q: 'Is J a hard letter?',
+        a: 'The stroke is easy. The direction of the hook is the only real difficulty, and it usually settles quickly once a child notices it turns the other way.',
+      },
+    ],
+  },
+
+  141: {
+    slug: 'trace-letter-k',
+    h1: 'Trace and color the letter K: free printable worksheet',
+    metaTitle: 'Free Letter K Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter K tracing worksheet for ages 3 to 6. Trace a dotted kite and the uppercase K. Two diagonals meeting a spine, one of the harder capitals.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted kite with a tail of bows to trace and colour, a dotted uppercase K beneath, and the line K for Kite.',
+      'A K is one of the three or four hardest capitals. There is a vertical spine, then two diagonals that both have to meet it at the same point, one arriving from above and one leaving below.',
+      'Two things make that difficult. Diagonals are the last direction young hands control, and a shared meeting point asks the child to aim two separate strokes at the same spot. Expect the arms to attach at different heights, or to float clear of the spine altogether, for quite a while.',
+      'This is a letter to come back to rather than push through. If it is not working, the L and O sheets are far gentler and there is no cost to leaving K for a month.',
+      'The kite is well matched to it, since a kite is built from four diagonals meeting at a centre. Tracing the kite first is genuine preparation for the letter.',
+    ],
+    skillsIntro:
+      'Two diagonals aimed at a single point on a spine, which puts this among the hardest capitals.',
+    skills: [
+      'Drawing diagonals in two directions',
+      'Aiming two strokes at the same meeting point',
+      'Tracing a shape built from diagonals',
+      'Linking the letter K to the sound in kite',
+    ],
+    faqs: [
+      {
+        q: 'My child cannot get the K arms to meet the spine.',
+        a: 'That is expected for a long time. Two separate strokes aimed at one point is hard, and the arms commonly attach at different heights or float clear. Leave it and return in a month.',
+      },
+      {
+        q: 'What should we do instead if K is too hard?',
+        a: 'Try L or O. Both are much gentler, and there is no cost to skipping a letter and coming back to it later.',
+      },
+    ],
+  },
+
+  142: {
+    slug: 'trace-letter-l',
+    h1: 'Trace and color the letter L: free printable worksheet',
+    metaTitle: 'Free Letter L Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter L tracing worksheet for ages 3 to 6. Trace a dotted lemon and the uppercase L. Two straight strokes meeting at a right angle.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted lemon with a leaf to trace and colour, a dotted uppercase L below, and the line L for Lemon.',
+      'An L is a vertical line down and a horizontal line along the bottom. Two strokes, both in the directions a young hand controls first, meeting at a right angle. Alongside C and H it is one of the easiest capitals there is.',
+      'Coming straight after K, that is not an accident of the alphabet but it is worth using. A child who has just struggled with two diagonals meeting a spine can finish this one cleanly, and ending a session on something achieved is worth more than getting one letter closer to Z.',
+      'The only thing to watch is a bottom bar that slopes upward, which happens when the hand pivots from the wrist rather than moving across.',
+      'The lemon is a single rounded outline with a small leaf, so the tracing is straightforward too. This is a good sheet for a short session.',
+    ],
+    skillsIntro:
+      'A vertical and a horizontal meeting at a right angle, and one of the easiest capitals in the set.',
+    skills: [
+      'Joining two strokes at a right angle',
+      'Keeping a bottom bar level',
+      'Finishing a letter cleanly after a hard one',
+      'Linking the letter L to the sound in lemon',
+    ],
+    faqs: [
+      {
+        q: 'The bottom of the L slopes upward.',
+        a: 'That happens when the hand pivots from the wrist instead of moving across the page. Anchoring the paper with the other hand often fixes it on its own.',
+      },
+      {
+        q: 'Is L a good letter to end a session on?',
+        a: 'Yes. It is one of the easiest capitals, so it works well after a difficult letter like K when your child needs to finish something cleanly.',
+      },
+    ],
+  },
+
+  143: {
+    slug: 'trace-letter-m',
+    h1: 'Trace and color the letter M: free printable worksheet',
+    metaTitle: 'Free Letter M Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter M tracing worksheet for ages 3 to 6. Trace a dotted mango and the uppercase M, with a bilingual instruction line on the sheet.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted mango with a leaf to trace and colour, a dotted uppercase M below it, and the line M for Mango.',
+      'An M has four strokes: down, up-diagonal, down-diagonal, down. More movements than any other letter in this group, and the two diagonals in the middle have to meet at a point that sits between the two outer verticals.',
+      'The usual results are a middle V that does not reach far enough down, so the letter looks like two humps, or a letter that spreads too wide. Both are ordinary and neither is worth correcting hard.',
+      'M is also the other half of a confusion worth knowing about. An M turned upside down is a W, and children who have learned both often produce one for the other. Doing them well apart in time helps.',
+      'The mango deserves a mention. Most alphabet sets reach for a monkey or a mouse, and a mango is the fruit an Indian child actually knows by sight, taste and name in both languages.',
+    ],
+    skillsIntro:
+      'Four strokes including two diagonals meeting in the middle, the most movements of any letter here.',
+    skills: [
+      'Sequencing four strokes in one letter',
+      'Bringing a middle point down far enough',
+      'Telling M apart from W',
+      'Linking the letter M to the sound in mango',
+    ],
+    faqs: [
+      {
+        q: 'My child writes M as two humps.',
+        a: 'The middle point is not coming down far enough between the two verticals. Tracing slowly over the dotted guide and stopping at the bottom of the V usually sorts it.',
+      },
+      {
+        q: 'My child confuses M and W.',
+        a: 'A W is an M upside down, so this is common. Practising the two well apart in time works better than teaching them together.',
+      },
+    ],
+  },
+
+  144: {
+    slug: 'trace-letter-n',
+    h1: 'Trace and color the letter N: free printable worksheet',
+    metaTitle: 'Free Letter N Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter N tracing worksheet for ages 3 to 6. Trace a dotted nose and the uppercase N. The most commonly reversed capital letter.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted nose to trace and colour, a dotted uppercase N beneath, and the line N for Nose.',
+      'An N is three strokes: a vertical, a diagonal running down to the right, and another vertical. Fewer movements than an M, and the diagonal runs the full height rather than meeting a point partway.',
+      'This is the capital children reverse most often, and it stays reversed longer than B or D do. A backwards N has the diagonal running the other way, and because the letter is otherwise symmetrical there is nothing obviously wrong with the result. Nothing looks broken, which is exactly why it persists.',
+      'Do not treat it as a warning sign. Reversed capitals are ordinary well past five, and pointing at the dotted guide and following the diagonal together does more than telling a child it is the wrong way round.',
+      'The nose is one of the simplest pictures in the set and, unlike the igloo, a thing your child can look at on their own face.',
+    ],
+    skillsIntro:
+      'Three strokes with a full-height diagonal, and the capital children reverse most often.',
+    skills: [
+      'Drawing a diagonal across the full letter height',
+      'Keeping two verticals parallel',
+      'Noticing which way a diagonal runs',
+      'Linking the letter N to the sound in nose',
+    ],
+    faqs: [
+      {
+        q: 'My child writes N backwards and does not notice.',
+        a: 'The letter is otherwise symmetrical, so a reversed N does not look broken. That is why it persists longer than B or D confusion, and it is ordinary well past five.',
+      },
+      {
+        q: 'How do I help without making it a correction?',
+        a: 'Follow the diagonal together on the dotted guide rather than saying it is the wrong way round. The direction is easier to feel than to be told.',
+      },
+    ],
+  },
+
+  145: {
+    slug: 'trace-letter-o',
+    h1: 'Trace and color the letter O: free printable worksheet',
+    metaTitle: 'Free Letter O Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter O tracing worksheet for ages 3 to 6. Trace a dotted owl and the uppercase O. One closed curve, the C taken all the way round.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted owl to trace and colour, a dotted uppercase O below it, and the line O for Owl.',
+      'An O is a C carried all the way round until it meets itself. One stroke, no lift, no corner, and only one thing to get right: the join.',
+      'Closing a curve back onto its own starting point is a real skill and it is the same one the number 6 and the number 9 need. The hand has to remember where it began while it is still moving. Early attempts leave a gap at the top or overlap past the start, and both are normal.',
+      'Because of that shared movement, O is worth doing near C, G, Q and the 6 and 9 tracing sheets rather than in alphabetical position.',
+      'The owl is a good pairing. It is built almost entirely from circles, two large eyes, a rounded body and a curved head, so the whole page practises the same closed-curve movement in different sizes.',
+    ],
+    skillsIntro:
+      'One closed curve, which is the C taken all the way round and the same movement as 6 and 9.',
+    skills: [
+      'Closing a curve onto its own starting point',
+      'Controlling one continuous circular stroke',
+      'Tracing circles at several sizes',
+      'Linking the letter O to the sound in owl',
+    ],
+    faqs: [
+      {
+        q: 'My child leaves a gap at the top of the O.',
+        a: 'Normal. Closing a curve means remembering where the stroke began while the hand is still moving, which is the same difficulty as the numbers 6 and 9.',
+      },
+      {
+        q: 'Which sheets go well with this one?',
+        a: 'C, G and Q, plus the number 6 and 9 tracing sheets. They all use the same closed-curve movement, so doing them near each other helps more than following the alphabet.',
+      },
+    ],
+  },
+
+  146: {
+    slug: 'trace-letter-p',
+    h1: 'Trace and color the letter P: free printable worksheet',
+    metaTitle: 'Free Letter P Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter P tracing worksheet for ages 3 to 6. Trace a dotted pen and the uppercase P, with a bilingual instruction line printed on the sheet.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted pen to trace and colour, a dotted uppercase P beneath, and the line P for Pen.',
+      'A P is a vertical spine with a single bump at the top, two strokes. It is the simplest member of a family that also contains B and R, and it is the one to learn first.',
+      'A B is a P with a second bump underneath. An R is a P with a diagonal leg added. Teaching them in that order, P then B then R, means each new letter is one addition to a shape already in the hand, rather than three separate things to memorise.',
+      'The mistake to expect is a bump that comes too far down the spine, which turns the P into something closer to a D. Watch where the curve rejoins the line: it should meet at the middle, not the bottom.',
+      'The pen is a long narrow shape with straight parallel sides, which is different tracing work from the rounded pictures on either side of it.',
+    ],
+    skillsIntro:
+      'A spine with one bump at the top, and the first letter of the P, B and R family.',
+    skills: [
+      'Attaching a single bump at the top of a spine',
+      'Rejoining a curve at mid height',
+      'Tracing long parallel straight sides',
+      'Linking the letter P to the sound in pen',
+    ],
+    faqs: [
+      {
+        q: 'My child brings the P bump down too far.',
+        a: 'That turns it into something closer to a D. The curve should rejoin the spine at the middle rather than the bottom, and pointing at the join before they start helps.',
+      },
+      {
+        q: 'What order should P, B and R be taught in?',
+        a: 'P first, then B, then R. A B is a P with a second bump and an R is a P with a leg, so each one is a single addition to a shape the hand already knows.',
+      },
+    ],
+  },
+
+  147: {
+    slug: 'trace-letter-q',
+    h1: 'Trace and color the letter Q: free printable worksheet',
+    metaTitle: 'Free Letter Q Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter Q tracing worksheet for ages 3 to 6. Trace a dotted queen and the uppercase Q. The only capital with a stroke leaving the body.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted queen wearing a crown to trace and colour, a dotted uppercase Q below, and the line Q for Queen.',
+      'A Q is an O with a short tail, two strokes, and that tail makes it unusual. Every other capital in the alphabet is a closed or connected shape. Q is the only one with a stroke that leaves the body and finishes in open space, attached at one end and free at the other.',
+      'Children often skip it. A Q drawn without the tail is simply an O, and because an O looks complete, nothing prompts the child to add anything. Ask specifically after the circle is closed rather than assuming it will come.',
+      'Do this one after O is comfortable. The circle is most of the work and there is no reason to learn both at once.',
+      'The queen is the most detailed tracing in this stretch of the alphabet, with a crown, hair and facial features. It is a sheet for a child with patience rather than a quick one.',
+    ],
+    skillsIntro:
+      'An O with a tail, and the only capital where a stroke leaves the body and ends in open space.',
+    skills: [
+      'Adding a stroke that ends unattached',
+      'Remembering a second stroke after a closed shape',
+      'Tracing fine detail in a picture',
+      'Linking the letter Q to the sound in queen',
+    ],
+    faqs: [
+      {
+        q: 'My child forgets the tail on the Q.',
+        a: 'Very common, because an O already looks like a finished shape so nothing prompts them to add more. Ask about the tail specifically once the circle is closed.',
+      },
+      {
+        q: 'Should we do O before Q?',
+        a: 'Yes. The circle is most of the work in a Q, so learning it once as an O and then adding the tail is easier than meeting both at the same time.',
+      },
+    ],
+  },
+
+  148: {
+    slug: 'trace-letter-r',
+    h1: 'Trace and color the letter R: free printable worksheet',
+    metaTitle: 'Free Letter R Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable letter R tracing worksheet for ages 3 to 6. Trace a dotted rainbow and the uppercase R, completing the P, B and R letter family.',
+    hindi: 'रेखा बनाओ और रंग भरो',
+    body: [
+      'A dotted rainbow arching between two clouds to trace and colour, a dotted uppercase R below, and the line R for Rainbow.',
+      'An R is a P with a diagonal leg added at the bottom of the bump. Three strokes, and it completes the family that started with P and passed through B.',
+      'The leg is the whole difficulty. It has to start where the bump rejoins the spine and travel down and out to the right, which means judging both a starting point and an angle at once. Legs that start too high, too low, or run almost straight down are all ordinary.',
+      'If your child has already done P and B, say out loud that this is the same letter with a leg. Children who hear the relationship described tend to produce the letter more reliably than those who meet it as a new shape.',
+      'The rainbow is the best tracing on this page for a young hand: several arcs running parallel, each one a repeat of the last, which is steady practice at a curve without any join to judge.',
+    ],
+    skillsIntro:
+      'A P with a leg added, completing the family and asking for a starting point and an angle at once.',
+    skills: [
+      'Adding a diagonal leg to an existing shape',
+      'Judging a starting point and an angle together',
+      'Tracing repeated parallel arcs',
+      'Linking the letter R to the sound in rainbow',
+    ],
+    faqs: [
+      {
+        q: 'Where should the leg of the R start?',
+        a: 'Where the bump rejoins the spine, then down and out to the right. Legs starting too high or running almost straight down are ordinary at this age.',
+      },
+      {
+        q: 'Does it help to point out that R is like P?',
+        a: 'Yes. Children who hear that an R is a P with a leg added tend to form it more reliably than those meeting it as an entirely new shape.',
+      },
+    ],
+  },
 };
 
 export function getSheetContent(id: number): SheetContent | undefined {
