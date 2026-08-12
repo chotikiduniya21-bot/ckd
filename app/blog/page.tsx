@@ -5,7 +5,7 @@ import styles from './blog.module.css';
 // Map category name → background gradient
 
 export const metadata = {
-  title: 'Parent Blog — Real Parenting Advice from a Montessori Teacher',
+  title: 'Early Learning Blog for Indian Parents',
   description:
     'Real parenting advice from Choti, a Montessori-inspired educator and creator of Choti Ki Duniya. Hindi rhymes, screen time, writing readiness, Montessori at home, and more — for Indian families raising kids 2-8.',
   alternates: { canonical: '/blog' },

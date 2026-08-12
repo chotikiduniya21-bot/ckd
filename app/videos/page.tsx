@@ -3,7 +3,7 @@ import { chotiVideos } from './videosData';
 import styles from './videos.module.css';
 
 export const metadata = {
-  title: 'Watch Choti on YouTube — Hindi Rhymes for Kids',
+  title: 'Hindi Rhymes for Kids on YouTube',
   description: 'Hand-picked videos from Choti — Hindi rhymes, alphabets, counting, and stories for ages 2-8.',
   alternates: { canonical: '/videos' },
 };

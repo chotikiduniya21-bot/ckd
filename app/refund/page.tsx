@@ -1,7 +1,7 @@
 import styles from '@/styles/legal.module.css';
 
 export const metadata = {
-  title: 'Refund & Cancellation Policy | Choti Ki Duniya',
+  title: 'Refund & Cancellation Policy',
   description: 'Our honest refund policy. 7-day guarantee, clear process, no drama.',
   alternates: { canonical: '/refund' },
 };

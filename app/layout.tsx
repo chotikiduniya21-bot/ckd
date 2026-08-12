@@ -35,7 +35,7 @@ const SITE_URL = 'https://www.chotikiduniya.com';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Choti Ki Duniya — Free Activity Sheets, Hindi Rhymes & Montessori Learning for Kids 2-8',
+    default: 'Choti Ki Duniya: Free Kids Worksheets & Hindi Rhymes',
     template: '%s | Choti Ki Duniya',
   },
   description:

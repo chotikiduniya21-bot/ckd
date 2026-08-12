@@ -1,7 +1,7 @@
 import styles from '@/styles/legal.module.css';
 
 export const metadata = {
-  title: 'Privacy Policy | Choti Ki Duniya',
+  title: 'Privacy Policy',
   description: "How we handle your data and your child's privacy. Written in plain language.",
   alternates: { canonical: '/privacy' },
 };

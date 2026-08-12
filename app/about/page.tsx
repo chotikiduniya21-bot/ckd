@@ -6,7 +6,7 @@ import styles from './about.module.css';
 
 
 export const metadata = {
-  title: 'About Choti — Educator & Creator of Choti Ki Duniya',
+  title: 'About Choti, Early Childhood Educator',
   description:
     'Meet Choti — a Montessori-inspired early childhood educator focused on kids 2-8. Learn about her teaching philosophy, why she started Choti Ki Duniya, and the four pillars behind her work.',
   alternates: { canonical: '/about' },

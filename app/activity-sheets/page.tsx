@@ -5,7 +5,7 @@ import styles from './sheets.module.css';
 
 
 export const metadata = {
-  title: 'Free Activity Sheets for Kids 2-8 — Letters, Numbers, Hindi & More',
+  title: 'Free Printable Worksheets for Kids 2-8',
   description:
     'All activity sheets are 100% free, forever. Choti makes printable worksheets for letters, numbers, Hindi rhymes, life skills, and coloring. No email wall, no catch — just download and print.',
   alternates: { canonical: '/activity-sheets' },

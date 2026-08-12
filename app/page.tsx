@@ -6,7 +6,7 @@ import styles from './page.module.css';
 
 
 export const metadata = {
-  title: 'Choti Ki Duniya — Free Activity Sheets, Hindi Rhymes & Montessori Learning for Kids 2-8',
+  title: 'Choti Ki Duniya: Free Kids Worksheets & Hindi Rhymes',
   description:
     'Where little minds bloom big & bright! Free Montessori-inspired activity sheets, Hindi rhymes, stories, and YouTube videos for Indian kids aged 2-8. By Choti, a Montessori-inspired educator and YouTube creator with 8 lakh+ subscribers.',
   alternates: { canonical: '/' },
