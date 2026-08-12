@@ -2469,6 +2469,181 @@ export const sheetContent: Record<number, SheetContent> = {
       },
     ],
   },
+  172: {
+    slug: 'match-the-fruits',
+    h1: 'Match the fruits: free printable matching worksheet',
+    metaTitle: 'Free Fruit Matching Worksheet to Print',
+    metaDescription:
+      'A free printable fruit matching worksheet for ages 3 to 6. Draw a line between the same fruits in two scrambled columns. Bilingual header on the sheet.',
+    hindi: 'फलों का मिलान',
+    hindiInstruction: 'छोटी को एक जैसे फल मिलाने में मदद करें!',
+    body: [
+      'Two columns of five fruits, apple, banana, watermelon, orange and strawberry, scrambled so the order differs down each side. Your child draws a line joining each fruit to its pair.',
+      'Matching is a different kind of task from tracing or counting. There is no fixed route across the page, so your child has to look at one item, hold it in mind, search the other column, and only then draw. The drawing is the smallest part of it.',
+      'These fruits are strongly colour coded, which makes this the gentlest sheet in the matching set. An apple is the only red round one, a banana the only yellow curved one. A child can succeed here on colour alone without examining shape at all, and that is fine as a starting point.',
+      'The lines themselves are worth watching too. Joining two points that are not directly opposite means drawing a diagonal across an open page with nothing to follow, which is harder than tracing a dotted guide.',
+    ],
+    skillsIntro:
+      'Colour makes this the easiest sheet to match, but the lines are freehand rather than traced.',
+    skills: [
+      'Holding an item in mind while searching',
+      'Drawing a freehand line between two points',
+      'Matching by colour and shape',
+      'Fruit names in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'Which matching worksheet should we start with?',
+        a: 'This one. The fruits are strongly colour coded, so a child can succeed on colour alone before having to look closely at shape.',
+      },
+      {
+        q: 'My child matches correctly but the lines are messy.',
+        a: 'Those are two separate skills. Joining points across an open page with no dotted guide is harder than tracing, so a correct but wobbly line is a success.',
+      },
+      {
+        q: 'What age are matching sheets for?',
+        a: 'Roughly 3 to 6. Younger children can point at the pairs and let you draw the lines, which still practises the looking and remembering.',
+      },
+    ],
+  },
+
+  173: {
+    slug: 'match-the-vegetables',
+    h1: 'Match the vegetables: free printable matching worksheet',
+    metaTitle: 'Free Vegetable Matching Worksheet',
+    metaDescription:
+      'Free printable vegetable matching worksheet for ages 3 to 6. Join the same vegetables across two scrambled columns. Includes cabbage, brinjal and capsicum.',
+    hindi: 'सब्ज़ियों का मिलान',
+    hindiInstruction: 'छोटी को एक जैसी सब्ज़ियाँ मिलाने में मदद करें!',
+    body: [
+      'Two scrambled columns of five vegetables: cabbage, pumpkin, capsicum, brinjal and chilli, to be joined in pairs.',
+      'This is a step up from the fruit sheet for a reason that is easy to miss. Three of these five are green. Cabbage, capsicum and chilli all share a colour, so a child who has been matching by colour alone will suddenly find that it no longer works and has to start looking at shape instead.',
+      'That moment is genuinely useful. Watch whether your child slows down when they reach the green ones. Slowing down means they have noticed colour is not enough, which is a real shift in how carefully they are looking.',
+      'The vegetables are also worth naming as you go. Brinjal, capsicum and cabbage are words many children recognise on a plate long before they can name them, and the sheet gives a reason to say them out loud in both languages.',
+    ],
+    skillsIntro:
+      'Three green vegetables mean colour alone stops working, which forces a closer look.',
+    skills: [
+      'Matching by shape when colour repeats',
+      'Slowing down on a harder pair',
+      'Comparing two similar items carefully',
+      'Vegetable names in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'Why is this harder than the fruit sheet?',
+        a: 'Three of the five vegetables are green, so a child matching on colour alone has to start looking at shape instead. That shift is the point of the sheet.',
+      },
+      {
+        q: 'My child hesitates on the green ones.',
+        a: 'That is a good sign. Hesitating means they have noticed colour is no longer enough to tell the items apart.',
+      },
+    ],
+  },
+
+  174: {
+    slug: 'match-the-flowers',
+    h1: 'Match the flowers: free printable matching worksheet',
+    metaTitle: 'Free Flower Matching Worksheet to Print',
+    metaDescription:
+      'Free printable flower matching worksheet for ages 3 to 6. Lotus, rose, tulip, daisy and sunflower. The hardest sheet in the matching set. Bilingual header.',
+    hindi: 'फूलों का मिलान',
+    hindiInstruction: 'छोटी को एक जैसे फूल मिलाने में मदद करें!',
+    body: [
+      'Two scrambled columns of five flowers: sunflower, lotus, rose, tulip and daisy, to be joined in pairs.',
+      'This is the hardest sheet in the matching set. Every flower is roughly the same size, all of them are round arrangements of petals, and the differences come down to petal shape and count rather than anything obvious.',
+      'The daisy and the sunflower are the pair that catches children out. Both have a ring of narrow petals around a yellow centre, and telling them apart means noticing petal colour rather than overall form. Expect this one to take longer than the fruits and vegetables together.',
+      'It is worth doing anyway. Discriminating between two similar shapes is exactly the skill that will later separate a b from a d, or a 6 from a 9, and practising it on flowers carries none of the pressure that practising it on letters does.',
+      'The lotus is a good inclusion. It is the flower Indian children see in stories, on temple walls and on currency long before they see it in a book.',
+    ],
+    skillsIntro:
+      'Five similar round flowers with only small differences, which makes this the hardest sheet here.',
+    skills: [
+      'Telling apart two very similar shapes',
+      'Noticing petal shape and colour',
+      'Persisting with a harder task',
+      'Flower names in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'Why do children find the flowers hardest?',
+        a: 'All five are round arrangements of petals at a similar size, so the differences are small. The daisy and sunflower in particular both have narrow petals around a yellow centre.',
+      },
+      {
+        q: 'How does this help with reading later?',
+        a: 'Telling two similar shapes apart is the same skill that separates a b from a d or a 6 from a 9, and practising it on flowers carries none of the pressure letters do.',
+      },
+    ],
+  },
+
+  175: {
+    slug: 'match-the-animals',
+    h1: 'Match the animals: free printable matching worksheet',
+    metaTitle: 'Free Animal Matching Worksheet to Print',
+    metaDescription:
+      'Free printable animal matching worksheet for ages 3 to 6. Monkey, hippo, tiger, zebra and elephant in two scrambled columns. Free download, no email.',
+    hindi: 'जानवरों का मिलान',
+    hindiInstruction: 'छोटी को एक जैसे जानवरों का मिलान करने में मदद करें!',
+    body: [
+      'Two scrambled columns of five animals: monkey, hippo, tiger, zebra and elephant, to be joined in pairs.',
+      'The tiger and the zebra are the interesting pair here. Both are patterned animals with stripes, and a child scanning quickly will often join a tiger to a zebra because stripes are the first thing the eye registers. Colour sorts it out, but only if they look twice.',
+      'That is a different mistake from the one the flower sheet produces. Flowers are confused because they are too similar overall. The tiger and zebra are confused because one striking feature dominates everything else, which is a specific habit worth catching early.',
+      'Animals are also the easiest category for a child to name confidently in both languages, so this sheet tends to be chatty. Let it be. A child naming बंदर and हाथी while matching is getting more from the page than one who works silently.',
+    ],
+    skillsIntro:
+      'A tiger and a zebra both have stripes, which catches out children who scan too quickly.',
+    skills: [
+      'Looking past one dominant feature',
+      'Checking a match rather than assuming it',
+      'Matching patterned items accurately',
+      'Animal names in Hindi and English',
+    ],
+    faqs: [
+      {
+        q: 'My child matched the tiger to the zebra.',
+        a: 'Stripes are the first thing the eye registers, so this is common. It is a habit of scanning too quickly rather than a difficulty telling the animals apart.',
+      },
+      {
+        q: 'Should my child say the animal names while matching?',
+        a: 'Yes, and in both languages if you can. A child naming बंदर and हाथी as they work is getting more from the sheet than one working silently.',
+      },
+    ],
+  },
+
+  176: {
+    slug: 'match-the-shapes',
+    h1: 'Match the shapes: free printable matching worksheet',
+    metaTitle: 'Free Shape Matching Worksheet to Print',
+    metaDescription:
+      'Free printable shape matching worksheet for ages 3 to 6. Square, crescent, triangle, circle and oval in two scrambled columns. Useful before nursery or LKG.',
+    hindi: 'आकार मिलान',
+    hindiInstruction: 'छोटी को एक जैसी आकृतियों का मिलान करने में मदद करें!',
+    body: [
+      'Two scrambled columns of five shapes: square, crescent, triangle, circle and oval, to be joined in pairs.',
+      'Every other matching sheet uses pictures of things. This one uses shapes, which are not things at all but properties, and that makes it the most abstract page in the whole collection of seventy six.',
+      'The circle and the oval are the pair to watch. They are the only two here that differ by proportion rather than by kind, so a child cannot rely on a shape having a distinct outline. They have to notice that one is wider than it is tall. That is a finer judgement than anything the other matching sheets ask for.',
+      'This is also the most directly useful sheet in the set for a child heading into nursery or LKG. Shape naming appears in almost every Indian preschool syllabus and in most nursery admission conversations, and it is rarely practised at home.',
+      'Say the names in both languages as you go. आकार is a word worth having.',
+    ],
+    skillsIntro:
+      'The most abstract matching sheet, and the most useful one before nursery or LKG.',
+    skills: [
+      'Matching abstract shapes rather than objects',
+      'Telling a circle from an oval by proportion',
+      'Naming shapes while working',
+      'Preparing for nursery and LKG expectations',
+    ],
+    faqs: [
+      {
+        q: 'Why is matching shapes harder than matching animals?',
+        a: 'Shapes are properties rather than things, so there is no familiar object to recognise. The circle and oval in particular differ only by proportion.',
+      },
+      {
+        q: 'Is this useful for nursery admission preparation?',
+        a: 'Shape naming comes up in most Indian preschool syllabuses and in many nursery conversations, and it is rarely practised at home, so it is one of the more directly useful sheets here.',
+      },
+    ],
+  },
 };
 
 export function getSheetContent(id: number): SheetContent | undefined {
