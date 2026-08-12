@@ -1947,6 +1947,252 @@ export const sheetContent: Record<number, SheetContent> = {
       },
     ],
   },
+  157: {
+    slug: 'line-tracing-zigzags-and-waves',
+    h1: 'Zigzags and waves: free printable line tracing worksheet',
+    metaTitle: 'Free Pre-Writing Tracing Worksheet (PDF)',
+    metaDescription:
+      'A free printable pre-writing line tracing worksheet for ages 3 to 5. Five rows of square waves, zigzags and curves to build pencil control before letters.',
+    hindi: 'रेखाएँ ट्रेस करें',
+    hindiInstruction: 'छोटी को रेखाएँ ट्रेस करने में मदद करें',
+    body: [
+      'Five rows to trace: a square wave, a sharp zigzag, tall pointed curves, a gentle rolling wave, and rounded humps. Choti stands at the start of each row.',
+      'This is the first sheet in the pre-writing set and the place to begin if letters are still ahead of your child. Nothing here is a letter or a number, which is exactly the point. A child can practise the movements writing needs without any pressure to produce something recognisable, and without anyone being able to tell them it is wrong.',
+      'The five rows are not variations on one idea. The square wave needs sharp corners and pencil control that stops dead. The zigzag needs diagonals. The wave needs a curve that never stops moving. Those are three different demands on the same hand.',
+      'Rows can be done across several days. There is no reason to finish a sheet in one sitting, and a child who does one row well has got more from it than a child who rushed all five.',
+    ],
+    skillsIntro:
+      'Five different line types in one sheet, each asking something different of the hand.',
+    skills: [
+      'Stopping a stroke at a sharp corner',
+      'Drawing diagonals in alternating directions',
+      'Keeping a curve moving without stopping',
+      'Working left to right across a page',
+    ],
+    faqs: [
+      {
+        q: 'Why trace lines instead of letters?',
+        a: 'Because the movements are the same but there is no right answer to get wrong. A child builds pencil control without the pressure of producing a recognisable letter.',
+      },
+      {
+        q: 'What age is pre-writing practice for?',
+        a: 'Roughly 3 to 5, and it is worth doing before letter tracing rather than alongside it. Hand control comes first, letter shapes second.',
+      },
+      {
+        q: 'Should my child finish all five rows at once?',
+        a: 'No. One row done carefully is worth more than five rushed, and there is nothing wrong with spreading a sheet across several days.',
+      },
+    ],
+    relatedPost: {
+      slug: 'why-4-year-olds-shouldnt-trace-letters',
+      title: "Why 4-year-olds shouldn't be tracing letters yet",
+    },
+  },
+
+  158: {
+    slug: 'line-tracing-curves-and-slopes',
+    h1: 'Curves and slopes: free printable line tracing worksheet',
+    metaTitle: 'Free Curved Line Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable line tracing worksheet for ages 3 to 5, with rolling curves, long slopes and steep sawtooth lines. Pre-writing practice before letters.',
+    hindi: 'रेखाएँ ट्रेस करें',
+    hindiInstruction: 'छोटी को रेखाएँ ट्रेस करने में मदद करें',
+    body: [
+      'Five rows: rolling scallops, one long shallow wave, rounded arches, a steep sawtooth, and a row of squared hooks.',
+      'The long shallow wave in the second row is the one worth noticing. It runs almost the width of the page as a single continuous line with only the gentlest rise and fall, which makes it harder than the busier rows above and below it.',
+      'Short repeated shapes let a child reset every few centimetres. A long line does not. The hand has to keep moving steadily across the whole page, and children who can manage sharp zigzags will often wobble badly here. That is a stamina and steadiness problem rather than a control one, and it is worth knowing which of the two your child is short on.',
+      'The sawtooth row at the bottom is the opposite: steep, tightly spaced, and demanding quick direction changes in a small space.',
+    ],
+    skillsIntro:
+      'A mix of long steady lines and tight repeated ones, which test different things.',
+    skills: [
+      'Holding a line steady across a whole page',
+      'Making quick direction changes in a small space',
+      'Tracing rounded arches evenly',
+      'Building hand stamina',
+    ],
+    faqs: [
+      {
+        q: 'My child does zigzags well but wobbles on the long wave.',
+        a: 'Those test different things. Short repeated shapes let the hand reset often, while a long line needs steady continuous movement. It is a stamina issue rather than a control one.',
+      },
+      {
+        q: 'Does the order of these sheets matter?',
+        a: 'Loosely. The set gets harder from the zigzag sheet through to the arrows sheet, but there is no harm in picking whichever row looks right for the day.',
+      },
+    ],
+  },
+
+  159: {
+    slug: 'line-tracing-loops-and-spirals',
+    h1: 'Loops and spirals: free printable line tracing worksheet',
+    metaTitle: 'Free Loop Tracing Worksheet for Kids (PDF)',
+    metaDescription:
+      'Free printable loop and spiral tracing worksheet for ages 3 to 5. Practises the curling movement that cursive writing needs later. Bilingual instructions.',
+    hindi: 'रेखाएँ ट्रेस करें',
+    hindiInstruction: 'छोटी को रेखाएँ ट्रेस करने में मदद करें',
+    body: [
+      'Five rows built around curls: tight repeated coils, a gentle wave, rounded arches, a line broken by small loops, and a row of tall standing loops.',
+      'Loops are the movement that separates pre-writing from writing. A loop asks the pencil to cross back over its own path, which no straight line or simple wave ever does. It is the same demand the numbers 6, 8 and 9 make, and later the same demand cursive makes everywhere.',
+      'Expect this sheet to be slower than the first two. Children who trace confident zigzags often produce loops that do not close, or that get progressively larger across the row as the hand loses the size it started with.',
+      'Keeping loops the same size across a row is genuinely difficult and not worth insisting on. That they are loops at all is the achievement at this age.',
+    ],
+    skillsIntro:
+      'Curling strokes that cross back over themselves, which is where writing movements really begin.',
+    skills: [
+      'Crossing a stroke back over its own path',
+      'Closing a loop rather than leaving it open',
+      'Keeping repeated shapes a similar size',
+      'Preparing for the 6, 8 and 9 numerals',
+    ],
+    faqs: [
+      {
+        q: 'My child’s loops get bigger across the row.',
+        a: 'Very common. Holding a size steady across a whole row is difficult, and it is not worth insisting on. That they are loops at all is the achievement.',
+      },
+      {
+        q: 'Why do loops matter for writing?',
+        a: 'A loop crosses back over its own path, which no straight line does. It is the same movement the numbers 6, 8 and 9 need, and the movement cursive is built from.',
+      },
+    ],
+  },
+
+  160: {
+    slug: 'line-tracing-peaks-and-coils',
+    h1: 'Peaks and coils: free printable line tracing worksheet',
+    metaTitle: 'Free Zigzag Tracing Worksheet for Kids (PDF)',
+    metaDescription:
+      'Free printable line tracing worksheet for ages 3 to 5, mixing tight peaks, arches and tall cursive-style coils. Pre-writing practice with bilingual instructions.',
+    hindi: 'रेखाएँ ट्रेस करें',
+    hindiInstruction: 'छोटी को रेखाएँ ट्रेस करने में मदद करें',
+    body: [
+      'Five rows: tightly packed peaks, rounded arches, a wider zigzag, a straight line broken by two small loops, and a row of tall leaning coils.',
+      'The bottom row is the most advanced thing in the whole pre-writing set. Those tall coils lean slightly and connect to each other, which is what continuous cursive writing actually looks like. A child who can trace that row has the underlying movement for joined-up writing years before they will be asked for it.',
+      'The fourth row is quietly clever. It is a mostly straight line interrupted by two small loops, which means the hand has to change from a steady horizontal movement into a curl and back again without stopping. Switching between two movements mid-stroke is harder than doing either one repeatedly.',
+      'Do not expect the bottom row early. It is reasonable for a four year old to manage the top three rows and leave the last one alone for a year.',
+    ],
+    skillsIntro:
+      'The most advanced sheet here, ending with the continuous coils that cursive is built from.',
+    skills: [
+      'Switching between straight and curling movements',
+      'Tracing tightly spaced repeated peaks',
+      'Producing connected leaning loops',
+      'Preparing for joined-up writing',
+    ],
+    faqs: [
+      {
+        q: 'My child manages the top rows but not the bottom one.',
+        a: 'That is entirely reasonable. The tall connected coils are the most advanced thing in the pre-writing set, and leaving that row for a year is fine.',
+      },
+      {
+        q: 'What is the row with loops in a straight line for?',
+        a: 'It forces the hand to switch from a steady horizontal movement into a curl and back without stopping, which is harder than repeating either movement on its own.',
+      },
+    ],
+  },
+
+  161: {
+    slug: 'line-tracing-arches-and-swirls',
+    h1: 'Arches and swirls: free printable line tracing worksheet',
+    metaTitle: 'Free Curve Tracing Worksheet for Kids (PDF)',
+    metaDescription:
+      'Free printable arch and swirl tracing worksheet for ages 3 to 5. Includes a single large arc and a row of decorative spirals. Bilingual instructions on the sheet.',
+    hindi: 'रेखाएँ ट्रेस करें',
+    hindiInstruction: 'छोटी को रेखाएँ ट्रेस करने में मदद करें',
+    body: [
+      'Five rows: one large single arc, a row of sharp mountain peaks, tight vertical scallops, a row of spirals, and a rolling wave along the bottom.',
+      'The first row is unlike anything else in the set. It is one large arc taking up the whole width of the page, a single stroke with no repetition at all. Every other row asks a child to repeat a small shape; this one asks for one long committed movement.',
+      'That is worth watching, because repetition hides things. A child can produce twenty small acceptable zigzags without much control, since each one is short enough to get away with. One long arc has nowhere to hide, and how smooth it comes out tells you more about hand control than the rest of the sheet combined.',
+      'The spirals in the fourth row are the other standout. A spiral is a loop that keeps tightening, so the hand has to reduce the size of its movement continuously rather than repeat it.',
+    ],
+    skillsIntro:
+      'One long committed arc and a row of tightening spirals, both of which show control clearly.',
+    skills: [
+      'Drawing one long uninterrupted curve',
+      'Tightening a movement continuously',
+      'Tracing tightly spaced vertical scallops',
+      'Committing to a stroke without stopping',
+    ],
+    faqs: [
+      {
+        q: 'Why is one big arc harder than a row of zigzags?',
+        a: 'Repetition hides a lot. Short shapes are over quickly enough to get away with, while a single long curve shows exactly how steady the hand really is.',
+      },
+      {
+        q: 'What does the spiral row practise?',
+        a: 'Reducing the size of a movement continuously rather than repeating the same one. It is a different demand from any other row in the set.',
+      },
+    ],
+  },
+
+  162: {
+    slug: 'line-tracing-waves-and-scallops',
+    h1: 'Waves and scallops: free printable line tracing worksheet',
+    metaTitle: 'Free Wavy Line Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable wavy line tracing worksheet for ages 3 to 5. Rounded loops, scallops and a long tapering spiral. Pre-writing practice with bilingual instructions.',
+    hindi: 'रेखाएँ ट्रेस करें',
+    hindiInstruction: 'छोटी को रेखाएँ ट्रेस करने में मदद करें',
+    body: [
+      'Five rows: rounded loops along a line, wide scallops, a tight wave, a long tapering line, and a large flat spiral at the bottom.',
+      'The flat spiral in the last row is the single most demanding shape in the pre-writing set. It winds inward through several full turns, and it cannot be done in stages. Once the hand starts, it has to keep going and keep tightening, with no natural point to stop and restart.',
+      'Children love it, which is the useful part. A spiral looks like drawing rather than practice, so they will attempt it willingly and produce several minutes of continuous controlled movement without ever thinking of it as a worksheet.',
+      'The upper rows are gentler and follow the same wave and scallop family as the earlier sheets, so this page works as a recap with one hard thing at the end.',
+    ],
+    skillsIntro:
+      'Familiar wave shapes above, and the hardest single shape in the set waiting at the bottom.',
+    skills: [
+      'Winding a spiral inward without stopping',
+      'Sustaining one movement for several turns',
+      'Tracing wide and tight waves in one sheet',
+      'Enjoying practice that feels like drawing',
+    ],
+    faqs: [
+      {
+        q: 'Which is the hardest shape in the pre-writing set?',
+        a: 'The flat spiral at the bottom of this sheet. It winds inward through several turns with no natural point to stop and restart.',
+      },
+      {
+        q: 'My child wants to do the spiral over and over.',
+        a: 'Let them. It looks like drawing rather than practice, so it produces several minutes of continuous controlled movement without feeling like a worksheet.',
+      },
+    ],
+  },
+
+  163: {
+    slug: 'line-tracing-direction-arrows',
+    h1: 'Direction arrows: free printable line tracing worksheet',
+    metaTitle: 'Free Directional Tracing Worksheet (PDF)',
+    metaDescription:
+      'Free printable directional tracing worksheet for ages 3 to 5. Every stroke ends in an arrow, so children learn which way a line is drawn, not just its shape.',
+    hindi: 'रेखाएँ ट्रेस करें',
+    hindiInstruction: 'छोटी को रेखाएँ ट्रेस करने में मदद करें',
+    body: [
+      'Five rows of short strokes, each one ending in an arrowhead: curved S shapes going up, diagonals going down and left, arcs turning down, wandering paths going up, and loops rising to a point.',
+      'This is the only sheet in the pre-writing set where direction is the entire lesson. Everywhere else, a child traces a shape and it does not much matter which end they start from. Here, every stroke has an arrow, so there is a right way round and a wrong one.',
+      'That matters more than it sounds. Letters and numbers all have a correct direction of travel, and a child who has settled into drawing shapes whichever way is convenient has to unlearn it later, usually when writing speeds up and the habit starts costing them. Meeting the idea of direction before letters is much easier than correcting it after.',
+      'The arrows also point in genuinely different ways: up, down, down-left, and up-right. Working out where a stroke ends before starting it is the skill being practised, not the shape itself.',
+      'Save this one for last. It makes most sense after the other six sheets are comfortable.',
+    ],
+    skillsIntro:
+      'The only sheet where direction is the lesson, which is the idea letters depend on later.',
+    skills: [
+      'Starting a stroke at the correct end',
+      'Reading an arrow before drawing',
+      'Travelling in four different directions',
+      'Preparing for correct letter formation',
+    ],
+    faqs: [
+      {
+        q: 'Why does the direction of a line matter?',
+        a: 'Every letter and number has a correct direction of travel. A child who draws shapes whichever way is convenient has to unlearn it later, and that is harder than learning it now.',
+      },
+      {
+        q: 'Should this sheet come first or last?',
+        a: 'Last. It makes most sense once the other six sheets are comfortable and your child is ready to think about direction rather than just shape.',
+      },
+    ],
+  },
 };
 
 export function getSheetContent(id: number): SheetContent | undefined {
