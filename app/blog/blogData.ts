@@ -4,6 +4,8 @@
 export interface BlogPost {
   slug: string;
   title: string;
+  /** Optional shorter title for the <title> tag. Falls back to `title`. */
+  metaTitle?: string;
   description: string;
   category?: string;
   ageRange?: string;
@@ -2789,10 +2791,11 @@ At age 3, your child may comprehend all 100 of these words but only <em>say</em>
   {
     slug: "when-should-toddler-start-school-india",
     title: "When Should My Toddler Start School in India? An Honest Guide for Indian Parents",
+    metaTitle: "What Age Do Kids Start School in India?",
     description: "Every Indian parent is told 'earlier is better' when it comes to school. A Montessori educator explains what the research actually says \u2014 and what age is genuinely right for your child.",
     category: "School Readiness",
     ageRange: "2-4",
-    lastUpdated: "2026-05-23",
+    lastUpdated: "2026-08-14",
     keywords: ["when to start school in India", "what age to send child to school India", "toddler school age India", "nursery admission age India", "is my 2 year old ready for school", "preschool age India", "when to admit child to nursery"],
     html: `<div class="ckd-eyebrow">School Readiness · Ages 2–4 · 11 min read · Backed by child development research</div>
 
@@ -2802,8 +2805,50 @@ At age 3, your child may comprehend all 100 of these words but only <em>say</em>
 <p>I share this not to alarm you, but because this story plays out in thousands of Indian households every year — and it doesn't have to.</p>
 <div class="ckd-honest-box">
   <div class="ckd-honest-tag">⚡ Quick Answer</div>
-  <p><strong>The research-backed minimum age for any group childcare setting is 2.5–3 years.</strong> Before this, most children lack the neurological development to regulate separation distress, follow group instructions, or manage basic self-care independently. For formal nursery or LKG in India, 3–3.5 years is the optimal entry window. Starting before 2.5 years benefits almost no child — and risks several.</p>
+  <p><strong>In India, children enter Nursery at 3, LKG at 4, UKG at 5, and Class 1 at 6.</strong> Under NEP 2020 the Ministry of Education has directed all states and union territories to set 6 completed years as the minimum age for Class 1. There is no national minimum age for pre-primary, which is why some schools will admit a 2-year-old to playgroup. On the research, the minimum age for any group childcare setting is 2.5 to 3 years, and 3 to 3.5 years is the optimal window for nursery. Starting before 2.5 benefits almost no child.</p>
 </div>
+
+<hr>
+<h2>The Indian school ladder: what age for each class</h2>
+<p>Before the developmental argument, here is the plain structure, because most parents asking this question want the ladder before they want the advice.</p>
+<div class="ckd-skill-table">
+  <div class="ckd-skill-row ckd-skill-header">
+    <div>Class</div>
+    <div>Entry age</div>
+    <div>What it usually is</div>
+  </div>
+  <div class="ckd-skill-row">
+    <div>Playgroup / Pre-nursery</div>
+    <div>2 to 3 yrs</div>
+    <div>Optional. Not part of the NEP structure. Short play sessions, often 2 hours.</div>
+  </div>
+  <div class="ckd-skill-row">
+    <div>Nursery (Bal Vatika / Pre-school 1)</div>
+    <div>3 yrs</div>
+    <div>First year of the Foundational Stage. Play-based, no formal academics.</div>
+  </div>
+  <div class="ckd-skill-row">
+    <div>LKG (Pre-school 2)</div>
+    <div>4 yrs</div>
+    <div>Lower Kindergarten. Letter and number recognition begins.</div>
+  </div>
+  <div class="ckd-skill-row">
+    <div>UKG (Pre-school 3)</div>
+    <div>5 yrs</div>
+    <div>Upper Kindergarten. Writing readiness, early reading.</div>
+  </div>
+  <div class="ckd-skill-row">
+    <div>Class 1</div>
+    <div>6 yrs completed</div>
+    <div>Formal schooling begins. Minimum age now set nationally.</div>
+  </div>
+</div>
+<p>NEP 2020 replaced the old 10+2 system with a 5+3+3+4 structure. The first block, the Foundational Stage, covers ages 3 to 8 and is made up of three years of pre-primary (Nursery, LKG, UKG) followed by Classes 1 and 2. The point of that design is that preschool and the first two primary years are treated as one continuous phase rather than two separate worlds.</p>
+<div class="ckd-callout-warning">
+  <div class="ckd-callout-icon">&#128204;</div>
+  <div><strong>Two things parents get caught out by.</strong> First, the age is usually counted as of 31 March of the admission year, not the day you apply, so a child born in April or May can miss a whole year by days. Second, NEP is a national framework but admissions are run by states, union territories and individual boards, so timing differs by where you live. Delhi moved to the six-year Class 1 rule from the 2026-27 session. Check your own state before you plan.</div>
+</div>
+<p>Notice what is missing from that table: there is no national minimum age for Playgroup or Nursery. The six-year rule applies to Class 1 only. That gap is exactly why a school can accept a child of 1 year 10 months and be breaking no rule at all.</p>
 
 <hr>
 <h2>The "earlier is better" myth — where it came from</h2>
@@ -3007,6 +3052,18 @@ At age 3, your child may comprehend all 100 of these words but only <em>say</em>
 <hr>
 <h2>Frequently Asked Questions</h2>
 <div class="ckd-faq">
+  <div class="ckd-faq-item">
+    <div class="ckd-faq-q">What age does school start in India?</div>
+    <div class="ckd-faq-a">Nursery begins at 3, LKG at 4, UKG at 5, and Class 1 at 6 completed years. Optional playgroup exists from about 2. Under NEP 2020 the Ministry of Education has asked all states and union territories to make 6 the minimum age for Class 1, though the timing of that change varies by state.</div>
+  </div>
+  <div class="ckd-faq-item">
+    <div class="ckd-faq-q">What is the difference between Nursery, LKG and UKG?</div>
+    <div class="ckd-faq-a">They are the three pre-primary years, taken at 3, 4 and 5 respectively. Nursery is play-based with no formal academics. LKG introduces letter and number recognition. UKG builds writing readiness and early reading. Together they form the first three years of the Foundational Stage under NEP 2020.</div>
+  </div>
+  <div class="ckd-faq-item">
+    <div class="ckd-faq-q">Is there a minimum legal age for nursery admission in India?</div>
+    <div class="ckd-faq-a">No. The six-year minimum applies to Class 1 only. There is no national minimum age for playgroup or nursery, which is why some private preschools accept children under 2. A school doing this is not breaking any rule, so the decision sits entirely with you.</div>
+  </div>
   <div class="ckd-faq-item">
     <div class="ckd-faq-q">What is the right age to start nursery in India?</div>
     <div class="ckd-faq-a">For most children, 3–3.5 years is the developmentally appropriate window for nursery admission. Before 2.5 years, most children lack the neurological readiness for sustained group care. The key readiness markers are: can express needs in words, can indicate toileting need, and can tolerate brief (30-min) separation without complete distress.</div>
